@@ -3,19 +3,19 @@
  * This fucntion is responsible for rendering metaboxes in single post area
  *
  * @package ThemeGrill
- * @subpackage Spacious
- * @since Spacious 1.0
+ * @subpackage Elmispase
+ * @since Elmispase 1.0
  */
  
- add_action( 'add_meta_boxes', 'spacious_add_custom_box' );
+ add_action( 'add_meta_boxes', 'elmispase_add_custom_box' );
 /**
  * Add Meta Boxes.
  */ 
-function spacious_add_custom_box() {
+function elmispase_add_custom_box() {
 	// Adding layout meta box for page
-	add_meta_box( 'page-layout', __( 'Select Layout', 'spacious' ), 'spacious_page_layout', 'page', 'side', 'default' ); 
+	add_meta_box( 'page-layout', __( 'Select Layout', 'elmispase' ), 'elmispase_page_layout', 'page', 'side', 'default' ); 
 	// Adding layout meta box for
-	add_meta_box( 'page-layout', __( 'Select Layout', 'spacious' ), 'spacious_page_layout', 'post', 'side', 'default' ); 
+	add_meta_box( 'page-layout', __( 'Select Layout', 'elmispase' ), 'elmispase_page_layout', 'post', 'side', 'default' ); 
 }
 
 /****************************************************************************************/
@@ -23,29 +23,29 @@ function spacious_add_custom_box() {
 global $page_layout;
 $page_layout = array(
 							'default-layout' 	=> array(
-														'id'			=> 'spacious_page_layout',
+														'id'			=> 'elmispase_page_layout',
 														'value' 		=> 'default_layout',
-														'label' 		=> __( 'Default Layout', 'spacious' )
+														'label' 		=> __( 'Default Layout', 'elmispase' )
 														),
 							'right-sidebar' 	=> array(
-														'id'			=> 'spacious_page_layout',
+														'id'			=> 'elmispase_page_layout',
 														'value' 		=> 'right_sidebar',
-														'label' 		=> __( 'Right Sidebar', 'spacious' )
+														'label' 		=> __( 'Right Sidebar', 'elmispase' )
 														),
 							'left-sidebar' 	=> array(
-														'id'			=> 'spacious_page_layout',
+														'id'			=> 'elmispase_page_layout',
 														'value' 		=> 'left_sidebar',
-														'label' 		=> __( 'Left Sidebar', 'spacious' )
+														'label' 		=> __( 'Left Sidebar', 'elmispase' )
 														),
 							'no-sidebar-full-width' => array(
-															'id'			=> 'spacious_page_layout',
+															'id'			=> 'elmispase_page_layout',
 															'value' 		=> 'no_sidebar_full_width',
-															'label' 		=> __( 'No Sidebar Full Width', 'spacious' )
+															'label' 		=> __( 'No Sidebar Full Width', 'elmispase' )
 															),
 							'no-sidebar-content-centered' => array(
-															'id'			=> 'spacious_page_layout',
+															'id'			=> 'elmispase_page_layout',
 															'value' 		=> 'no_sidebar_content_centered',
-															'label' 		=> __( 'No Sidebar Content Centered', 'spacious' )
+															'label' 		=> __( 'No Sidebar Content Centered', 'elmispase' )
 															)
 						);
 	
@@ -54,7 +54,7 @@ $page_layout = array(
 /**
  * Displays metabox to for select layout option
  */
-function spacious_page_layout() {  
+function elmispase_page_layout() {  
 	global $page_layout, $post; 
 
 	// Use nonce for verification  
@@ -72,12 +72,12 @@ function spacious_page_layout() {
 
 /****************************************************************************************/
 
-add_action('pre_post_update', 'spacious_save_custom_meta'); 
+add_action('pre_post_update', 'elmispase_save_custom_meta'); 
 /**
  * save the custom metabox data
  * @hooked to pre_post_update hook
  */
-function spacious_save_custom_meta( $post_id ) { 
+function elmispase_save_custom_meta( $post_id ) { 
 	global $page_layout, $post; 
 	
 	// Verify the nonce before proceeding.

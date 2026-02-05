@@ -1,6 +1,6 @@
 <?php
 /**
- * Spacious functions related to defining constants, adding files and WordPress core functionality.
+ * Elmispase functions related to defining constants, adding files and WordPress core functionality.
  *
  * Defining some constants, loading all the required files and Adding some core functionality.
  * @uses add_theme_support() To add support for post thumbnails and automatic feed links.
@@ -8,8 +8,8 @@
  * @uses set_post_thumbnail_size() To set a custom post thumbnail size.
  *
  * @package ThemeGrill
- * @subpackage Spacious
- * @since Spacious 1.0
+ * @subpackage Elmispase
+ * @since Elmispase 1.0
  */
 
 /**
@@ -17,9 +17,9 @@
  */
 
 /** Load functions */
-require_once( SPACIOUS_INCLUDES_DIR . '/custom-header.php' );
-require_once( SPACIOUS_INCLUDES_DIR . '/functions.php' );
-require_once( SPACIOUS_INCLUDES_DIR . '/header-functions.php' );
+require_once( ELMISPASE_INCLUDES_DIR . '/custom-header.php' );
+require_once( ELMISPASE_INCLUDES_DIR . '/functions.php' );
+require_once( ELMISPASE_INCLUDES_DIR . '/header-functions.php' );
 
 
 if (!function_exists('theme_special_nav')) {

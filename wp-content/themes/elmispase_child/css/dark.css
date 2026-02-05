@@ -25,13 +25,13 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
 body, input, textarea {
    color: #AAAAAA;
 }
-.spacious-button,
+.elmispase-button,
 input[type="reset"], 
 input[type="button"], 
 input[type="submit"] {
    border: 1px solid #444444;
 }
-.spacious-button:hover,
+.elmispase-button:hover,
 input[type="reset"]:hover, 
 input[type="button"]:hover, 
 input[type="submit"]:hover,

@@ -3,21 +3,21 @@
  * Contains all the functions related to sidebar and widget.
  *
  * @package ThemeGrill
- * @subpackage Spacious
- * @since Spacious 1.0
+ * @subpackage Elmispase
+ * @since Elmispase 1.0
  */
 
-add_action( 'widgets_init', 'spacious_widgets_init');
+add_action( 'widgets_init', 'elmispase_widgets_init');
 /**
  * Function to register the widget areas(sidebar) and widgets.
  */
-function spacious_widgets_init() {
+function elmispase_widgets_init() {
 
 	// Registering main right sidebar
 	register_sidebar( array(
-		'name' 				=> __( 'Right Sidebar', 'spacious' ),
-		'id' 					=> 'spacious_right_sidebar',
-		'description'   	=> __( 'Shows widgets at Right side.', 'spacious' ),
+		'name' 				=> __( 'Right Sidebar', 'elmispase' ),
+		'id' 					=> 'elmispase_right_sidebar',
+		'description'   	=> __( 'Shows widgets at Right side.', 'elmispase' ),
 		'before_widget' 	=> '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  	=> '</aside>',
 		'before_title'  	=> '<h3 class="widget-title"><span>',
@@ -26,9 +26,9 @@ function spacious_widgets_init() {
 
 	// Registering main left sidebar
 	register_sidebar( array(
-		'name' 				=> __( 'Left Sidebar', 'spacious' ),
-		'id' 					=> 'spacious_left_sidebar',
-		'description'   	=> __( 'Shows widgets at Left side.', 'spacious' ),
+		'name' 				=> __( 'Left Sidebar', 'elmispase' ),
+		'id' 					=> 'elmispase_left_sidebar',
+		'description'   	=> __( 'Shows widgets at Left side.', 'elmispase' ),
 		'before_widget' 	=> '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  	=> '</aside>',
 		'before_title'  	=> '<h3 class="widget-title"><span>',
@@ -37,9 +37,9 @@ function spacious_widgets_init() {
 
 	// Registering Header sidebar
 	register_sidebar( array(
-		'name' 				=> __( 'Header Sidebar', 'spacious' ),
-		'id' 					=> 'spacious_header_sidebar',
-		'description'   	=> __( 'Shows widgets in header section just above the main navigation menu.', 'spacious' ),
+		'name' 				=> __( 'Header Sidebar', 'elmispase' ),
+		'id' 					=> 'elmispase_header_sidebar',
+		'description'   	=> __( 'Shows widgets in header section just above the main navigation menu.', 'elmispase' ),
 		'before_widget' 	=> '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  	=> '</aside>',
 		'before_title'  	=> '<h3 class="widget-title">',
@@ -48,9 +48,9 @@ function spacious_widgets_init() {
 
 	// Registering Business Page template top section sidebar
 	register_sidebar( array(
-		'name' 				=> __( 'Business Top Sidebar', 'spacious' ),
-		'id' 					=> 'spacious_business_page_top_section_sidebar',
-		'description'   	=> __( 'Shows widgets on Business Page Template Top Section. Sutiable widget: ', 'spacious' ),
+		'name' 				=> __( 'Business Top Sidebar', 'elmispase' ),
+		'id' 					=> 'elmispase_business_page_top_section_sidebar',
+		'description'   	=> __( 'Shows widgets on Business Page Template Top Section. Sutiable widget: ', 'elmispase' ),
 		'before_widget' 	=> '<section id="%1$s" class="widget %2$s clearfix">',
 		'after_widget'  	=> '</section>',
 		'before_title'  	=> '<h1 class="widget-title">',
@@ -59,9 +59,9 @@ function spacious_widgets_init() {
 
 	// Registering Business Page template middle section left half sidebar
 	register_sidebar( array(
-		'name' 				=> __( 'Business Middle Left Sidebar', 'spacious' ),
-		'id' 					=> 'spacious_business_page_middle_section_left_half_sidebar',
-		'description'   	=> __( 'Shows widgets on Business Page Template Middle Section Left Half. Sutiable widget: ', 'spacious' ),
+		'name' 				=> __( 'Business Middle Left Sidebar', 'elmispase' ),
+		'id' 					=> 'elmispase_business_page_middle_section_left_half_sidebar',
+		'description'   	=> __( 'Shows widgets on Business Page Template Middle Section Left Half. Sutiable widget: ', 'elmispase' ),
 		'before_widget' 	=> '<section id="%1$s" class="widget %2$s clearfix">',
 		'after_widget'  	=> '</section>',
 		'before_title'  	=> '<h1 class="widget-title">',
@@ -70,9 +70,9 @@ function spacious_widgets_init() {
 
 	// Registering Business Page template middle section right half sidebar
 	register_sidebar( array(
-		'name' 				=> __( 'Business Middle Right Sidebar', 'spacious' ),
-		'id' 					=> 'spacious_business_page_middle_section_right_half_sidebar',
-		'description'   	=> __( 'Shows widgets on Business Page Template Middle Section Right Half. Sutiable widget: ', 'spacious' ),
+		'name' 				=> __( 'Business Middle Right Sidebar', 'elmispase' ),
+		'id' 					=> 'elmispase_business_page_middle_section_right_half_sidebar',
+		'description'   	=> __( 'Shows widgets on Business Page Template Middle Section Right Half. Sutiable widget: ', 'elmispase' ),
 		'before_widget' 	=> '<section id="%1$s" class="widget %2$s clearfix">',
 		'after_widget'  	=> '</section>',
 		'before_title'  	=> '<h1 class="widget-title">',
@@ -82,9 +82,9 @@ function spacious_widgets_init() {
 
 	// Registering Business Page template bottom section sidebar
 	register_sidebar( array(
-		'name' 				=> __( 'Business Bottom Sidebar', 'spacious' ),
-		'id' 					=> 'spacious_business_page_bottom_section_sidebar',
-		'description'   	=> __( 'Shows widgets on Business Page Template Bottom Section. Sutiable widget: ', 'spacious' ),
+		'name' 				=> __( 'Business Bottom Sidebar', 'elmispase' ),
+		'id' 					=> 'elmispase_business_page_bottom_section_sidebar',
+		'description'   	=> __( 'Shows widgets on Business Page Template Bottom Section. Sutiable widget: ', 'elmispase' ),
 		'before_widget' 	=> '<section id="%1$s" class="widget %2$s clearfix">',
 		'after_widget'  	=> '</section>',
 		'before_title'  	=> '<h1 class="widget-title">',
@@ -93,9 +93,9 @@ function spacious_widgets_init() {
 
 	// Registering contact Page sidebar
 	register_sidebar( array(
-		'name' 				=> __( 'Contact Page Sidebar', 'spacious' ),
-		'id' 					=> 'spacious_contact_page_sidebar',
-		'description'   	=> __( 'Shows widgets on Contact Page Template.', 'spacious' ),
+		'name' 				=> __( 'Contact Page Sidebar', 'elmispase' ),
+		'id' 					=> 'elmispase_contact_page_sidebar',
+		'description'   	=> __( 'Shows widgets on Contact Page Template.', 'elmispase' ),
 		'before_widget' 	=> '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  	=> '</aside>',
 		'before_title'  	=> '<h3 class="widget-title"><span>',
@@ -104,9 +104,9 @@ function spacious_widgets_init() {
 
 	// Registering Error 404 Page sidebar
 	register_sidebar( array(
-		'name' 				=> __( 'Error 404 Page Sidebar', 'spacious' ),
-		'id' 					=> 'spacious_error_404_page_sidebar',
-		'description'   	=> __( 'Shows widgets on Error 404 page.', 'spacious' ),
+		'name' 				=> __( 'Error 404 Page Sidebar', 'elmispase' ),
+		'id' 					=> 'elmispase_error_404_page_sidebar',
+		'description'   	=> __( 'Shows widgets on Error 404 page.', 'elmispase' ),
 		'before_widget' 	=> '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  	=> '</aside>',
 		'before_title'  	=> '<h3 class="widget-title"><span>',
@@ -115,9 +115,9 @@ function spacious_widgets_init() {
 
 	// Registering footer sidebar one
 	register_sidebar( array(
-		'name' 				=> __( 'Footer Sidebar One', 'spacious' ),
-		'id' 					=> 'spacious_footer_sidebar_one',
-		'description'   	=> __( 'Shows widgets at footer sidebar one.', 'spacious' ),
+		'name' 				=> __( 'Footer Sidebar One', 'elmispase' ),
+		'id' 					=> 'elmispase_footer_sidebar_one',
+		'description'   	=> __( 'Shows widgets at footer sidebar one.', 'elmispase' ),
 		'before_widget' 	=> '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  	=> '</aside>',
 		'before_title'  	=> '<h3 class="widget-title"><span>',
@@ -126,9 +126,9 @@ function spacious_widgets_init() {
 
 	// Registering footer sidebar two
 	register_sidebar( array(
-		'name' 				=> __( 'Footer Sidebar Two', 'spacious' ),
-		'id' 					=> 'spacious_footer_sidebar_two',
-		'description'   	=> __( 'Shows widgets at footer sidebar two.', 'spacious' ),
+		'name' 				=> __( 'Footer Sidebar Two', 'elmispase' ),
+		'id' 					=> 'elmispase_footer_sidebar_two',
+		'description'   	=> __( 'Shows widgets at footer sidebar two.', 'elmispase' ),
 		'before_widget' 	=> '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  	=> '</aside>',
 		'before_title'  	=> '<h3 class="widget-title"><span>',
@@ -137,9 +137,9 @@ function spacious_widgets_init() {
 
 	// Registering footer sidebar three
 	register_sidebar( array(
-		'name' 				=> __( 'Footer Sidebar Three', 'spacious' ),
-		'id' 					=> 'spacious_footer_sidebar_three',
-		'description'   	=> __( 'Shows widgets at footer sidebar three.', 'spacious' ),
+		'name' 				=> __( 'Footer Sidebar Three', 'elmispase' ),
+		'id' 					=> 'elmispase_footer_sidebar_three',
+		'description'   	=> __( 'Shows widgets at footer sidebar three.', 'elmispase' ),
 		'before_widget' 	=> '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  	=> '</aside>',
 		'before_title'  	=> '<h3 class="widget-title"><span>',
@@ -148,9 +148,9 @@ function spacious_widgets_init() {
 
 	// Registering footer sidebar four
 	register_sidebar( array(
-		'name' 				=> __( 'Footer Sidebar Four', 'spacious' ),
-		'id' 					=> 'spacious_footer_sidebar_four',
-		'description'   	=> __( 'Shows widgets at footer sidebar four.', 'spacious' ),
+		'name' 				=> __( 'Footer Sidebar Four', 'elmispase' ),
+		'id' 					=> 'elmispase_footer_sidebar_four',
+		'description'   	=> __( 'Shows widgets at footer sidebar four.', 'elmispase' ),
 		'before_widget' 	=> '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  	=> '</aside>',
 		'before_title'  	=> '<h3 class="widget-title"><span>',
@@ -158,11 +158,11 @@ function spacious_widgets_init() {
 	) );
 
 	// Registering widgets
-	register_widget( "spacious_featured_single_page_widget" );
-	register_widget( "spacious_service_widget" );
-	register_widget( "spacious_call_to_action_widget" );
-	register_widget( "spacious_testimonial_widget" );
-	register_widget( "spacious_recent_work_widget" );	
+	register_widget( "elmispase_featured_single_page_widget" );
+	register_widget( "elmispase_service_widget" );
+	register_widget( "elmispase_call_to_action_widget" );
+	register_widget( "elmispase_testimonial_widget" );
+	register_widget( "elmispase_recent_work_widget" );	
 }
 
 /****************************************************************************************/
@@ -171,9 +171,9 @@ function spacious_widgets_init() {
  * Featured Single page widget.
  *
  */
- class spacious_featured_single_page_widget extends WP_Widget {
- 	function spacious_featured_single_page_widget() {
- 		$widget_ops = array( 'classname' => 'widget_featured_single_post', 'description' => __( 'Display Featured Single Page', 'spacious' ) );
+ class elmispase_featured_single_page_widget extends WP_Widget {
+ 	function elmispase_featured_single_page_widget() {
+ 		$widget_ops = array( 'classname' => 'widget_featured_single_post', 'description' => __( 'Display Featured Single Page', 'elmispase' ) );
 		$control_ops = array( 'width' => 200, 'height' =>250 );
 		parent::WP_Widget( false, $name='TG: Featured Single Page', $widget_ops, $control_ops);
  	}
@@ -184,31 +184,31 @@ function spacious_widgets_init() {
 		$page_id = absint( $instance[ 'page_id' ] );
 		$disable_feature_image = $instance['disable_feature_image'] ? 'checked="checked"' : '';
 		$image_position = $instance[ 'image_position' ];
-		_e( 'Suitable for Home Top Sidebar, Home Bottom Left Sidebar and Side Sidbar.', 'spacious' );
+		_e( 'Suitable for Home Top Sidebar, Home Bottom Left Sidebar and Side Sidbar.', 'elmispase' );
 	?>
 		<p>
-			<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e( 'Title:', 'spacious' ); ?></label> 
+			<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e( 'Title:', 'elmispase' ); ?></label> 
 			<input id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" />
 		</p>
-		<p><?php _e( 'Displays the title of the Page if title input is empty.', 'spacious' ); ?></p>
+		<p><?php _e( 'Displays the title of the Page if title input is empty.', 'elmispase' ); ?></p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'page_id' ); ?>"><?php _e( 'Page', 'spacious' ); ?>:</label>
+			<label for="<?php echo $this->get_field_id( 'page_id' ); ?>"><?php _e( 'Page', 'elmispase' ); ?>:</label>
 			<?php wp_dropdown_pages( array( 'name' => $this->get_field_name( 'page_id' ), 'selected' => $instance['page_id'] ) ); ?>
 		</p>
 		<p>
-			<input class="checkbox" type="checkbox" <?php echo $disable_feature_image; ?> id="<?php echo $this->get_field_id('disable_feature_image'); ?>" name="<?php echo $this->get_field_name('disable_feature_image'); ?>" /> <label for="<?php echo $this->get_field_id('disable_feature_image'); ?>"><?php _e( 'Remove Featured image', 'spacious' ); ?></label>
+			<input class="checkbox" type="checkbox" <?php echo $disable_feature_image; ?> id="<?php echo $this->get_field_id('disable_feature_image'); ?>" name="<?php echo $this->get_field_name('disable_feature_image'); ?>" /> <label for="<?php echo $this->get_field_id('disable_feature_image'); ?>"><?php _e( 'Remove Featured image', 'elmispase' ); ?></label>
 		</p>
 
 	    <?php if( $image_position == 'above' ) { ?>  
 		<p> 
-		    <input type="radio" id="<?php echo $this->get_field_id( 'image_position' ); ?>" name="<?php echo $this->get_field_name( 'image_position' ); ?>" value="above" style="" checked /><?php _e( 'Show Image Before Title', 'spacious' );?><br />  
-		    <input type="radio" id="<?php echo $this->get_field_id( 'image_position' ); ?>" name="<?php echo $this->get_field_name( 'image_position' ); ?>" value="below" style="" /><?php _e( 'Show Image After Title', 'spacious' );?><br />              
+		    <input type="radio" id="<?php echo $this->get_field_id( 'image_position' ); ?>" name="<?php echo $this->get_field_name( 'image_position' ); ?>" value="above" style="" checked /><?php _e( 'Show Image Before Title', 'elmispase' );?><br />  
+		    <input type="radio" id="<?php echo $this->get_field_id( 'image_position' ); ?>" name="<?php echo $this->get_field_name( 'image_position' ); ?>" value="below" style="" /><?php _e( 'Show Image After Title', 'elmispase' );?><br />              
 		</p>  
 		<?php } else { ?> 
 		<p>   
-		    <input type="radio" id="<?php echo $this->get_field_id( 'image_position' ); ?>" name="<?php echo $this->get_field_name( 'image_position' ); ?>" value="above" style="" /><?php _e( 'Show Image Before Title', 'spacious' );?><br />  
-		    <input type="radio" id="<?php echo $this->get_field_id( 'image_position' ); ?>" name="<?php echo $this->get_field_name( 'image_position' ); ?>" value="below" style="" checked /><?php _e( 'Show Image After Title', 'spacious' );?><br />              
+		    <input type="radio" id="<?php echo $this->get_field_id( 'image_position' ); ?>" name="<?php echo $this->get_field_name( 'image_position' ); ?>" value="above" style="" /><?php _e( 'Show Image Before Title', 'elmispase' );?><br />  
+		    <input type="radio" id="<?php echo $this->get_field_id( 'image_position' ); ?>" name="<?php echo $this->get_field_name( 'image_position' ); ?>" value="below" style="" checked /><?php _e( 'Show Image After Title', 'elmispase' );?><br />              
 		</p>  
 		<?php } ?> 
 
@@ -255,7 +255,7 @@ function spacious_widgets_init() {
 	 			endif;
 		 	}
 			$output .= '<p>'.get_the_excerpt().'...'.'</p>'; 
-			$output .= '<a class="read-more" href="'. get_permalink() .'">'.__( 'Read more', 'spacious' ).'</a>';
+			$output .= '<a class="read-more" href="'. get_permalink() .'">'.__( 'Read more', 'elmispase' ).'</a>';
 	 		$output .= $after_widget;
 	 		endwhile;
 	 		// Reset Post Data
@@ -271,11 +271,11 @@ function spacious_widgets_init() {
 /**
  * Featured service widget to show pages.
  */
-class spacious_service_widget extends WP_Widget {
- 	function spacious_service_widget() {
- 		$widget_ops = array( 'classname' => 'widget_service_block', 'description' => __( 'Display some pages as services. Best for Business Top or Bottom sidebar.', 'spacious' ) );
+class elmispase_service_widget extends WP_Widget {
+ 	function elmispase_service_widget() {
+ 		$widget_ops = array( 'classname' => 'widget_service_block', 'description' => __( 'Display some pages as services. Best for Business Top or Bottom sidebar.', 'elmispase' ) );
 		$control_ops = array( 'width' => 200, 'height' =>250 ); 
-		parent::WP_Widget( false, $name = __( 'TG: Services', 'spacious' ), $widget_ops, $control_ops);
+		parent::WP_Widget( false, $name = __( 'TG: Services', 'elmispase' ), $widget_ops, $control_ops);
  	}
 
  	function form( $instance ) {
@@ -291,7 +291,7 @@ class spacious_service_widget extends WP_Widget {
 	?>
 		<?php for( $i=0; $i<6; $i++) { ?>
 			<p>
-				<label for="<?php echo $this->get_field_id( key($defaults) ); ?>"><?php _e( 'Page', 'spacious' ); ?>:</label>
+				<label for="<?php echo $this->get_field_id( key($defaults) ); ?>"><?php _e( 'Page', 'elmispase' ); ?>:</label>
 				<?php wp_dropdown_pages( array( 'show_option_none' =>' ','name' => $this->get_field_name( key($defaults) ), 'selected' => $instance[key($defaults)] ) ); ?>
 			</p>
 		<?php
@@ -354,7 +354,7 @@ class spacious_service_widget extends WP_Widget {
 					<?php echo $before_title; ?><a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><?php echo $page_title; ?></a><?php echo $after_title; ?>
 					<?php the_excerpt(); ?>
 					<div class="more-link-wrap">
-						<a class="more-link" title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><?php _e( 'Read more','spacious' ); ?></a>	
+						<a class="more-link" title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><?php _e( 'Read more','elmispase' ); ?></a>	
 					</div>					
 				</div>
 				<?php $j++; ?>					
@@ -372,19 +372,19 @@ class spacious_service_widget extends WP_Widget {
 /**
  * Featured call to action widget.
  */
-class spacious_call_to_action_widget extends WP_Widget {
- 	function spacious_call_to_action_widget() {
- 		$widget_ops = array( 'classname' => 'widget_call_to_action', 'description' => __( 'Use this widget to show the call to action section.', 'spacious' ) );
+class elmispase_call_to_action_widget extends WP_Widget {
+ 	function elmispase_call_to_action_widget() {
+ 		$widget_ops = array( 'classname' => 'widget_call_to_action', 'description' => __( 'Use this widget to show the call to action section.', 'elmispase' ) );
 		$control_ops = array( 'width' => 200, 'height' =>250 ); 
-		parent::WP_Widget( false, $name = __( 'TG: Call To Action Widget', 'spacious' ), $widget_ops, $control_ops);
+		parent::WP_Widget( false, $name = __( 'TG: Call To Action Widget', 'elmispase' ), $widget_ops, $control_ops);
  	}
 
  	function form( $instance ) {
- 		$spacious_defaults[ 'text_main' ] = '';
- 		$spacious_defaults[ 'text_additional' ] = '';
- 		$spacious_defaults[ 'button_text' ] = '';
- 		$spacious_defaults[ 'button_url' ] = '';
- 		$instance = wp_parse_args( (array) $instance, $spacious_defaults );
+ 		$elmispase_defaults[ 'text_main' ] = '';
+ 		$elmispase_defaults[ 'text_additional' ] = '';
+ 		$elmispase_defaults[ 'button_text' ] = '';
+ 		$elmispase_defaults[ 'button_url' ] = '';
+ 		$instance = wp_parse_args( (array) $instance, $elmispase_defaults );
 		$text_main = esc_textarea( $instance[ 'text_main' ] );
 		$text_additional = esc_textarea( $instance[ 'text_additional' ] );
 		$button_text = esc_attr( $instance[ 'button_text' ] );
@@ -392,16 +392,16 @@ class spacious_call_to_action_widget extends WP_Widget {
 		?>
 	
 		
-		<?php _e( 'Call to Action Main Text','spacious' ); ?>
+		<?php _e( 'Call to Action Main Text','elmispase' ); ?>
 		<textarea class="widefat" rows="3" cols="20" id="<?php echo $this->get_field_id('text_main'); ?>" name="<?php echo $this->get_field_name('text_main'); ?>"><?php echo $text_main; ?></textarea>
-		<?php _e( 'Call to Action Additional Text','spacious' ); ?>
+		<?php _e( 'Call to Action Additional Text','elmispase' ); ?>
 		<textarea class="widefat" rows="3" cols="20" id="<?php echo $this->get_field_id('text_additional'); ?>" name="<?php echo $this->get_field_name('text_additional'); ?>"><?php echo $text_additional; ?></textarea>
 		<p>
-			<label for="<?php echo $this->get_field_id('button_text'); ?>"><?php _e( 'Button Text:', 'spacious' ); ?></label> 
+			<label for="<?php echo $this->get_field_id('button_text'); ?>"><?php _e( 'Button Text:', 'elmispase' ); ?></label> 
 			<input id="<?php echo $this->get_field_id('button_text'); ?>" name="<?php echo $this->get_field_name('button_text'); ?>" type="text" value="<?php echo $button_text; ?>" />
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id('button_url'); ?>"><?php _e( 'Button Redirect Link:', 'spacious' ); ?></label> 
+			<label for="<?php echo $this->get_field_id('button_url'); ?>"><?php _e( 'Button Redirect Link:', 'elmispase' ); ?></label> 
 			<input id="<?php echo $this->get_field_id('button_url'); ?>" name="<?php echo $this->get_field_name('button_url'); ?>" type="text" value="<?php echo $button_url; ?>" />
 		</p>
 		<?php
@@ -471,12 +471,12 @@ class spacious_call_to_action_widget extends WP_Widget {
  /**
  * Testimonial widget
  */
-class spacious_testimonial_widget extends WP_Widget {
+class elmispase_testimonial_widget extends WP_Widget {
 
-	function spacious_testimonial_widget() {
- 		$widget_ops = array( 'classname' => 'widget_testimonial', 'description' => __( 'Display Testimonial', 'spacious' ) );
+	function elmispase_testimonial_widget() {
+ 		$widget_ops = array( 'classname' => 'widget_testimonial', 'description' => __( 'Display Testimonial', 'elmispase' ) );
 		$control_ops = array( 'width' => 200, 'height' =>250 ); 
-		parent::WP_Widget( false, $name = __( 'TG: Testimonial', 'spacious' ), $widget_ops, $control_ops);
+		parent::WP_Widget( false, $name = __( 'TG: Testimonial', 'elmispase' ), $widget_ops, $control_ops);
  	}
 
 	function widget( $args, $instance ) {
@@ -519,15 +519,15 @@ class spacious_testimonial_widget extends WP_Widget {
 		$byline = strip_tags($instance['byline']);
 		$text = esc_textarea($instance['text']);
 ?>
-		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e( 'Title:', 'spacious' ); ?></label>
+		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e( 'Title:', 'elmispase' ); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></p>
-		<?php _e( 'Testimonial Description','spacious'); ?>
+		<?php _e( 'Testimonial Description','elmispase'); ?>
 		<textarea class="widefat" rows="8" cols="20" id="<?php echo $this->get_field_id('text'); ?>" name="<?php echo $this->get_field_name('text'); ?>"><?php echo $text; ?></textarea>
 
-		<p><label for="<?php echo $this->get_field_id('name'); ?>"><?php _e( 'Name:', 'spacious' ); ?></label>
+		<p><label for="<?php echo $this->get_field_id('name'); ?>"><?php _e( 'Name:', 'elmispase' ); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id('name'); ?>" name="<?php echo $this->get_field_name('name'); ?>" type="text" value="<?php echo esc_attr($name); ?>" /></p>
 
-		<p><label for="<?php echo $this->get_field_id('byline'); ?>"><?php _e( 'Byline:', 'spacious' ); ?></label>
+		<p><label for="<?php echo $this->get_field_id('byline'); ?>"><?php _e( 'Byline:', 'elmispase' ); ?></label>
 		<input class="widefat" id="<?php echo $this->get_field_id('byline'); ?>" name="<?php echo $this->get_field_name('byline'); ?>" type="text" value="<?php echo esc_attr($byline); ?>" /></p>
 
 <?php
@@ -539,11 +539,11 @@ class spacious_testimonial_widget extends WP_Widget {
 /**
  * Featured recent work widget to show pages.
  */
- class spacious_recent_work_widget extends WP_Widget {
- 	function spacious_recent_work_widget() {
- 		$widget_ops = array( 'classname' => 'widget_recent_work', 'description' => __( 'Show your some pages as recent work. Best for Business Top or Bottom sidebar.', 'spacious' ) );
+ class elmispase_recent_work_widget extends WP_Widget {
+ 	function elmispase_recent_work_widget() {
+ 		$widget_ops = array( 'classname' => 'widget_recent_work', 'description' => __( 'Show your some pages as recent work. Best for Business Top or Bottom sidebar.', 'elmispase' ) );
 		$control_ops = array( 'width' => 400, 'height' =>450 ); 
-		parent::WP_Widget( false, $name = __( 'TG: Featured Widget', 'spacious' ), $widget_ops, $control_ops);
+		parent::WP_Widget( false, $name = __( 'TG: Featured Widget', 'elmispase' ), $widget_ops, $control_ops);
  	}
 
  	function form( $instance ) {
@@ -564,16 +564,16 @@ class spacious_testimonial_widget extends WP_Widget {
 		?>
 	
 		<p>
-			<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e( 'Title:', 'spacious' ); ?></label> 
+			<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e( 'Title:', 'elmispase' ); ?></label> 
 			<input id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" />
 		</p>
-		<?php _e( 'Description','spacious' ); ?>
+		<?php _e( 'Description','elmispase' ); ?>
 		<textarea class="widefat" rows="10" cols="20" id="<?php echo $this->get_field_id('text'); ?>" name="<?php echo $this->get_field_name('text'); ?>"><?php echo $text; ?></textarea>
 		<?php
 		for( $i=0; $i<3; $i++) { 
 			?>
 			<p>
-				<label for="<?php echo $this->get_field_id( key($defaults) ); ?>"><?php _e( 'Page', 'spacious' ); ?>:</label>
+				<label for="<?php echo $this->get_field_id( key($defaults) ); ?>"><?php _e( 'Page', 'elmispase' ); ?>:</label>
 				<?php wp_dropdown_pages( array( 'show_option_none' =>' ','name' => $this->get_field_name( key($defaults) ), 'selected' => $instance[key($defaults)] ) ); ?>
 			</p>
 		<?php

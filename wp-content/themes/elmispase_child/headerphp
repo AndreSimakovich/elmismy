@@ -5,8 +5,8 @@
  * Displays all of the <head> section and everything up till <div id="main" class="clearfix"> <div class="inner-wrap">
  *
  * @package ThemeGrill
- * @subpackage Spacious
- * @since Spacious 1.0
+ * @subpackage Elmispase
+ * @since Elmispase 1.0
  */
 ?>
 <!DOCTYPE html>
@@ -35,10 +35,10 @@ wp_head();
 <body <?php body_class(); ?>>
 <?php	do_action( 'before' ); ?>
 <div id="page" class="hfeed site">
-	<?php do_action( 'spacious_before_header' ); ?>
+	<?php do_action( 'elmispase_before_header' ); ?>
 	<header id="masthead" class="site-header clearfix">
 		
-		<?php if( of_get_option( 'spacious_header_image_position', 'above' ) == 'above' ) { spacious_render_header_image(); } ?>
+		<?php if( of_get_option( 'elmispase_header_image_position', 'above' ) == 'above' ) { elmispase_render_header_image(); } ?>
 
 		<div id="header-text-nav-container">
 			<div class="inner-wrap">
@@ -46,15 +46,15 @@ wp_head();
 				<div id="header-text-nav-wrap" class="clearfix">
 					<div id="header-left-section">
 						<?php 
-						if( ( of_get_option( 'spacious_show_header_logo_text', 'text_only' ) == 'both' || of_get_option( 'spacious_show_header_logo_text', 'text_only' ) == 'logo_only' ) && of_get_option( 'spacious_header_logo_image', '' ) != '' ) {
+						if( ( of_get_option( 'elmispase_show_header_logo_text', 'text_only' ) == 'both' || of_get_option( 'elmispase_show_header_logo_text', 'text_only' ) == 'logo_only' ) && of_get_option( 'elmispase_header_logo_image', '' ) != '' ) {
 						?>
 							<div id="header-logo-image">
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo of_get_option( 'spacious_header_logo_image', '' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo of_get_option( 'elmispase_header_logo_image', '' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
 							</div><!-- #header-logo-image -->
 						<?php
 						}
 
-						if( of_get_option( 'spacious_show_header_logo_text', 'text_only' ) == 'both' || of_get_option( 'spacious_show_header_logo_text', 'text_only' ) == 'text_only' ) {
+						if( of_get_option( 'elmispase_show_header_logo_text', 'text_only' ) == 'both' || of_get_option( 'elmispase_show_header_logo_text', 'text_only' ) == 'text_only' ) {
 						?>
 						<div id="header-text">
 							<h1 id="site-title"> 
@@ -68,12 +68,15 @@ wp_head();
 					</div><!-- #header-left-section -->
 					<div id="header-right-section">
 						<?php
-						if( is_active_sidebar( 'spacious_header_sidebar' ) ) {
-						?>								
+						if( is_active_sidebar( 'elmispase_header_sidebar' ) ) {
+						?>	
+						<div id="header-logo-image">
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo of_get_option( 'elmispase_header_logo_image', '' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
+							</div><!-- #header-logo-image -->							
 						<div id="header-right-sidebar" class="clearfix">
 						<?php
 							// Calling the header sidebar if it exists.
-							if ( !dynamic_sidebar( 'spacious_header_sidebar' ) ):
+							if ( !dynamic_sidebar( 'elmispase_header_sidebar' ) ):
 							endif;
 						?>		
 						</div>
@@ -81,7 +84,7 @@ wp_head();
 						}
 						?>
 						<nav id="site-navigation" class="main-navigation" role="navigation">
-							<h1 class="menu-toggle"><?php _e( 'Menu', 'spacious' ); ?></h1>
+							<h1 class="menu-toggle"><?php _e( 'Menu', 'elmispase' ); ?></h1>
 							<?php
 								if ( has_nav_menu( 'primary' ) ) {									
 									wp_nav_menu( array( 'theme_location' => 'primary' ) );
@@ -97,36 +100,36 @@ wp_head();
 			</div><!-- .inner-wrap -->
 		</div><!-- #header-text-nav-container -->
 
-		<?php if( of_get_option( 'spacious_header_image_position', 'above' ) == 'below' ) { spacious_render_header_image(); } ?>
+		<?php if( of_get_option( 'elmispase_header_image_position', 'above' ) == 'below' ) { elmispase_render_header_image(); } ?>
 
 		<?php
-   	if( of_get_option( 'spacious_activate_slider', '0' ) == '1' ) {
+   	if( of_get_option( 'elmispase_activate_slider', '0' ) == '1' ) {
 			if ( is_home() || is_front_page() ) {
-   			spacious_featured_image_slider();
+   			elmispase_featured_image_slider();
 			}
    	}
 
-		if( ( '' != spacious_header_title() )  && !( is_home() || is_front_page() ) ) {
+		if( ( '' != elmispase_header_title() )  && !( is_home() || is_front_page() ) ) {
 		?>
 		<div class="header-post-title-container clearfix">
 			<div class="inner-wrap">
 				<div class="post-title-wrapper">
 					<?php 
-					if( '' != spacious_header_title() ) {
+					if( '' != elmispase_header_title() ) {
 					?>
-				   	<h1 class="header-post-title-class"><?php echo spacious_header_title(); ?></h1>
+				   	<h1 class="header-post-title-class"><?php echo elmispase_header_title(); ?></h1>
 				   <?php
 					}
 					?>
 				</div>
-				<?php if( function_exists( 'spacious_breadcrumb' ) ) { spacious_breadcrumb(); } ?>
+				<?php if( function_exists( 'elmispase_breadcrumb' ) ) { elmispase_breadcrumb(); } ?>
 			</div>
 		</div>
 		<?php
 	   }
 	   ?>
 	</header>
-	<?php do_action( 'spacious_after_header' ); ?>
-	<?php do_action( 'spacious_before_main' ); ?>
+	<?php do_action( 'elmispase_after_header' ); ?>
+	<?php do_action( 'elmispase_before_main' ); ?>
 	<div id="main" class="clearfix">
 		<div class="inner-wrap">

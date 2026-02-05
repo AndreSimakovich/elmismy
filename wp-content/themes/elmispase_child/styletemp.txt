@@ -1,14 +1,14 @@
 /*
-Theme Name:     spacious_child
+Theme Name:     elmispase_child
 Theme URI:      http:// gomel-osp.by
-*Description:    Child thenme for Spacious
+*Description:    Child thenme for Elmispase
 *Author:         Р’Р°С€Рµ РёРјСЏ
 *Author URI:     http: //gomel-osp.by
-*Template:       spacious
+*Template:       elmispase
 *Version:        0.1.0
 */
 
-/*@import url("../spacious/style.css");
+/*@import url("../elmispase/style.css");
 
 
 *Resetting and rebuilding styles have been helped along thanks to the fine work of
@@ -309,7 +309,7 @@ input.s:focus {
 	border-color: #EAEAEA;
 	text-indent: 0;
 }
-.spacious-button,
+.elmispase-button,
 input[type="reset"], 
 input[type="button"], 
 input[type="submit"],
@@ -329,7 +329,7 @@ button {
 	border-radius: 3px;
    font-size: 16px;
 }
-.spacious-button:hover,
+.elmispase-button:hover,
 input[type="reset"]:hover, 
 input[type="button"]:hover, 
 input[type="submit"]:hover,

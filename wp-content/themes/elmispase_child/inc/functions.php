@@ -1,29 +1,29 @@
 <?php
 /**
- * Spacious functions and definitions
+ * Elmispase functions and definitions
  *
  * This file contains all the functions and it's defination that particularly can't be
  * in other files.
  * 
  * @package ThemeGrill
- * @subpackage Spacious
- * @since Spacious 1.0
+ * @subpackage Elmispase
+ * @since Elmispase 1.0
  */
 
 /****************************************************************************************/
 
-add_action( 'wp_enqueue_scripts', 'spacious_scripts_styles_method' );
+add_action( 'wp_enqueue_scripts', 'elmispase_scripts_styles_method' );
 /**
  * Register jquery scripts
  */
-function spacious_scripts_styles_method() {
+function elmispase_scripts_styles_method() {
    /**
 	* Loads our main stylesheet.
 	*/
-	wp_enqueue_style( 'spacious_style', get_stylesheet_uri() );
+	wp_enqueue_style( 'elmispase_style', get_stylesheet_uri() );
 
-	if( of_get_option( 'spacious_color_skin', 'light' ) == 'dark' ) {
-		wp_enqueue_style( 'spacious_dark_style', SPACIOUS_CSS_URL. '/dark.css' );
+	if( of_get_option( 'elmispase_color_skin', 'light' ) == 'dark' ) {
+		wp_enqueue_style( 'elmispase_dark_style', ELMISPASE_CSS_URL. '/dark.css' );
 	}
 
 	/**
@@ -36,42 +36,42 @@ function spacious_scripts_styles_method() {
 	/**
 	 * Register JQuery cycle js file for slider.
 	 */
-	wp_register_script( 'jquery_cycle', SPACIOUS_JS_URL . '/jquery.cycle.all.min.js', array( 'jquery' ), '2.9999.5', true );
+	wp_register_script( 'jquery_cycle', ELMISPASE_JS_URL . '/jquery.cycle.all.min.js', array( 'jquery' ), '2.9999.5', true );
 
    wp_register_style( 'google_fonts', 'http://fonts.googleapis.com/css?family=Lato' ); 
 	
 	/**
 	 * Enqueue Slider setup js file.	 
 	 */
-	if ( is_home() || is_front_page() && of_get_option( 'spacious_activate_slider', '0' ) == '1' ) {
-		wp_enqueue_script( 'spacious_slider', SPACIOUS_JS_URL . '/spacious-slider-setting.js', array( 'jquery_cycle' ), false, true );
+	if ( is_home() || is_front_page() && of_get_option( 'elmispase_activate_slider', '0' ) == '1' ) {
+		wp_enqueue_script( 'elmispase_slider', ELMISPASE_JS_URL . '/elmispase-slider-setting.js', array( 'jquery_cycle' ), false, true );
 	}
-	wp_enqueue_script( 'spacious-navigation', SPACIOUS_JS_URL . '/navigation.js', array( 'jquery' ), false, true );
-	wp_enqueue_script( 'spacious-custom', SPACIOUS_JS_URL. '/spacious-custom.js', array( 'jquery' ) );
+	wp_enqueue_script( 'elmispase-navigation', ELMISPASE_JS_URL . '/navigation.js', array( 'jquery' ), false, true );
+	wp_enqueue_script( 'elmispase-custom', ELMISPASE_JS_URL. '/elmispase-custom.js', array( 'jquery' ) );
 
 	wp_enqueue_style( 'google_fonts' );
 
-   $spacious_user_agent = strtolower($_SERVER['HTTP_USER_AGENT']);
-	if(preg_match('/(?i)msie [1-8]/',$spacious_user_agent)) {
-		wp_enqueue_script( 'html5', SPACIOUS_JS_URL . '/html5.js', true ); 
+   $elmispase_user_agent = strtolower($_SERVER['HTTP_USER_AGENT']);
+	if(preg_match('/(?i)msie [1-8]/',$elmispase_user_agent)) {
+		wp_enqueue_script( 'html5', ELMISPASE_JS_URL . '/html5.js', true ); 
 	}
 
 }
 
-add_action( 'admin_print_styles-appearance_page_options-framework', 'spacious_admin_styles' );
+add_action( 'admin_print_styles-appearance_page_options-framework', 'elmispase_admin_styles' );
 /**
  * Enqueuing some styles.
  *
  * @uses wp_enqueue_style to register stylesheets.
  * @uses wp_enqueue_style to add styles.
  */
-function spacious_admin_styles() {
-	wp_enqueue_style( 'spacious_admin_style', SPACIOUS_ADMIN_CSS_URL. '/admin.css' );
+function elmispase_admin_styles() {
+	wp_enqueue_style( 'elmispase_admin_style', ELMISPASE_ADMIN_CSS_URL. '/admin.css' );
 }
 
 /****************************************************************************************/
 
-add_filter( 'excerpt_length', 'spacious_excerpt_length' );
+add_filter( 'excerpt_length', 'elmispase_excerpt_length' );
 /**
  * Sets the post excerpt length to 40 words.
  *
@@ -79,15 +79,15 @@ add_filter( 'excerpt_length', 'spacious_excerpt_length' );
  *
  * @uses filter excerpt_length
  */
-function spacious_excerpt_length( $length ) {
+function elmispase_excerpt_length( $length ) {
 	return 40;
 }
 
-add_filter( 'excerpt_more', 'spacious_continue_reading' );
+add_filter( 'excerpt_more', 'elmispase_continue_reading' );
 /**
  * Returns a "Continue Reading" link for excerpts
  */
-function spacious_continue_reading() {
+function elmispase_continue_reading() {
 	return '&hellip; ';
 }
 
@@ -101,7 +101,7 @@ add_filter( 'use_default_gallery_style', '__return_false' );
 /**
  * Filtering the size to be medium from thumbnail to be used in WordPress gallery as a default size
  */
-function spacious_gallery_atts( $out, $pairs, $atts ) {
+function elmispase_gallery_atts( $out, $pairs, $atts ) {
 	$atts = shortcode_atts( array(
 	'size' => 'medium',
 	), $atts );
@@ -111,44 +111,44 @@ function spacious_gallery_atts( $out, $pairs, $atts ) {
 	return $out;
  
 }
-add_filter( 'shortcode_atts_gallery', 'spacious_gallery_atts', 10, 3 );
+add_filter( 'shortcode_atts_gallery', 'elmispase_gallery_atts', 10, 3 );
 
 /****************************************************************************************/
 
-add_filter( 'body_class', 'spacious_body_class' );
+add_filter( 'body_class', 'elmispase_body_class' );
 /**
  * Filter the body_class
  *
  * Throwing different body class for the different layouts in the body tag
  */
-function spacious_body_class( $classes ) {
+function elmispase_body_class( $classes ) {
 	global $post;
 
-	if( $post ) { $layout_meta = get_post_meta( $post->ID, 'spacious_page_layout', true ); }
+	if( $post ) { $layout_meta = get_post_meta( $post->ID, 'elmispase_page_layout', true ); }
 
 	if( empty( $layout_meta ) || is_archive() || is_search() || is_home() ) { $layout_meta = 'default_layout'; }
-	$spacious_default_layout = of_get_option( 'spacious_default_layout', 'right_sidebar' );
+	$elmispase_default_layout = of_get_option( 'elmispase_default_layout', 'right_sidebar' );
 
-	$spacious_default_page_layout = of_get_option( 'spacious_pages_default_layout', 'right_sidebar' );
-	$spacious_default_post_layout = of_get_option( 'spacious_single_posts_default_layout', 'right_sidebar' );
+	$elmispase_default_page_layout = of_get_option( 'elmispase_pages_default_layout', 'right_sidebar' );
+	$elmispase_default_post_layout = of_get_option( 'elmispase_single_posts_default_layout', 'right_sidebar' );
 
 	if( $layout_meta == 'default_layout' ) {
 		if( is_page() ) {
-			if( $spacious_default_page_layout == 'right_sidebar' ) { $classes[] = ''; }
-			elseif( $spacious_default_page_layout == 'left_sidebar' ) { $classes[] = 'left-sidebar'; }
-			elseif( $spacious_default_page_layout == 'no_sidebar_full_width' ) { $classes[] = 'no-sidebar-full-width'; }
-			elseif( $spacious_default_page_layout == 'no_sidebar_content_centered' ) { $classes[] = 'no-sidebar'; }
+			if( $elmispase_default_page_layout == 'right_sidebar' ) { $classes[] = ''; }
+			elseif( $elmispase_default_page_layout == 'left_sidebar' ) { $classes[] = 'left-sidebar'; }
+			elseif( $elmispase_default_page_layout == 'no_sidebar_full_width' ) { $classes[] = 'no-sidebar-full-width'; }
+			elseif( $elmispase_default_page_layout == 'no_sidebar_content_centered' ) { $classes[] = 'no-sidebar'; }
 		}
 		elseif( is_single() ) {
-			if( $spacious_default_post_layout == 'right_sidebar' ) { $classes[] = ''; }
-			elseif( $spacious_default_post_layout == 'left_sidebar' ) { $classes[] = 'left-sidebar'; }
-			elseif( $spacious_default_post_layout == 'no_sidebar_full_width' ) { $classes[] = 'no-sidebar-full-width'; }
-			elseif( $spacious_default_post_layout == 'no_sidebar_content_centered' ) { $classes[] = 'no-sidebar'; }
+			if( $elmispase_default_post_layout == 'right_sidebar' ) { $classes[] = ''; }
+			elseif( $elmispase_default_post_layout == 'left_sidebar' ) { $classes[] = 'left-sidebar'; }
+			elseif( $elmispase_default_post_layout == 'no_sidebar_full_width' ) { $classes[] = 'no-sidebar-full-width'; }
+			elseif( $elmispase_default_post_layout == 'no_sidebar_content_centered' ) { $classes[] = 'no-sidebar'; }
 		}
-		elseif( $spacious_default_layout == 'right_sidebar' ) { $classes[] = ''; }
-		elseif( $spacious_default_layout == 'left_sidebar' ) { $classes[] = 'left-sidebar'; }
-		elseif( $spacious_default_layout == 'no_sidebar_full_width' ) { $classes[] = 'no-sidebar-full-width'; }
-		elseif( $spacious_default_layout == 'no_sidebar_content_centered' ) { $classes[] = 'no-sidebar'; }
+		elseif( $elmispase_default_layout == 'right_sidebar' ) { $classes[] = ''; }
+		elseif( $elmispase_default_layout == 'left_sidebar' ) { $classes[] = 'left-sidebar'; }
+		elseif( $elmispase_default_layout == 'no_sidebar_full_width' ) { $classes[] = 'no-sidebar-full-width'; }
+		elseif( $elmispase_default_layout == 'no_sidebar_content_centered' ) { $classes[] = 'no-sidebar'; }
 	}
 	elseif( $layout_meta == 'right_sidebar' ) { $classes[] = ''; }
 	elseif( $layout_meta == 'left_sidebar' ) { $classes[] = 'left-sidebar'; }
@@ -162,13 +162,13 @@ function spacious_body_class( $classes ) {
 	if( is_page_template( 'page-templates/blog-image-medium.php' ) ) {
 		$classes[] = 'blog-medium';
 	}
-	if( of_get_option( 'spacious_site_layout', 'box_1218px' ) == 'wide_978px' ) {
+	if( of_get_option( 'elmispase_site_layout', 'box_1218px' ) == 'wide_978px' ) {
 		$classes[] = 'wide-978';
 	}
-	elseif( of_get_option( 'spacious_site_layout', 'box_1218px' ) == 'box_978px' ) {
+	elseif( of_get_option( 'elmispase_site_layout', 'box_1218px' ) == 'box_978px' ) {
 		$classes[] = 'narrow-978';
 	}
-	elseif( of_get_option( 'spacious_site_layout', 'box_1218px' ) == 'wide_1218px' ) {
+	elseif( of_get_option( 'elmispase_site_layout', 'box_1218px' ) == 'wide_1218px' ) {
 		$classes[] = 'wide-1218';
 	}
 	else {
@@ -180,32 +180,32 @@ function spacious_body_class( $classes ) {
 
 /****************************************************************************************/
 
-if ( ! function_exists( 'spacious_sidebar_select' ) ) :
+if ( ! function_exists( 'elmispase_sidebar_select' ) ) :
 /**
  * Fucntion to select the sidebar
  */
-function spacious_sidebar_select() {
+function elmispase_sidebar_select() {
 	global $post;
 
-	if( $post ) { $layout_meta = get_post_meta( $post->ID, 'spacious_page_layout', true ); }
+	if( $post ) { $layout_meta = get_post_meta( $post->ID, 'elmispase_page_layout', true ); }
 
 	if( empty( $layout_meta ) || is_archive() || is_search() || is_home() ) { $layout_meta = 'default_layout'; }
-	$spacious_default_layout = of_get_option( 'spacious_default_layout', 'right_sidebar' );
+	$elmispase_default_layout = of_get_option( 'elmispase_default_layout', 'right_sidebar' );
 
-	$spacious_default_page_layout = of_get_option( 'spacious_pages_default_layout', 'right_sidebar' );
-	$spacious_default_post_layout = of_get_option( 'spacious_single_posts_default_layout', 'right_sidebar' );
+	$elmispase_default_page_layout = of_get_option( 'elmispase_pages_default_layout', 'right_sidebar' );
+	$elmispase_default_post_layout = of_get_option( 'elmispase_single_posts_default_layout', 'right_sidebar' );
 
 	if( $layout_meta == 'default_layout' ) {
 		if( is_page() ) {
-			if( $spacious_default_page_layout == 'right_sidebar' ) { get_sidebar(); }
-			elseif ( $spacious_default_page_layout == 'left_sidebar' ) { get_sidebar( 'left' ); }
+			if( $elmispase_default_page_layout == 'right_sidebar' ) { get_sidebar(); }
+			elseif ( $elmispase_default_page_layout == 'left_sidebar' ) { get_sidebar( 'left' ); }
 		}
 		if( is_single() ) {
-			if( $spacious_default_post_layout == 'right_sidebar' ) { get_sidebar(); }
-			elseif ( $spacious_default_post_layout == 'left_sidebar' ) { get_sidebar( 'left' ); }
+			if( $elmispase_default_post_layout == 'right_sidebar' ) { get_sidebar(); }
+			elseif ( $elmispase_default_post_layout == 'left_sidebar' ) { get_sidebar( 'left' ); }
 		}
-		elseif( $spacious_default_layout == 'right_sidebar' ) { get_sidebar(); }
-		elseif ( $spacious_default_layout == 'left_sidebar' ) { get_sidebar( 'left' ); }
+		elseif( $elmispase_default_layout == 'right_sidebar' ) { get_sidebar(); }
+		elseif ( $elmispase_default_layout == 'left_sidebar' ) { get_sidebar( 'left' ); }
 	}
 	elseif( $layout_meta == 'right_sidebar' ) { get_sidebar(); }
 	elseif( $layout_meta == 'left_sidebar' ) { get_sidebar( 'left' ); }
@@ -214,34 +214,34 @@ endif;
 
 /****************************************************************************************/
 
-add_action( 'admin_head', 'spacious_favicon' );
-add_action( 'wp_head', 'spacious_favicon' );
+add_action( 'admin_head', 'elmispase_favicon' );
+add_action( 'wp_head', 'elmispase_favicon' );
 /**
  * Fav icon for the site
  */
-function spacious_favicon() {
-	if ( of_get_option( 'spacious_activate_favicon', '0' ) == '1' ) {
-		$spacious_favicon = of_get_option( 'spacious_favicon', '' );
-		$spacious_favicon_output = '';
-		if ( !empty( $spacious_favicon ) ) {
-			$spacious_favicon_output .= '<link rel="shortcut icon" href="'.esc_url( $spacious_favicon ).'" type="image/x-icon" />';
+function elmispase_favicon() {
+	if ( of_get_option( 'elmispase_activate_favicon', '0' ) == '1' ) {
+		$elmispase_favicon = of_get_option( 'elmispase_favicon', '' );
+		$elmispase_favicon_output = '';
+		if ( !empty( $elmispase_favicon ) ) {
+			$elmispase_favicon_output .= '<link rel="shortcut icon" href="'.esc_url( $elmispase_favicon ).'" type="image/x-icon" />';
 		}
-		echo $spacious_favicon_output;
+		echo $elmispase_favicon_output;
 	}
 }
 
 /****************************************************************************************/
 
-add_action('wp_head', 'spacious_custom_css');
+add_action('wp_head', 'elmispase_custom_css');
 /**
  * Hooks the Custom Internal CSS to head section
  */
-function spacious_custom_css() {	
-	$primary_color = of_get_option( 'spacious_primary_color', '#0FBE7C' );
-	$spacious_internal_css = '';
+function elmispase_custom_css() {	
+	$primary_color = of_get_option( 'elmispase_primary_color', '#0FBE7C' );
+	$elmispase_internal_css = '';
 	if( $primary_color != '#0FBE7C' ) {
-		$spacious_internal_css = ' blockquote { border-left: 3px solid '.$primary_color.'; }
-			.spacious-button, input[type="reset"], input[type="button"], input[type="submit"], button { background-color: '.$primary_color.'; }
+		$elmispase_internal_css = ' blockquote { border-left: 3px solid '.$primary_color.'; }
+			.elmispase-button, input[type="reset"], input[type="button"], input[type="submit"], button { background-color: '.$primary_color.'; }
 			.previous a:hover, .next a:hover { 	color: '.$primary_color.'; }
 			a { color: '.$primary_color.'; }
 			#site-title a:hover { color: '.$primary_color.'; }
@@ -282,27 +282,27 @@ function spacious_custom_css() {
 			#search-form span { background-color: '.$primary_color.'; }';
 	}
 
-	if( !empty( $spacious_internal_css ) ) {
+	if( !empty( $elmispase_internal_css ) ) {
 		?>
-		<style type="text/css"><?php echo $spacious_internal_css; ?></style>
+		<style type="text/css"><?php echo $elmispase_internal_css; ?></style>
 		<?php
 	}
 
-	$spacious_custom_css = of_get_option( 'spacious_custom_css', '' );
-	if( !empty( $spacious_custom_css ) ) {
+	$elmispase_custom_css = of_get_option( 'elmispase_custom_css', '' );
+	if( !empty( $elmispase_custom_css ) ) {
 		?>
-		<style type="text/css"><?php echo $spacious_custom_css; ?></style>
+		<style type="text/css"><?php echo $elmispase_custom_css; ?></style>
 		<?php
 	}
 }
 
 /**************************************************************************************/
 
-if ( ! function_exists( 'spacious_content_nav' ) ) :
+if ( ! function_exists( 'elmispase_content_nav' ) ) :
 /**
  * Display navigation to next/previous pages when applicable
  */
-function spacious_content_nav( $nav_id ) {
+function elmispase_content_nav( $nav_id ) {
 	global $wp_query, $post;
 
 	// Don't print empty markup on single pages if there's nowhere to navigate.
@@ -322,21 +322,21 @@ function spacious_content_nav( $nav_id ) {
 
 	?>
 	<nav role="navigation" id="<?php echo esc_attr( $nav_id ); ?>" class="<?php echo $nav_class; ?>">
-		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'spacious' ); ?></h1>
+		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'elmispase' ); ?></h1>
 
 	<?php if ( is_single() ) : // navigation links for single posts ?>
 
-		<?php previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'spacious' ) . '</span> %title' ); ?>
-		<?php next_post_link( '<div class="nav-next">%link</div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'spacious' ) . '</span>' ); ?>
+		<?php previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'elmispase' ) . '</span> %title' ); ?>
+		<?php next_post_link( '<div class="nav-next">%link</div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'elmispase' ) . '</span>' ); ?>
 
 	<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 
 		<?php if ( get_next_posts_link() ) : ?>
-		<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'spacious' ) ); ?></div>
+		<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'elmispase' ) ); ?></div>
 		<?php endif; ?>
 
 		<?php if ( get_previous_posts_link() ) : ?>
-		<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'spacious' ) ); ?></div>
+		<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'elmispase' ) ); ?></div>
 		<?php endif; ?>
 
 	<?php endif; ?>
@@ -344,17 +344,17 @@ function spacious_content_nav( $nav_id ) {
 	</nav><!-- #<?php echo esc_html( $nav_id ); ?> -->
 	<?php
 }
-endif; // spacious_content_nav
+endif; // elmispase_content_nav
 
 /**************************************************************************************/
 
-if ( ! function_exists( 'spacious_comment' ) ) :
+if ( ! function_exists( 'elmispase_comment' ) ) :
 /**
  * Template for comments and pingbacks.
  *
  * Used as a callback by wp_list_comments() for displaying the comments.
  */
-function spacious_comment( $comment, $args, $depth ) {
+function elmispase_comment( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;
 	switch ( $comment->comment_type ) :
 		case 'pingback' :
@@ -362,7 +362,7 @@ function spacious_comment( $comment, $args, $depth ) {
 		// Display trackbacks differently than normal comments.
 	?>
 	<li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
-		<p><?php _e( 'Pingback:', 'spacious' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( '(Edit)', 'spacious' ), '<span class="edit-link">', '</span>' ); ?></p>
+		<p><?php _e( 'Pingback:', 'elmispase' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( '(Edit)', 'elmispase' ), '<span class="edit-link">', '</span>' ); ?></p>
 	<?php
 			break;
 		default :
@@ -377,23 +377,23 @@ function spacious_comment( $comment, $args, $depth ) {
 					printf( '<div class="comment-author-link">%1$s%2$s</div>',
 						get_comment_author_link(),
 						// If current post author is also comment author, make it known visually.
-						( $comment->user_id === $post->post_author ) ? '<span>' . __( 'Post author', 'spacious' ) . '</span>' : ''
+						( $comment->user_id === $post->post_author ) ? '<span>' . __( 'Post author', 'elmispase' ) . '</span>' : ''
 					);
 					printf( '<div class="comment-date-time">%1$s</div>',
-						sprintf( __( '%1$s at %2$s', 'spacious' ), get_comment_date(), get_comment_time() )
+						sprintf( __( '%1$s at %2$s', 'elmispase' ), get_comment_date(), get_comment_time() )
 					);
-					printf( __( '<a class="comment-permalink" href="%1$s">Permalink</a>', 'spacious'), esc_url( get_comment_link( $comment->comment_ID ) ) );
+					printf( __( '<a class="comment-permalink" href="%1$s">Permalink</a>', 'elmispase'), esc_url( get_comment_link( $comment->comment_ID ) ) );
 					edit_comment_link();
 				?>
 			</header><!-- .comment-meta -->
 
 			<?php if ( '0' == $comment->comment_approved ) : ?>
-				<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'spacious' ); ?></p>
+				<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'elmispase' ); ?></p>
 			<?php endif; ?>
 
 			<section class="comment-content comment">
 				<?php comment_text(); ?>
-				<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'spacious' ), 'after' => '', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+				<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'elmispase' ), 'after' => '', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 			</section><!-- .comment-content -->
 			
 		</article><!-- #comment-## -->
@@ -406,19 +406,19 @@ endif;
 /**************************************************************************************/
 
 /* Register shortcodes. */
-add_action( 'init', 'spacious_add_shortcodes' );
+add_action( 'init', 'elmispase_add_shortcodes' );
 /**
  * Creates new shortcodes for use in any shortcode-ready area.  This function uses the add_shortcode() 
  * function to register new shortcodes with WordPress.
  *
  * @uses add_shortcode() to create new shortcodes.
  */
-function spacious_add_shortcodes() {
+function elmispase_add_shortcodes() {
 	/* Add theme-specific shortcodes. */
-	add_shortcode( 'the-year', 'spacious_the_year_shortcode' );
-	add_shortcode( 'site-link', 'spacious_site_link_shortcode' );
-	add_shortcode( 'wp-link', 'spacious_wp_link_shortcode' );
-	add_shortcode( 'tg-link', 'spacious_themegrill_link_shortcode' );
+	add_shortcode( 'the-year', 'elmispase_the_year_shortcode' );
+	add_shortcode( 'site-link', 'elmispase_site_link_shortcode' );
+	add_shortcode( 'wp-link', 'elmispase_wp_link_shortcode' );
+	add_shortcode( 'tg-link', 'elmispase_themegrill_link_shortcode' );
 }
 
 /**
@@ -427,7 +427,7 @@ function spacious_add_shortcodes() {
  * @uses date() Gets the current year.
  * @return string
  */
-function spacious_the_year_shortcode() {
+function elmispase_the_year_shortcode() {
    return date( 'Y' );
 }
 
@@ -437,7 +437,7 @@ function spacious_the_year_shortcode() {
  * @uses get_bloginfo() Gets the site link
  * @return string
  */
-function spacious_site_link_shortcode() {
+function elmispase_site_link_shortcode() {
    return '<a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" ><span>' . get_bloginfo( 'name', 'display' ) . '</span></a>';
 }
 
@@ -446,27 +446,27 @@ function spacious_site_link_shortcode() {
  *
  * @return string
  */
-function spacious_wp_link_shortcode() {
+function elmispase_wp_link_shortcode() {
    return '<a href="http://best-wordpress-templates.ru/"><span>Шаблоны WordPress</span></a>';
 }
 
 /**
- * Shortcode to display a link to spacious.com.
+ * Shortcode to display a link to elmispase.com.
  *
  * @return string
  */
-function spacious_themegrill_link_shortcode() {
-   return '<a href="'.esc_url( 'http://themegrill.com' ).'" target="_blank" title="'.esc_attr__( 'ThemeGrill', 'spacious' ).'" ><span>'.__( 'ThemeGrill', 'spacious') .'</span></a>';
+function elmispase_themegrill_link_shortcode() {
+   return '<a href="'.esc_url( 'http://themegrill.com' ).'" target="_blank" title="'.esc_attr__( 'ThemeGrill', 'elmispase' ).'" ><span>'.__( 'ThemeGrill', 'elmispase') .'</span></a>';
 }
 
-add_action( 'spacious_footer_copyright', 'spacious_footer_copyright', 10 );
+add_action( 'elmispase_footer_copyright', 'elmispase_footer_copyright', 10 );
 /**
  * function to show the footer info, copyright information
  */
-if ( ! function_exists( 'spacious_footer_copyright' ) ) :
-function spacious_footer_copyright() {
-	$spacious_footer_copyright = '<div class="copyright">'.__( 'Copyright &copy; ', 'spacious' ).'[the-year] [site-link] '.__( ' ', 'spacious' ).'[tg-link] '.__( '- ', 'spacious' ).'[wp-link]'.'</div>';
-	echo do_shortcode( $spacious_footer_copyright );
+if ( ! function_exists( 'elmispase_footer_copyright' ) ) :
+function elmispase_footer_copyright() {
+	$elmispase_footer_copyright = '<div class="copyright">'.__( 'Copyright &copy; ', 'elmispase' ).'[the-year] [site-link] '.__( ' ', 'elmispase' ).'[tg-link] '.__( '- ', 'elmispase' ).'[wp-link]'.'</div>';
+	echo do_shortcode( $elmispase_footer_copyright );
 }
 endif;
 

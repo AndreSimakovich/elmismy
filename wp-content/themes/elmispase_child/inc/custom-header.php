@@ -1,44 +1,44 @@
 <?php
 /**
- * Implements a custom header for Spacious.
+ * Implements a custom header for Elmispase.
  * See http://codex.wordpress.org/Custom_Headers
  *
  * @package ThemeGrill
- * @subpackage Spacious
- * @since Spacious 1.0
+ * @subpackage Elmispase
+ * @since Elmispase 1.0
  */
 
 /**
  * Setup the WordPress core custom header feature.
  *
- * @uses spacious_header_style()
- * @uses spacious_admin_header_style()
- * @uses spacious_admin_header_image()
+ * @uses elmispase_header_style()
+ * @uses elmispase_admin_header_style()
+ * @uses elmispase_admin_header_image()
  *
- * @package spacious
+ * @package elmispase
  */
-function spacious_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'spacious_custom_header_args', array(
+function elmispase_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'elmispase_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '333333',
 		'width'                  => 1400,
 		'height'                 => 400,
 		'flex-width'				 => true,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'spacious_header_style',
-		'admin-head-callback'    => 'spacious_admin_header_style',
-		'admin-preview-callback' => 'spacious_admin_header_image',
+		'wp-head-callback'       => 'elmispase_header_style',
+		'admin-head-callback'    => 'elmispase_admin_header_style',
+		'admin-preview-callback' => 'elmispase_admin_header_image',
 	) ) );	
 }
-add_action( 'after_setup_theme', 'spacious_custom_header_setup' );
+add_action( 'after_setup_theme', 'elmispase_custom_header_setup' );
 
-if ( ! function_exists( 'spacious_header_style' ) ) :
+if ( ! function_exists( 'elmispase_header_style' ) ) :
 
 /**
  * Styles the header text displayed on the blog.
  *
  */
-function spacious_header_style() {
+function elmispase_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	// If no custom options for text are set, let's bail
@@ -73,15 +73,15 @@ function spacious_header_style() {
 	</style>
 	<?php
 }
-endif; // spacious_header_style
+endif; // elmispase_header_style
 
-if ( ! function_exists( 'spacious_admin_header_style' ) ) :
+if ( ! function_exists( 'elmispase_admin_header_style' ) ) :
 /**
  * Styles the header image displayed on the Appearance > Header admin panel.
  *
- * @see spacious_custom_header_setup().
+ * @see elmispase_custom_header_setup().
  */
-function spacious_admin_header_style() {
+function elmispase_admin_header_style() {
 ?>
 	<style type="text/css">
 		.appearance_page_custom-header #headimg {
@@ -102,15 +102,15 @@ function spacious_admin_header_style() {
 	</style>
 <?php
 }
-endif; // spacious_admin_header_style
+endif; // elmispase_admin_header_style
 
-if ( ! function_exists( 'spacious_admin_header_image' ) ) :
+if ( ! function_exists( 'elmispase_admin_header_image' ) ) :
 /**
  * Custom header image markup displayed on the Appearance > Header admin panel.
  *
- * @see spacious_custom_header_setup().
+ * @see elmispase_custom_header_setup().
  */
-function spacious_admin_header_image() {
+function elmispase_admin_header_image() {
 	$style = sprintf( ' style="color:#%s;"', get_header_textcolor() );
 ?>
 	<div id="headimg">
@@ -122,4 +122,4 @@ function spacious_admin_header_image() {
 	</div>
 <?php
 }
-endif; // spacious_admin_header_image
+endif; // elmispase_admin_header_image
