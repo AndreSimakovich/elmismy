@@ -1,0 +1,945 @@
+# Translation of Themes - Maintenance Works in Russian
+# This file is distributed under the same license as the Themes - Maintenance Works package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2026-01-30 21:34:28+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: ru\n"
+"Project-Id-Version: Themes - Maintenance Works\n"
+
+#. Theme Name of the theme
+#: style.css inc/custom-functions.php:377
+#, gp-priority: high
+msgid "Maintenance Works"
+msgstr "Maintenance Works"
+
+#: inc/custom-functions.php:377
+msgid " By "
+msgstr " От "
+
+#. translators: %d: ID of a post.
+#: classes/class-walker-menu.php:76
+msgid "#%d (no title)"
+msgstr "#%d (без названия)"
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:28
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s комментарий для &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s мыслей о &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$s мыслей о &ldquo;%2$s&rdquo;"
+
+#: inc/customizer/default.php:92
+msgid "Oops! That page can’t be found."
+msgstr "Ой! Страница не найдена."
+
+#: inc/pagination.php:26
+msgid "&laquo; Newer"
+msgstr "&laquo; Следующие"
+
+#. Translators: %s is the page number.
+#: lib/breadcrumbs/breadcrumbs.php:316
+msgid "Page %s"
+msgstr "Страница %s"
+
+#: inc/pagination.php:35
+msgid "&laquo; Previous"
+msgstr "&larr; Ранее"
+
+#: sidebar.php:24
+msgid "Pages"
+msgstr "Страницы"
+
+#: template-parts/content-single.php:74 template-parts/content.php:95
+msgid "Pages:"
+msgstr "Страницы:"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:290
+msgctxt "list item separator"
+msgid ", "
+msgstr ", "
+
+#: inc/customizer/custom-addon.php:79
+msgid "Pagination Alignment"
+msgstr "Выравнивание пагинации"
+
+#: inc/custom-functions.php:162
+msgid "-- Select Category --"
+msgstr "-- Выбрать рубрику --"
+
+#: inc/customizer/custom-addon.php:60
+msgid "Pagination Style"
+msgstr "Стиль пагинации"
+
+#: lib/breadcrumbs/breadcrumbs.php:311
+msgid "404 Not Found"
+msgstr "404 не найдено"
+
+#: inc/customizer/404-page-settings.php:12
+msgid "404 Page Settings"
+msgstr "Настройки страницы 404"
+
+#: inc/customizer/header-button.php:44
+msgid "Phone Number"
+msgstr "Номер телефона"
+
+#: inc/customizer/social-media.php:59
+msgid "Pintrest Link"
+msgstr "Ссылка на Pintrest"
+
+#: inc/customizer/404-page-settings.php:73
+msgid "404 Sub Title Two"
+msgstr "Подзаголовок второй 404"
+
+#: inc/pagination.php:28 inc/pagination.php:38
+msgid "Posts navigation"
+msgstr "Навигация по записям"
+
+#: inc/widgets/widgets.php:14 inc/widgets/widgets.php:34
+msgid "Add widgets here."
+msgstr "Добавить виджеты здесь."
+
+#: inc/customizer/additional-woocommerce.php:13
+msgid "Additional Woocommerce Options"
+msgstr "Дополнительные параметры WooCommerce"
+
+#: inc/custom-functions.php:378
+msgid "Powered by "
+msgstr "На платформе "
+
+#: inc/custom-functions.php:199
+msgid "Previous post:"
+msgstr "Предыдущая запись:"
+
+#: inc/customizer/header-button.php:74
+msgid "Address"
+msgstr "Адрес"
+
+#: inc/customizer/default.php:64
+msgid "All rights reserved."
+msgstr "Все права защищены."
+
+#: functions.php:175
+msgid "Primary Menu"
+msgstr "Основное меню"
+
+#: inc/customizer/additional-woocommerce.php:29
+msgid "Products Per Column"
+msgstr "Товаров на столбец"
+
+#: lib/breadcrumbs/breadcrumbs.php:312 sidebar.php:35
+msgid "Archives"
+msgstr "Архивы"
+
+#: inc/custom-functions.php:646
+msgid "Aside"
+msgstr "Заметка"
+
+#: inc/customizer/additional-woocommerce.php:49
+msgid "Products Per Page"
+msgstr "Товаров на страницу"
+
+#: inc/custom-functions.php:634
+msgid "Quote"
+msgstr "Цитата"
+
+#: inc/custom-functions.php:628
+msgid "Audio"
+msgstr "Аудио"
+
+#: template-parts/content.php:102
+msgid "Read More"
+msgstr "Читайте далее"
+
+#: inc/customizer/colors.php:39
+msgid "Border Color"
+msgstr "Цвет рамки"
+
+#. translators: %s: Name of current post.
+#: template-parts/content-single.php:69
+msgid "Read More %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Читать далее %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/customizer/custom-addon.php:114
+msgid "Breadcrumb Alignment"
+msgstr "Выравнивание навигационной цепочки"
+
+#. translators: %1$s: Link to create a new post.
+#: template-parts/content-none.php:22
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Готовы опубликовать свою первую запись? <a href=\"%1$s\">Начните здесь</a>."
+
+#: inc/customizer/custom-addon.php:134
+msgid "Breadcrumb Font Size"
+msgstr "Размер шрифта навигационной цепочки"
+
+#: inc/customizer/additional-woocommerce.php:84
+msgid "Related Products Per Page"
+msgstr "Сопутствующие товары на страницу"
+
+#: inc/customizer/additional-woocommerce.php:104
+msgid "Related Products Per Row"
+msgstr "Сопутствующий товар на строку"
+
+#: lib/breadcrumbs/breadcrumbs.php:309
+msgctxt "breadcrumbs aria label"
+msgid "Breadcrumbs"
+msgstr "Навигационные цепочки"
+
+#: inc/customizer/custom-addon.php:84 inc/customizer/custom-addon.php:119
+#: inc/customizer/footer.php:69 inc/customizer/post.php:110
+#: inc/customizer/post.php:130
+msgid "Right"
+msgstr "Вправо"
+
+#: inc/customizer/layout-setting.php:33 inc/customizer/layout-setting.php:51
+#: inc/customizer/layout-setting.php:68
+msgid "Right Sidebar"
+msgstr "Правая боковая панель"
+
+#: inc/metabox.php:17
+msgid "Right sidebar"
+msgstr "Правая боковая панель"
+
+#: sidebar.php:19
+msgid "Search"
+msgstr "Поиск"
+
+#: lib/breadcrumbs/breadcrumbs.php:308
+msgid "Browse:"
+msgstr "Обзор:"
+
+#. Translators: %s is the search query.
+#: lib/breadcrumbs/breadcrumbs.php:314
+msgid "Search results for: %s"
+msgstr "Результаты поиска: %s"
+
+#: searchform.php:11
+msgid "Search..."
+msgstr "Поиск…"
+
+#: inc/customizer/homepage-content.php:258
+msgid "Select Category to display Services"
+msgstr "Выбрать рубрику для отображения услуг"
+
+#: classes/class-walker-menu.php:120 inc/custom-functions.php:45
+msgid "Show sub menu"
+msgstr "Показать подменю"
+
+#: inc/customizer/layout-setting.php:13
+msgid "Sidebar Settings"
+msgstr "Настройки боковой панели"
+
+#: inc/customizer/layout-setting.php:47
+msgid "Single Page Sidebar Layout"
+msgstr "Макет боковой панели отдельной страницы"
+
+#: inc/customizer/layout-setting.php:64
+msgid "Single Post Sidebar Layout"
+msgstr "Макет боковой панели отдельной записи"
+
+#: header.php:36
+msgid "Skip to the content"
+msgstr "Перейти к содержимому"
+
+#: inc/customizer/homepage-content.php:13
+msgid "Slider Settings"
+msgstr "Настройки слайдера"
+
+#: inc/customizer/social-media.php:13
+msgid "Social Media Settings"
+msgstr "Настройки соцсетей"
+
+#: template-parts/content-none.php:34
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "По вашему запросу ничего не найдено. Попробуйте другие ключевые слова."
+
+#: inc/custom-functions.php:643
+msgid "Status"
+msgstr "Статус"
+
+#: inc/customizer/header-button.php:143
+msgid "Submenu Color"
+msgstr "Цвет подменю"
+
+#: inc/customizer/header-button.php:152
+msgid "Submenu Hover Color"
+msgstr "Цвет подменю при наведении"
+
+#: inc/customizer/default.php:15
+msgid "support@example.com"
+msgstr "support@example.com"
+
+#: inc/custom-functions.php:326
+msgid "Calendar"
+msgstr "Календарь"
+
+#: sidebar.php:49
+msgid "Tags"
+msgstr "Метки"
+
+#: inc/customizer/colors.php:21
+msgid "Text Color"
+msgstr "Цвет текста"
+
+#: inc/customizer/customizer.php:90
+msgid "Theme Addons"
+msgstr "Дополнения темы"
+
+#: inc/customizer/customizer.php:99
+msgid "Theme Options"
+msgstr "Параметры темы"
+
+#: inc/custom-functions.php:377
+msgid "Theme: "
+msgstr "Тема: "
+
+#: inc/widgets/widgets.php:29
+msgid "Three"
+msgstr "Три"
+
+#: inc/customizer/footer.php:49
+msgid "Three Column"
+msgstr "Три столбца"
+
+#: inc/customizer/social-media.php:44
+msgid "Twitter Link"
+msgstr "Ссылка на Twitter"
+
+#: inc/widgets/widgets.php:28
+msgid "Two"
+msgstr "Два"
+
+#: inc/customizer/footer.php:48
+msgid "Two Column"
+msgstr "Два столбца"
+
+#: inc/customizer/header-button.php:113
+msgid "Capitalize"
+msgstr "Заглавные буквы"
+
+#: sidebar.php:42
+msgid "Categories"
+msgstr "Рубрики"
+
+#: inc/customizer/custom-addon.php:83 inc/customizer/custom-addon.php:118
+#: inc/customizer/footer.php:68 inc/customizer/post.php:109
+#: inc/customizer/post.php:129
+msgid "Center"
+msgstr "По центру"
+
+#: inc/custom-functions.php:649
+msgid "Chat"
+msgstr "Чат"
+
+#: inc/customizer/customizer.php:34
+msgid "Color Options"
+msgstr "Параметры цвета"
+
+#: inc/customizer/customizer.php:63
+msgid "Color Settings"
+msgstr "Настройки цвета"
+
+#. Translators: %s is the page number.
+#: lib/breadcrumbs/breadcrumbs.php:318
+msgid "Comment Page %s"
+msgstr "Страница комментария %s"
+
+#: comments.php:52
+msgid "Comments are closed."
+msgstr "Обсуждение закрыто."
+
+#: inc/customizer/footer.php:98
+msgid "Copyright Font Size"
+msgstr "Размер шрифта авторского права"
+
+#: inc/customizer/custom-addon.php:10
+msgid "Customizer Custom Settings"
+msgstr "Пользовательские настройки темы"
+
+#: inc/customizer/footer.php:120
+msgid "Default View"
+msgstr "Вид по умолчанию"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:312
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Изменить <span class=\"screen-reader-text\">%s</span>"
+
+#: inc/customizer/footer.php:170
+msgid "Edit Text Here"
+msgstr "Редактировать текст здесь"
+
+#: inc/customizer/header-button.php:59
+msgid "Email Id"
+msgstr "ID email"
+
+#: inc/customizer/homepage-content.php:27
+msgid "Enable / Disable Site Logo"
+msgstr "Логотип сайта"
+
+#: inc/customizer/homepage-content.php:54
+msgid "Enable / Disable Site Tagline"
+msgstr "Краткое описание сайта"
+
+#: inc/customizer/homepage-content.php:39
+msgid "Enable / Disable Site Title"
+msgstr "Название сайта"
+
+#: inc/customizer/custom-addon.php:99
+msgid "Enable Breadcrumb"
+msgstr "Включить навигационную цепочку"
+
+#: inc/customizer/footer.php:28
+msgid "Enable Footer"
+msgstr "Включить подвал"
+
+#: inc/customizer/custom-addon.php:44
+msgid "Enable Pagination"
+msgstr "Включить разделение на страницы"
+
+#: inc/customizer/custom-addon.php:26
+msgid "Enable Preloader"
+msgstr "Анимация загрузки"
+
+#: inc/customizer/header-button.php:165
+msgid "Enable Search"
+msgstr "Включить поиск"
+
+#: inc/customizer/homepage-content.php:69
+msgid "Enable Slider"
+msgstr "Включить слайдер"
+
+#: inc/customizer/header-button.php:29
+msgid "Enable Sticky Header"
+msgstr "Прикрепленный заголовок"
+
+#: inc/customizer/nothing-found-page-settings.php:58
+msgid "Enable/Disable Search"
+msgstr "Поиск"
+
+#: inc/custom-functions.php:332
+msgid "Enter Keywords Here"
+msgstr "Введите ключевые слова здесь"
+
+#: lib/breadcrumbs/breadcrumbs.php:833 lib/breadcrumbs/breadcrumbs.php:889
+#: lib/breadcrumbs/breadcrumbs.php:1259
+msgctxt "monthly archives date format"
+msgid "F"
+msgstr "F"
+
+#: inc/customizer/social-media.php:29
+msgid "Facebook Link"
+msgstr "Ссылка на Facebook"
+
+#: inc/customizer/footer.php:43
+msgid "Footer Column Layout"
+msgstr "Макет столбца подвала"
+
+#: inc/customizer/footer.php:83
+msgid "Footer Copyright Text"
+msgstr "Текст авторского права в подвале"
+
+#: inc/custom-functions.php:314
+msgid "Footer Image"
+msgstr "Изображение в подвале"
+
+#: inc/customizer/customizer.php:72 inc/customizer/footer.php:12
+msgid "Footer Settings"
+msgstr "Настройки подвала"
+
+#: inc/widgets/widgets.php:32
+msgid "Footer Widget "
+msgstr "Виджет подвала "
+
+#: inc/customizer/footer.php:131
+msgid "Footer Widget Background Color"
+msgstr "Цвет фона виджета подвала"
+
+#: inc/customizer/footer.php:142
+msgid "Footer Widget Background Image"
+msgstr "Фоновое изображение виджета подвала"
+
+#. Template Name of the theme
+msgid "Front Page Template"
+msgstr "Шаблон главной страницы"
+
+#: inc/customizer/customizer.php:81
+msgid "Frontpage Settings"
+msgstr "Настройки главной страницы"
+
+#: inc/custom-functions.php:631
+msgid "Gallery"
+msgstr "Галерея"
+
+#: inc/customizer/customizer.php:55
+msgid "General Settings"
+msgstr "Общие настройки"
+
+#: inc/customizer/global-color-setting.php:32
+#: inc/customizer/global-color-setting.php:50
+msgid "Global Color"
+msgstr "Глобальный цвет"
+
+#: inc/customizer/global-color-setting.php:13
+msgid "Global Color Settings"
+msgstr "Настройки глобальных цветов"
+
+#: inc/metabox.php:12
+msgid "Global sidebar"
+msgstr "Глобальная боковая панель"
+
+#: inc/customizer/layout-setting.php:29
+msgid "Global Sidebar Layout"
+msgstr "Макет глобальной боковой панели"
+
+#: inc/customizer/header-button.php:13
+msgid "Header Settings"
+msgstr "Настройки заголовка"
+
+#: lib/breadcrumbs/breadcrumbs.php:310
+msgid "Home"
+msgstr "Главная"
+
+#: 404.php:38
+msgid "Homepage"
+msgstr "Главная страница"
+
+#: inc/custom-functions.php:242 template-parts/header/header-layout.php:91
+msgid "Horizontal"
+msgstr "Горизонтально"
+
+#: lib/breadcrumbs/breadcrumbs.php:799
+msgctxt "minute archives time format"
+msgid "i"
+msgstr "i"
+
+#: inc/custom-functions.php:637
+msgid "Image"
+msgstr "Изображение"
+
+#: inc/customizer/social-media.php:74
+msgid "Instagram Link"
+msgstr "Ссылка на Instagram"
+
+#: template-parts/content-none.php:45
+msgid "It seems we can’t find what you’re looking for. Perhaps searching can help."
+msgstr "Не можем найти то что вы ищете. Возможно, поиск сможет помочь."
+
+#: lib/breadcrumbs/breadcrumbs.php:834 lib/breadcrumbs/breadcrumbs.php:1263
+msgctxt "daily archives date format"
+msgid "j"
+msgstr "j"
+
+#: inc/customizer/custom-addon.php:85 inc/customizer/custom-addon.php:120
+#: inc/customizer/footer.php:67 inc/customizer/post.php:108
+#: inc/customizer/post.php:128
+msgid "Left"
+msgstr "Слева"
+
+#: inc/customizer/layout-setting.php:34 inc/customizer/layout-setting.php:52
+#: inc/customizer/layout-setting.php:69
+msgid "Left Sidebar"
+msgstr "Левая боковая панель"
+
+#: inc/metabox.php:22
+msgid "Left sidebar"
+msgstr "Левая боковая панель"
+
+#: inc/custom-functions.php:640
+msgid "Link"
+msgstr "Ссылка"
+
+#: inc/customizer/customizer.php:113
+msgid "Logo width"
+msgstr "Ширина логотипа"
+
+#: inc/customizer/header-button.php:115
+msgid "Lowercase"
+msgstr "Нижний регистр"
+
+#: inc/widgets/widgets.php:12
+msgid "Main Sidebar"
+msgstr "Главная боковая панель"
+
+#: inc/customizer/nothing-found-page-settings.php:28
+msgid "Main Title"
+msgstr "Основное название"
+
+#: inc/customizer/header-button.php:89
+msgid "Menu Font Size"
+msgstr "Размер шрифта меню"
+
+#: inc/customizer/header-button.php:109
+msgid "Menu Text Transform"
+msgstr "Преобразование текста меню"
+
+#. Translators: Minute archive title. %s is the minute time format.
+#: lib/breadcrumbs/breadcrumbs.php:320
+msgid "Minute %s"
+msgstr "Минута %s"
+
+#: inc/customizer/custom-addon.php:65
+msgid "Newer/Older (Previous/Next)"
+msgstr "Новее/старее (предыдущий/следующий)"
+
+#: inc/pagination.php:36
+msgid "Next &raquo;"
+msgstr "Далее &rarr;"
+
+#: inc/custom-functions.php:200
+msgid "Next post:"
+msgstr "Следующая запись:"
+
+#: inc/customizer/layout-setting.php:35 inc/customizer/layout-setting.php:53
+#: inc/customizer/layout-setting.php:70
+msgid "No Sidebar"
+msgstr "Без боковой панели"
+
+#: inc/metabox.php:27
+msgid "No sidebar"
+msgstr "Без боковой панели"
+
+#: sidebar.php:60
+msgid "No tags found."
+msgstr "Меток не найдено."
+
+#: template-parts/content-none.php:11
+msgid "Nothing Found"
+msgstr "Ничего не найдено"
+
+#: inc/customizer/custom-addon.php:64
+msgid "Numeric (Page Numbers)"
+msgstr "Цифры (номера страниц)"
+
+#: inc/pagination.php:27
+msgid "Older &raquo;"
+msgstr "Предыдущие &raquo;"
+
+#: inc/custom-functions.php:377
+msgid "OMEGA "
+msgstr "OMEGA "
+
+#: inc/widgets/widgets.php:27
+msgid "One"
+msgstr "Один"
+
+#: inc/customizer/footer.php:47
+msgid "One Column"
+msgstr "Один столбец"
+
+#. translators: 1: title.
+#: comments.php:22
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr "Один комментарий к &ldquo;%1$s&rdquo;"
+
+#: inc/customizer/typography.php:13
+msgid "Typography Settings"
+msgstr "Настройки типографии"
+
+#: inc/customizer/default.php:14
+msgid "1234567890"
+msgstr "1234567890"
+
+#: inc/customizer/additional-woocommerce.php:69
+msgid "Enable Related Products"
+msgstr "Включить сопутствующие товары"
+
+#: inc/customizer/customizer.php:135
+msgid "Upgrade To Pro"
+msgstr "Обновить до Pro"
+
+#: inc/customizer/header-button.php:114
+msgid "Uppercase"
+msgstr "Верхний регистр"
+
+#: inc/custom-functions.php:625
+msgid "Video"
+msgstr "Видео"
+
+#: lib/breadcrumbs/breadcrumbs.php:862
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr "W"
+
+#. Translators: Weekly archive title. %s is the week date format.
+#: lib/breadcrumbs/breadcrumbs.php:322
+msgid "Week %s"
+msgstr "Неделя %s"
+
+#: inc/custom-functions.php:378
+msgid "WordPress"
+msgstr "WordPress"
+
+#: inc/custom-functions.php:378
+msgid "WordPress."
+msgstr "WordPress."
+
+#: lib/breadcrumbs/breadcrumbs.php:832 lib/breadcrumbs/breadcrumbs.php:861
+#: lib/breadcrumbs/breadcrumbs.php:888 lib/breadcrumbs/breadcrumbs.php:915
+#: lib/breadcrumbs/breadcrumbs.php:1255
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: inc/customizer/social-media.php:89
+msgid "Youtube Link"
+msgstr "Ссылка на YouTube"
+
+#: inc/customizer/homepage-content.php:132
+#: inc/customizer/homepage-content.php:147
+#: inc/customizer/homepage-content.php:162
+#: inc/customizer/homepage-content.php:177
+msgid "Our Projects Title"
+msgstr "Название наших проектов"
+
+#: lib/breadcrumbs/breadcrumbs.php:816
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr "H"
+
+#: lib/breadcrumbs/breadcrumbs.php:782
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr "H:i"
+
+#: inc/customizer/404-page-settings.php:28
+msgid "404 Main Title"
+msgstr "Основной заголовок 404"
+
+#: inc/customizer/404-page-settings.php:58
+msgid "404 Para Text One"
+msgstr "404 Para Текст первый"
+
+#: inc/customizer/404-page-settings.php:88
+msgid "404 Para Text Two"
+msgstr "404 Пара Текст второй"
+
+#: inc/customizer/404-page-settings.php:43
+msgid "404 Sub Title One"
+msgstr "Подзаголовок первый 404"
+
+#: inc/customizer/default.php:16
+msgid "445 S St unit 12, Santa Rosa CA 95404, United States"
+msgstr "445 S St unit 12, Santa Rosa CA 95404, United States"
+
+#: inc/customizer/post.php:138
+msgid "Archive Meta Information Settings"
+msgstr "Настройки архивной метаинформации"
+
+#: inc/customizer/post.php:269
+msgid "Big Size Image"
+msgstr "Изображение большого размера"
+
+#: inc/customizer/post.php:244
+msgid "Blog Posts Excerpt limit"
+msgstr "Ограничение отрывка записи блога"
+
+#: inc/customizer/post.php:264
+msgid "Blog Posts Image Size"
+msgstr "Размер изображения записи блога"
+
+#: inc/customizer/post.php:287
+msgid "Blog Posts Per Column"
+msgstr "Записи блога в столбец"
+
+#: inc/customizer/footer.php:122
+msgid "Centered Content"
+msgstr "По центру"
+
+#: inc/customizer/footer.php:116
+msgid "Copyright Section Alignment"
+msgstr "Выравнивание раздела авторского права"
+
+#: inc/customizer/typography.php:22
+msgid "Default Font"
+msgstr "Стандартный шрифт"
+
+#: inc/customizer/post.php:44
+msgid "Enable Posts Author"
+msgstr "Включить автора записи"
+
+#: inc/customizer/post.php:229
+msgid "Enable Posts Button"
+msgstr "Включить кнопку записей"
+
+#: inc/customizer/post.php:74 inc/customizer/post.php:184
+msgid "Enable Posts Category"
+msgstr "Включить рубрику записей"
+
+#: inc/customizer/post.php:214
+msgid "Enable Posts Content"
+msgstr "Включить содержимое записей"
+
+#: inc/customizer/post.php:59
+msgid "Enable Posts Date"
+msgstr "Включить дату записей"
+
+#: inc/customizer/post.php:154
+msgid "Enable Posts Format Icon"
+msgstr "Включить значок формата записей"
+
+#: inc/customizer/post.php:169
+msgid "Enable Posts Image"
+msgstr "Включить изображение записей"
+
+#: inc/customizer/post.php:89
+msgid "Enable Posts Tags"
+msgstr "Включить метки записей"
+
+#: inc/customizer/post.php:199
+msgid "Enable Posts Title"
+msgstr "Включить заголовок записей"
+
+#: inc/customizer/post.php:29
+msgid "Enable Single Posts Image"
+msgstr "Включить изображение отдельной записи"
+
+#: inc/customizer/footer.php:155
+msgid "Enable To The Top"
+msgstr "Включить прокрутку наверх"
+
+#: inc/customizer/layout-setting.php:83
+msgid "Enable/Disable Sticky Sidebar"
+msgstr "Прикреплённая боковая панель: вкл/откл"
+
+#: inc/customizer/default.php:96
+msgid "Enjoy these stories about getting lost, losing things, and finding what you never knew you were looking for."
+msgstr "Наслаждайтесь этими историями о том, как потеряться, потерять вещи и найти то, о чем вы и не подозревали."
+
+#: inc/customizer/post.php:272
+msgid "Extra Small Size Image"
+msgstr "Изображение очень маленького размера"
+
+#: inc/customizer/default.php:51
+msgid "Flexible Appointments"
+msgstr "Гибкий график работы"
+
+#: inc/customizer/footer.php:63
+msgid "Footer Widget Title Alignment"
+msgstr "Выравнивание названия виджетов подвала"
+
+#: inc/customizer/typography.php:45
+msgid "General Content Font"
+msgstr "Шрифт общего содержимого"
+
+#: inc/customizer/typography.php:59
+msgid "General Heading Font"
+msgstr "Шрифт общего заголовка"
+
+#: inc/customizer/footer.php:132
+msgid "It will change the complete footer widget background color."
+msgstr "Это полностью изменит цвет фона виджетов в подвале."
+
+#: inc/customizer/post.php:268
+msgid "Large Size Image"
+msgstr "Большой размер изображения"
+
+#: inc/customizer/header-button.php:125
+msgid "Main Menu Color"
+msgstr "Цвет главного меню"
+
+#: inc/customizer/header-button.php:134
+msgid "Main Menu Hover Color"
+msgstr "Цвет главного меню при наведении"
+
+#: inc/customizer/default.php:93
+msgid "Maybe it’s out there, somewhere..."
+msgstr "Может, оно где-то здесь..."
+
+#: inc/customizer/post.php:270
+msgid "Medium Size Image"
+msgstr "Изображение среднего размера"
+
+#: inc/customizer/nothing-found-page-settings.php:12
+msgid "Nothing Found Page Settings"
+msgstr "Настройки страницы Ничего не найдено"
+
+#: inc/customizer/default.php:88
+msgid "OUR PROJECTS"
+msgstr "НАШИ ПРОЕКТЫ"
+
+#: inc/customizer/homepage-content.php:187
+msgid "Our Projects Settings"
+msgstr "Настройки наших проектов"
+
+#: inc/customizer/footer.php:121
+msgid "Reverse View"
+msgstr "Обратный вид"
+
+#: inc/customizer/default.php:48
+msgid "Satisfaction Guarantee"
+msgstr "Гарантия удовлетворённости"
+
+#: inc/customizer/post.php:13
+msgid "Single Meta Information Settings"
+msgstr "Настройки отдельной метаинформации"
+
+#: inc/customizer/post.php:104
+msgid "Single Page Content Alignment"
+msgstr "Выравнивание содержимого отдельной страницы"
+
+#: inc/customizer/post.php:124
+msgid "Single Post Content Alignment"
+msgstr "Выравнивание содержимого отдельной записи"
+
+#: inc/customizer/homepage-content.php:100
+msgid "Slider Left Image "
+msgstr "Левое изображение слайдера "
+
+#: inc/customizer/homepage-content.php:116
+msgid "Slider Right Image "
+msgstr "Изображение слайдера справа "
+
+#: inc/customizer/post.php:271
+msgid "Small Size Image"
+msgstr "Изображение маленького размера"
+
+#: inc/customizer/customizer.php:114
+msgid "Specify the range for logo size with a minimum of 200px and a maximum of 700px, in increments of 20px."
+msgstr "Укажите диапазон размера логотипа: мин. 200 px  и макс. 700 px  с шагом 20 px."
+
+#: inc/customizer/default.php:95
+msgid "Still feeling lost? You’re not alone."
+msgstr "Все еще чувствуете себя потерянным? Вы не одиноки."
+
+#: inc/customizer/post.php:273
+msgid "Thumbnail Size Image"
+msgstr "Изображение размера миниатюры"
+
+#: inc/custom-functions.php:388
+msgid "To the Top"
+msgstr "Наверх"
+
+#: inc/customizer/default.php:84
+msgid "To The Top"
+msgstr "Наверх"
+
+#: inc/customizer/default.php:94
+msgid "You can always find insightful stories on our"
+msgstr "Вы всегда можете найти интересные истории на нашем сайте"
+
+#. Author URI of the theme
+#: style.css
+#, gp-priority: low
+msgid "https://www.omegathemes.com/"
+msgstr "https://www.omegathemes.com/"
+
+#. Theme URI of the theme
+#: style.css
+#, gp-priority: low
+msgid "https://www.omegathemes.com/products/maintenance-works"
+msgstr "https://www.omegathemes.com/products/maintenance-works"
+
+#. Author of the theme
+#: style.css
+#, gp-priority: low
+msgid "Omega Themes"
+msgstr "Omega Themes"

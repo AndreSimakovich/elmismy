@@ -1,0 +1,79 @@
+# Translation of Plugins - Starter Templates &amp; Sites Pack by ThemeGrill - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Starter Templates &amp; Sites Pack by ThemeGrill - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-09-23 06:09:24+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Starter Templates &amp; Sites Pack by ThemeGrill - Stable (latest release)\n"
+
+#: src/Traits/Singleton.php:34 src/Traits/Singleton.php:41
+msgid "Cheatin&#8217; huh?"
+msgstr "Хакер, что ли?"
+
+#. Author URI of the plugin
+#: themegrill-demo-importer.php
+msgid "https://themegrill.com"
+msgstr "https://themegrill.com"
+
+#. Plugin URI of the plugin
+#: themegrill-demo-importer.php
+msgid "https://themegrill.com/demo-importer/"
+msgstr "https://themegrill.com/demo-importer/"
+
+#: src/App.php:87
+msgid "Free Support"
+msgstr "Бесплатная поддержка"
+
+#: src/App.php:87
+msgid "Visit Free Customer Support Forum"
+msgstr "Посетите бесплатный форум поддержки клиентов"
+
+#: src/App.php:86
+msgid "Docs"
+msgstr "Документация"
+
+#: src/Importers/WXRImporter/WXRImporter.php:1519
+msgid "Remote file is too large, limit is %s"
+msgstr "Удаленный файл слишком велик, ограничение составляет %s"
+
+#: src/Importers/WXRImporter/WXRImporter.php:1513
+msgid "Zero size file downloaded"
+msgstr "Загружен файл с нулевым размером"
+
+#: src/Importers/WXRImporter/WXRImporter.php:972
+msgid "Invalid file type"
+msgstr "Неверный тип файла"
+
+#: src/Importers/WidgetsImporter.php:219
+msgid "No Title"
+msgstr "Нет заголовка"
+
+#: src/Importers/WidgetsImporter.php:213
+msgid "Imported to Inactive"
+msgstr "Импортирован в неактивный"
+
+#: src/Importers/WidgetsImporter.php:210
+msgid "Imported"
+msgstr "Импортировано"
+
+#: src/Importers/WidgetsImporter.php:151
+msgid "Widget already exists"
+msgstr "Виджет уже существует"
+
+#: src/Importers/WidgetsImporter.php:117
+msgid "Site does not support widget"
+msgstr "Сайт не поддерживает виджет"
+
+#: src/Importers/WidgetsImporter.php:95
+msgid "Sidebar does not exist in theme (moving widget to Inactive)"
+msgstr "Боковая панель не существует в теме (перемещение виджета в неактивное)"
+
+#. Author of the plugin
+#: themegrill-demo-importer.php
+msgid "ThemeGrill"
+msgstr "ThemeGrill"

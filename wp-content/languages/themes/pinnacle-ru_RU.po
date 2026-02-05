@@ -1,0 +1,3607 @@
+# Translation of Themes - Pinnacle in Russian
+# This file is distributed under the same license as the Themes - Pinnacle package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-25 12:11:04+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: ru\n"
+"Project-Id-Version: Themes - Pinnacle\n"
+
+#. Description of the theme
+#: style.css
+#, gp-priority: high
+msgid "Pinnacle is a \"Classic\" theme built before the WordPress Block editor was created. While it supports the block editor, it wasn't built to be optimized for the block editor (because the block editor wasn't created). Pinnacle is a bold theme with a versatile theme options panel for multiple styles. Its fully responsive layout makes for easy navigation on mobile/tablet displays. Pinnacle is fully compatible with woocommerce and gives you a unique layout for an e-commerce site."
+msgstr "Pinnacle - это \"классическая\" тема, созданная до появления редактора блоков WordPress. Хотя она поддерживает редактор блоков, она не была создана, чтобы быть оптимизированной для редактора блоков (потому что редактор блоков не был создан). Pinnacle - это жирная тема с универсальной панелью параметров темы, позволяющей использовать множество стилей. Ее полностью адаптивный макет обеспечивает удобную навигацию на дисплеях для мобильных устройств/плашетов. Pinnacle полностью совместима с WooCommerce и предоставляет Вам уникальный макет для сайта электронной коммерции."
+
+#. Theme Name of the theme
+#: style.css
+#, gp-priority: high
+msgid "Pinnacle"
+msgstr "Pinnacle"
+
+#: woocommerce/single-product/add-to-cart/variable.php:48
+msgid "Clear options"
+msgstr "Очистить параметры"
+
+#: lib/plugin-activate.php:26
+msgid "Activate Pinnacle Toolkit"
+msgstr "Активировать Pinnacle Toolkit"
+
+#: lib/plugin-activate.php:23
+msgid "Install Pinnacle Toolkit"
+msgstr "Установить Pinnacle Toolkit"
+
+#: themeoptions/theme_options.php:2754
+msgid "You must have Kadence toolkit installed to use."
+msgstr "Для использования у Вас должен быть установлен набор инструментов Kadence."
+
+#: themeoptions/theme_options.php:1174
+msgid "span"
+msgstr "span"
+
+#: themeoptions/theme_options.php:1173
+msgid "h3"
+msgstr "h3"
+
+#: themeoptions/theme_options.php:1172
+msgid "h2"
+msgstr "h2"
+
+#: themeoptions/theme_options.php:1171
+msgid "h1"
+msgstr "h1"
+
+#: themeoptions/theme_options.php:1169
+msgid "Text Tag"
+msgstr "Тег текста"
+
+#. translators: %s: <strong> <a>
+#: lib/plugin-activate.php:102
+msgid "We have a %1$snew plugin%2$s to extend and enhance the Block editor for your site. To take full advantage of the Pinnacle Theme please install the %3$sKadence Blocks%4$s, this adds extra editor blocks settings and features."
+msgstr "У нас есть %1$sновый плагин%2$s для расширения и улучшения редактора блоков для сайта. Чтобы использовать все преимущества темы Pinnacle, установите %3$sKadence Blocks%4$s, который добавляет дополнительные настройки и функции редактора блоков."
+
+#: lib/plugin-activate.php:82
+msgid "Activate Kadence Blocks"
+msgstr "Активировать Kadence Blocks"
+
+#: lib/plugin-activate.php:79
+msgid "Install Kadence Blocks"
+msgstr "Установите Kadence Blocks"
+
+#: lib/plugin-activate.php:63 lib/plugin-activate.php:119
+msgid "Authorization failed. Please refresh the page and try again."
+msgstr "Авторизация не удалась. Обновите страницу и попробуйте еще раз."
+
+#: lib/plugin-activate.php:105
+msgid "Skip"
+msgstr "Пропустить"
+
+#: lib/plugin-activate.php:48 lib/plugin-activate.php:104
+msgid "Installed"
+msgstr "Установлено"
+
+#: lib/plugin-activate.php:48 lib/plugin-activate.php:104
+msgid "Installing..."
+msgstr "Установка..."
+
+#: lib/plugin-activate.php:48 lib/plugin-activate.php:104
+msgid "Activated"
+msgstr "Активировано"
+
+#: lib/plugin-activate.php:48 lib/plugin-activate.php:104
+msgid "Activating..."
+msgstr "Активация..."
+
+#. translators: %s: <strong>
+#: lib/plugin-activate.php:46
+msgid "To take full advantage of the Pinnacle Theme please install the %1$sPinnacle Toolkit%2$s, this adds extra settings and features."
+msgstr "Чтобы в полной мере воспользоваться темой Pinnacle, установите %1$sPinnacle Toolkit%2$s, который добавляет дополнительные настройки и функции."
+
+#: lib/plugin-activate.php:45 lib/plugin-activate.php:101
+msgid "Thanks for choosing the Pinnacle Theme"
+msgstr "Спасибо, что выбрали тему Pinnacle."
+
+#: lib/init.php:58
+msgid "Black"
+msgstr "Чёрный"
+
+#: lib/init.php:53
+msgid "Very dark gray"
+msgstr "Очень темно-серый"
+
+#: lib/init.php:48
+msgid "White"
+msgstr "Белый"
+
+#: lib/init.php:43
+msgid "Very light gray"
+msgstr "Очень светло-серый"
+
+#: lib/init.php:38
+msgid "Lighter Primary Color"
+msgstr "Более светлый основной цвет"
+
+#: lib/metaboxes.php:333 lib/metaboxes.php:381
+msgid "16"
+msgstr "16"
+
+#: lib/metaboxes.php:332 lib/metaboxes.php:380
+msgid "15"
+msgstr "15"
+
+#: lib/metaboxes.php:331 lib/metaboxes.php:379
+msgid "14"
+msgstr "14"
+
+#: lib/metaboxes.php:330 lib/metaboxes.php:378
+msgid "13"
+msgstr "13"
+
+#: lib/metaboxes.php:329 lib/metaboxes.php:377
+msgid "12"
+msgstr "12"
+
+#: lib/metaboxes.php:328 lib/metaboxes.php:376
+msgid "11"
+msgstr "11"
+
+#: lib/metaboxes.php:327 lib/metaboxes.php:375
+msgid "10"
+msgstr "10"
+
+#: lib/metaboxes.php:326 lib/metaboxes.php:374
+msgid "9"
+msgstr "9"
+
+#: lib/metaboxes.php:325 lib/metaboxes.php:373
+msgid "8"
+msgstr "8"
+
+#: lib/metaboxes.php:324 lib/metaboxes.php:372
+msgid "7"
+msgstr "7"
+
+#: lib/metaboxes.php:323 lib/metaboxes.php:371
+msgid "6"
+msgstr "6"
+
+#: lib/metaboxes.php:322 lib/metaboxes.php:370
+msgid "5"
+msgstr "5"
+
+#: lib/metaboxes.php:321 lib/metaboxes.php:369
+msgid "4"
+msgstr "4"
+
+#: lib/metaboxes.php:320 lib/metaboxes.php:368
+msgid "3"
+msgstr "3"
+
+#: lib/metaboxes.php:319 lib/metaboxes.php:367
+msgid "2"
+msgstr "2"
+
+#. translators: %s is the year
+#: lib/utils.php:55
+msgid "Year: %s"
+msgstr "Год: %s"
+
+#. translators: %s is the month
+#: lib/utils.php:52
+msgid "Month: %s"
+msgstr "Месяц: %s"
+
+#. translators: %s is the day
+#: lib/utils.php:49
+msgid "Day: %s"
+msgstr "День: %s"
+
+#. translators: %s is the author name
+#: lib/utils.php:44
+msgid "Author: %s"
+msgstr "Автор: %s"
+
+#: themeoptions/theme_options.php:1938
+msgid "Replace theme default feature image for posts without a featured image"
+msgstr "Заменить изображение темы по умолчанию для записей без избранного изображения"
+
+#: themeoptions/theme_options.php:1937
+msgid "Default post summary feature Image"
+msgstr "Изображение по умолчанию для сводки записи"
+
+#: woocommerce/single-product/product-image.php:99
+msgid "Awaiting product image"
+msgstr "Ожидается изображения товара"
+
+#: themeoptions/theme_options.php:1557
+msgid "Enable woocommerce hover zoom for product gallery? (must be woocommerce 3.0+)"
+msgstr "Включить увеличение при наведении для галереи товаров? (должен быть WooCommerce 3.0+)"
+
+#: themeoptions/theme_options.php:1551
+msgid "Enable woocommerce slider for product gallery? (must be woocommerce 3.0+)"
+msgstr "Включить слайдер woocommerce для галереи товаров? (должен быть WooCommerce 3.0+)"
+
+#: themeoptions/theme_options.php:1653
+msgid "Portfolio Default Title Text"
+msgstr "Текст названия портфолио по умолчанию"
+
+#: themeoptions/theme_options.php:2766
+msgid "For best performance add your own API for google maps."
+msgstr "Для лучшей производительности добавьте свой собственный API для карт Google."
+
+#: themeoptions/theme_options.php:2765
+msgid "Google Map API"
+msgstr "Google Map API"
+
+#: themeoptions/theme_options.php:2760
+msgid "Theme Google Maps"
+msgstr "Тема Google Maps"
+
+#: themeoptions/theme_options.php:2593
+msgid "*NOTE: Make sure Kadence Toolkit plugin is activated* <br>Then go to Apperance > Theme Options > Menu settings for all menu settings"
+msgstr "*ПРИМЕЧАНИЕ: Убедитесь, что активирован плагин Virtue/Pinnacle Toolkit* <br>Перейти к Внешний вид > Настройки темы> Настройки меню для изменения параметров"
+
+#: themeoptions/theme_options.php:2381
+msgid "*NOTE: Make sure Kadence Toolkit plugin is activated* <br>Then go to Apperance > Theme Options > Typography settings for all Typography settings"
+msgstr "*ПРИМЕЧАНИЕ: Убедитесь, что активирован плагин Virtue/Pinnacle Toolkit* <br>Перейти к Внешний вид > Настройки темы> Настройки типографии для изменения параметров шрифтов"
+
+#: themeoptions/theme_options.php:1285
+msgid "*NOTE: Make sure Kadence Toolkit plugin is activated* <br>Then go to Apperance > Theme Options > Home Layout for all home layout settings"
+msgstr "*ПРИМЕЧАНИЕ: Убедитесь, что активирован плагин Virtue/Pinnacle Toolkit* <br>Перейти к Внешний вид > Настройки темы> Макет домашней страницы для изменения параметров"
+
+#: themeoptions/theme_options.php:480
+msgid "*NOTE: Make sure Kadence Toolkit plugin is activated* <br>Then go to Apperance > Theme Options > Home Slider for all Home slider settings"
+msgstr "*ПРИМЕЧАНИЕ: Убедитесь, что активирован плагин Virtue/Pinnacle Toolkit* <br>Перейти к Внешний вид > Настройки темы> Слайдер домашней страницы для изменения параметров "
+
+#: themeoptions/theme_options.php:336
+msgid "*NOTE: Make sure Kadence Toolkit plugin is activated* <br>Go to Apperance > Theme Options > Page Title settings for all settings"
+msgstr "*ПРИМЕЧАНИЕ: Убедитесь, что активирован плагин Virtue/Pinnacle Toolkit* <br>Перейти к Внешний вид > Настройки темы> Макет домашней страницы для изменения всех параметров макета домашней страницы "
+
+#: themeoptions/theme_options.php:2632
+msgid "Submenu items collapse until opened"
+msgstr "Элементы подменю сворачиваются до тех пор, пока не будут открыты"
+
+#: themeoptions/redux/framework.php:2739
+msgid "Invalid user capability.  Please reload the page and try again."
+msgstr "Неверная возможность пользователя. Обновите страницу и попробуйте еще раз."
+
+#: themeoptions/theme_options.php:1897
+msgid "Do not display"
+msgstr "Не отображать"
+
+#: themeoptions/theme_options.php:1896
+msgid "Use H2 tag"
+msgstr "Используйте тэг Н2"
+
+#: themeoptions/theme_options.php:1895
+msgid "Use H1 tag"
+msgstr "Используйте тэг Н1"
+
+#: themeoptions/theme_options.php:1893
+msgid "Blog Post non-Head Title Output"
+msgstr "Вывод заголовка записи в блоге без заголовка"
+
+#: lib/class-tgm-plugin-activation.php:3390
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "Обновление плагина %1$s (%2$d/%3$d)"
+
+#: lib/class-tgm-plugin-activation.php:2732
+msgid "No plugins are available to be updated at this time."
+msgstr "Сейчас нет доступных плагинов для обновления."
+
+#: lib/class-tgm-plugin-activation.php:2666
+msgid "Update"
+msgstr "Обновление"
+
+#: lib/class-tgm-plugin-activation.php:2627
+msgid "Upgrade message from the plugin author:"
+msgstr "Информация об обновлении от автора плагина:"
+
+#: lib/class-tgm-plugin-activation.php:2550
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Update %2$s"
+msgstr "Обновить %2$s"
+
+#: lib/class-tgm-plugin-activation.php:2519
+msgid "Version"
+msgstr "Версия"
+
+#: lib/class-tgm-plugin-activation.php:2473
+msgid "Available version:"
+msgstr "Доступная версия:"
+
+#: lib/class-tgm-plugin-activation.php:2461
+msgid "Minimum required version:"
+msgstr "Миним. необходимая версия:"
+
+#: lib/class-tgm-plugin-activation.php:2453
+msgid "Installed version:"
+msgstr "Установленная версия:"
+
+#: lib/class-tgm-plugin-activation.php:2445
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr "неизвестна"
+
+#: lib/class-tgm-plugin-activation.php:2352
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "Для активации <span class=\"count\">(%s)</span>"
+msgstr[1] "Для активации <span class=\"count\">(%s)</span>"
+msgstr[2] "Для активации <span class=\"count\">(%s)</span>"
+
+#: lib/class-tgm-plugin-activation.php:2348
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "Доступно обновление <span class=\"count\">(%s)</span>"
+msgstr[1] "Доступны обновления <span class=\"count\">(%s)</span>"
+msgstr[2] "Доступны обновлений <span class=\"count\">(%s)</span>"
+
+#: lib/class-tgm-plugin-activation.php:2344
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "Для установки <span class=\"count\">(%s)</span>"
+msgstr[1] "Для установки <span class=\"count\">(%s)</span>"
+msgstr[2] "Для установки <span class=\"count\">(%s)</span>"
+
+#: lib/class-tgm-plugin-activation.php:2340
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "Все <span class=\"count\">(%s)</span>"
+msgstr[1] "Все <span class=\"count\">(%s)</span>"
+msgstr[2] "Все <span class=\"count\">(%s)</span>"
+
+#: lib/class-tgm-plugin-activation.php:2291
+msgctxt "%1$s = install status, %2$s = update status"
+msgid "%1$s, %2$s"
+msgstr "%1$s, %2$s"
+
+#: lib/class-tgm-plugin-activation.php:2283
+msgid "Update recommended"
+msgstr "Рекомендуется обновление"
+
+#: lib/class-tgm-plugin-activation.php:2280
+msgid "Requires Update"
+msgstr "Требуется обновление"
+
+#: lib/class-tgm-plugin-activation.php:2277
+msgid "Required Update not Available"
+msgstr "Требуемое обновление недоступно"
+
+#: lib/class-tgm-plugin-activation.php:2271
+msgid "Active"
+msgstr "Активный"
+
+#: lib/class-tgm-plugin-activation.php:1937
+msgctxt "%s = version number"
+msgid "TGMPA v%s"
+msgstr "TGMPA v%s"
+
+#: lib/class-tgm-plugin-activation.php:612
+msgid "Set the parent_slug config variable instead."
+msgstr "Используйте переменную parent_slug."
+
+#: lib/class-tgm-plugin-activation.php:495
+msgid "Update Required"
+msgstr "Требуется обновление"
+
+#: lib/class-tgm-plugin-activation.php:494
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr "Этот плагин необходимо обновить, чтобы он был совместим с вашей темой."
+
+#: lib/class-tgm-plugin-activation.php:376
+msgid "Please contact the administrator of this site for help."
+msgstr "Обратитесь за помощью к админу этого сайта."
+
+#: lib/class-tgm-plugin-activation.php:373
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr "Плагин не активирован. Тема требует более новую версию %s. Пожалуйста, обновите плагин."
+
+#: lib/class-tgm-plugin-activation.php:357
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] "Начать обновление плагина"
+msgstr[1] "Начать обновление плагинов"
+msgstr[2] "Начать обновление плагинов"
+
+#: lib/class-tgm-plugin-activation.php:347
+msgid "Sorry, but you do not have the correct permissions to activate the %1$s plugin."
+msgid_plural "Sorry, but you do not have the correct permissions to activate the %1$s plugins."
+msgstr[0] "Извините, у вас недостаточно полномочий, чтобы активировать плагин %1$s."
+msgstr[1] "Извините, у вас недостаточно полномочий, чтобы активировать плагины %1$s."
+msgstr[2] "Извините, у вас недостаточно полномочий, чтобы активировать плагины %1$s."
+
+#: lib/class-tgm-plugin-activation.php:332
+msgid "Sorry, but you do not have the correct permissions to update the %1$s plugin."
+msgid_plural "Sorry, but you do not have the correct permissions to update the %1$s plugins."
+msgstr[0] "Извините, у вас недостаточно полномочий, чтобы обновлять плагин %1$s."
+msgstr[1] "Извините, у вас недостаточно полномочий, чтобы обновлять плагины %1$s."
+msgstr[2] "Извините, у вас недостаточно полномочий, чтобы обновлять плагины %1$s."
+
+#: lib/class-tgm-plugin-activation.php:327
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] "Доступно обновление плагина: %1$s."
+msgstr[1] "Доступны обновления плагинов: %1$s."
+msgstr[2] "Доступны обновления плагинов: %1$s."
+
+#: lib/class-tgm-plugin-activation.php:317
+msgid "Sorry, but you do not have the correct permissions to install the %1$s plugin."
+msgid_plural "Sorry, but you do not have the correct permissions to install the %1$s plugins."
+msgstr[0] "Извините, у вас недостаточно полномочий, чтобы устанавливать плагин %1$s."
+msgstr[1] "Извините, у вас недостаточно полномочий, чтобы устанавливать плагины %1$s."
+msgstr[2] "Извините, у вас недостаточно полномочий, чтобы устанавливать плагины %1$s."
+
+#: themeoptions/theme_options.php:2798
+msgid "Import and Export your Theme Options from text or URL."
+msgstr "Импорт и экспорт параметров темы из текста или URL."
+
+#: themeoptions/redux/inc/extensions/import_export/import_export/field_import_export.php:111
+msgid "Input your backup file below and hit Import to restore your sites options from a backup."
+msgstr "Введите файл резервной копии ниже и нажмите «Импорт», чтобы восстановить параметры сайтов из резервной копии."
+
+#: themeoptions/redux/inc/extensions/import_export/import_export/field_import_export.php:102
+msgid "Import from File"
+msgstr "Импорт из файла"
+
+#: themeoptions/redux/inc/extensions/customizer/inc/customizer_section.php:122
+msgid "Press return or enter to expand"
+msgstr "Нажмите Enter, чтобы развернуть"
+
+#: themeoptions/redux/inc/extensions/customizer/inc/customizer_section.php:72
+msgid "Press return or enter to open"
+msgstr "Нажмите Enter, чтобы открыть"
+
+#: themeoptions/redux/inc/extensions/customizer/inc/customizer_panel.php:146
+msgid "Help"
+msgstr "Помощь"
+
+#: themeoptions/redux/inc/extensions/customizer/inc/customizer_panel.php:138
+#: themeoptions/redux/inc/extensions/customizer/inc/customizer_section.php:79
+msgid "Back"
+msgstr "Назад"
+
+#. translators: %s is the site/panel title in the Customizer
+#: themeoptions/redux/inc/extensions/customizer/inc/customizer_panel.php:114
+#: themeoptions/redux/inc/extensions/customizer/inc/customizer_panel.php:142
+msgid "You are customizing %s"
+msgstr "Вы настраиваете %s"
+
+#: themeoptions/redux/inc/extensions/customizer/inc/customizer_panel.php:89
+msgid "Press return or enter to open this panel"
+msgstr "Нажмите Enter, чтобы открыть эту панель"
+
+#: themeoptions/redux/inc/class.redux_filesystem.php:50
+#: themeoptions/redux/inc/class.redux_filesystem.php:289
+msgid "We were unable to modify required files. Please ensure that <code>%1s</code> has the proper read-write permissions, or modify your wp-config.php file to contain your FTP login credentials as <a href=\"%2s\" target=\"_blank\">outlined here</a>."
+msgstr "Нам не удалось изменить необходимые файлы. Убедитесь, что <code>%1s</code> имеет соответствующие разрешения на чтение и запись, или измените файл wp-config.php, чтобы он содержал ваши учетные данные для входа на FTP как <a href=\"%2s\" target=\"_blank\"> изложено здесь</a>."
+
+#: themeoptions/redux/inc/class.redux_filesystem.php:50
+#: themeoptions/redux/inc/class.redux_filesystem.php:289
+msgid "File Permission Issues"
+msgstr "Проблемы с правами доступа к файлам"
+
+#: themeoptions/redux/inc/class.redux_cdn.php:112
+msgid "The <a href=\"%s\">Vendor Support plugin</a> (or extension) is either not installed or not activated and thus, some controls may not render properly.  Please ensure that it is installed and <a href=\"%s\">activated</a>"
+msgstr "Подключаемый модуль <a href=\"%s\"> Vendor Support </a> (или расширение) не установлен или не активирован, поэтому некоторые элементы управления могут отображаться неправильно. Убедитесь, что она установлена и <a href=\"%s\"> активирована </а >"
+
+#: themeoptions/redux/inc/class.redux_cdn.php:76
+msgid "%s CDN unavailable.  Some controls may not render properly."
+msgstr "%s CDN недоступен. Некоторые элементы управления могут отображаться неправильно."
+
+#: themeoptions/redux/inc/class.redux_cdn.php:76
+msgid "Redux Framework Warning"
+msgstr "Предупреждение Redux Framework"
+
+#: themeoptions/redux/inc/class.redux_cdn.php:74
+msgid "Please wait a few minutes, then try refreshing the page. Unable to load some remotely hosted scripts."
+msgstr "Подождите несколько минут, а затем попробуйте обновить страницу. Не удалось загрузить некоторые удаленно размещенные скрипты."
+
+#: lib/plugin-activate.php:166
+msgid "This theme recommends the following plugin, it adds extra features to the theme options and content controls: %1$s. enjoy:)"
+msgid_plural "This theme recommends the following plugin, it adds extra features to the theme options and content controls: %1$s. enjoy:)"
+msgstr[0] "Эта тема рекомендует следующий плагин, он добавляет дополнительные функции к параметрам темы и элементам управления содержимым: %1$s. Наслаждайтесь:)"
+msgstr[1] "Эта тема рекомендует следующий плагин, он добавляет дополнительные функции к параметрам темы и элементам управления содержимым: %1$s. Наслаждайтесь:)"
+msgstr[2] "Эта тема рекомендует следующий плагин, он добавляет дополнительные функции к параметрам темы и элементам управления содержимым: %1$s. Наслаждайтесь:)"
+
+#. Template Name of the theme
+msgid "Portfolio Grid"
+msgstr "Сетка портфолио"
+
+#. Template Name of the theme
+msgid "Feature"
+msgstr "Особенность"
+
+#. Template Name of the theme
+msgid "Blog"
+msgstr "Блог"
+
+#. Template Name of the theme
+msgid "Blog Grid"
+msgstr "Сетка блога"
+
+#: woocommerce/single-product/add-to-cart/variable.php:29
+msgid "This product is currently out of stock and unavailable."
+msgstr "Этого товара нет в наличии, заказ недоступен."
+
+#: woocommerce/single-product/add-to-cart/variable.php:48
+msgid "Clear selection"
+msgstr "Очистить выбор"
+
+#: woocommerce/loop/sale-flash.php:14
+msgid "Sale!"
+msgstr "Распродажа!"
+
+#: woocommerce/loop/rating.php:31
+msgid "not rated"
+msgstr "не оценено"
+
+#: themeoptions/theme_options.php:60
+msgid "Thank you for using the Pinnacle Theme by <a href=\"https://kadencewp.com/\" target=\"_blank\">Kadence WP</a>."
+msgstr "Спасибо, что используете тему Pinnacle от <a href=\"https://kadencethemes.com/\" target=\"_blank\">Kadence Themes</a>."
+
+#: themeoptions/theme_options.php:35 themeoptions/theme_options.php:36
+msgid "Theme Options"
+msgstr "Настройки темы"
+
+#: themeoptions/theme_options.php:2787
+msgid "Quickly add some CSS to your theme by adding it to this block."
+msgstr "Быстро добавьте код CSS к вашей теме добавляя его в этот блок кода."
+
+#: themeoptions/theme_options.php:2780
+msgid "Custom CSS Box"
+msgstr "Пользовательский стиль CSS"
+
+#: themeoptions/theme_options.php:2779 themeoptions/theme_options.php:2786
+msgid "Custom CSS"
+msgstr "Произвольные CSS-стили"
+
+#: themeoptions/theme_options.php:2753
+msgid "Enable Pinnacle Galleries to override WordPress"
+msgstr "Разрешить галерее Pinnacle перекрывать галереи WordPress"
+
+#: themeoptions/theme_options.php:2747
+msgid "WordPress Galleries"
+msgstr "Галереи WordPress"
+
+#: themeoptions/theme_options.php:2741
+msgid "Extra Sidebar"
+msgstr "Дополнительные боковые панели"
+
+#: themeoptions/theme_options.php:2740
+msgid "Type new sidebar name into textbox"
+msgstr "Введите название новой боковой панели в поле"
+
+#: themeoptions/theme_options.php:2739
+msgid "Create Custom Sidebars"
+msgstr "Создать нестандартные боковые панели"
+
+#: themeoptions/theme_options.php:2733
+msgid "Create Sidebars"
+msgstr "Создать боковую панель"
+
+#: themeoptions/theme_options.php:2723
+msgid "Search Results - choose Sidebar"
+msgstr "Результаты поиска - выберете боковую панель"
+
+#: themeoptions/theme_options.php:2718
+msgid "Search Results Sidebars"
+msgstr "Результаты поиска боковые панели"
+
+#: themeoptions/theme_options.php:2711
+msgid "Write your own copyright text here. You can use the following shortcodes in your footer text: [copyright] [site-name] [the-year]"
+msgstr "Напишите свой текст сообщения об авторских правах. Вы можете использовать следующие шоркоды для вашего текста: [copyright] [site-name] [the-year]"
+
+#: themeoptions/theme_options.php:2710
+msgid "Footer Copyright Text"
+msgstr "Текст Copyright в подвале"
+
+#: themeoptions/theme_options.php:2703 themeoptions/theme_options.php:2704
+msgid "Misc Settings"
+msgstr "Прочие настройки"
+
+#: themeoptions/theme_options.php:2685
+msgid "Choose Size and Style for topbar menu"
+msgstr "Выберите размер и стиль для главного меню"
+
+#: themeoptions/theme_options.php:2672
+msgid "Topbar Menu Font"
+msgstr "Шрифт меню верхней панели"
+
+#: themeoptions/theme_options.php:2667
+msgid "Topbar Menu Options"
+msgstr "Параметры меню верхней панели"
+
+#: themeoptions/theme_options.php:2654
+msgid "Choose Size and Style for Mobile Menu"
+msgstr "Выберите размер и стиль для мобильного меню"
+
+#: themeoptions/theme_options.php:2638
+msgid "Mobile Menu Font"
+msgstr "Шрифт мобильного меню"
+
+#: themeoptions/theme_options.php:2626
+msgid "Mobile Menu Options"
+msgstr "Параметры мобильного меню"
+
+#: themeoptions/theme_options.php:2614
+msgid "Choose Size and Style for primary menu"
+msgstr "Выберите размер и стиль для основного меню"
+
+#: themeoptions/theme_options.php:2598
+msgid "Primary Menu Font"
+msgstr "Шрифт основного меню"
+
+#: themeoptions/theme_options.php:2587
+msgid "Primary Menu Options"
+msgstr "Параметры основного меню"
+
+#: themeoptions/theme_options.php:2586
+msgid "Menu Settings"
+msgstr "Настройки меню"
+
+#: themeoptions/theme_options.php:2568
+msgid "Choose Size and Style for paragraphs"
+msgstr "Выберите размер и стиль для отображения текста параграфов"
+
+#: themeoptions/theme_options.php:2552
+msgid "Body Font"
+msgstr "Шрифт основной части"
+
+#: themeoptions/theme_options.php:2547
+msgid "Body Font Options"
+msgstr "Настройки шрифта раздела body"
+
+#: themeoptions/theme_options.php:2534
+msgid "Choose Size and Style for Page Subtitle"
+msgstr "Выберите размер и стиль для подзаголовка страницы"
+
+#: themeoptions/theme_options.php:2521
+msgid "Page Subtitle"
+msgstr "Подзаголовок страницы"
+
+#: themeoptions/theme_options.php:2509
+msgid "Choose Size and Style for h5"
+msgstr "Выберите размер и стиль для заголовка H5"
+
+#: themeoptions/theme_options.php:2495
+msgid "H5 Headings"
+msgstr "Заголовок Н5"
+
+#: themeoptions/theme_options.php:2483
+msgid "Choose Size and Style for h4"
+msgstr "Выберите размер и стиль для заголовка H4"
+
+#: themeoptions/theme_options.php:2467
+msgid "H4 Headings"
+msgstr "Заголовок Н4"
+
+#: themeoptions/theme_options.php:2455
+msgid "Choose Size and Style for h3"
+msgstr "Выберите размер и стиль для заголовка H3"
+
+#: themeoptions/theme_options.php:2439
+msgid "H3 Headings"
+msgstr "Заголовок Н3"
+
+#: themeoptions/theme_options.php:2427
+msgid "Choose Size and Style for h2"
+msgstr "Выберите размер и стиль для заголовка H2"
+
+#: themeoptions/theme_options.php:2411
+msgid "H2 Headings"
+msgstr "Заголовок Н2"
+
+#: themeoptions/theme_options.php:2399
+msgid "Choose Size and Style for h1 (This Styles Your Page Titles)"
+msgstr "Выберите размер и стиль для заголовка H1 (это стиль заголовков страниц)"
+
+#: themeoptions/theme_options.php:2386
+msgid "H1 Headings"
+msgstr "Заголовок H1"
+
+#: themeoptions/theme_options.php:2375
+msgid "Header Font Options"
+msgstr "Настройки шрифтов заголовков"
+
+#: themeoptions/theme_options.php:2374
+msgid "Typography"
+msgstr "Типографика"
+
+#: themeoptions/theme_options.php:2363
+msgid "This shows if site is using the boxed layout option."
+msgstr "Это показывает, используется ли на сайте фиксированный макет."
+
+#: themeoptions/theme_options.php:2355 themeoptions/theme_options.php:2362
+msgid "Body Background"
+msgstr "Фон раздела body"
+
+#: themeoptions/theme_options.php:2342 themeoptions/theme_options.php:2349
+msgid "Footer Background"
+msgstr "Фон подвала"
+
+#: themeoptions/theme_options.php:2336
+msgid "Post Background"
+msgstr "Фон записи"
+
+#: themeoptions/theme_options.php:2329
+msgid "Post and Page Content area Background"
+msgstr "Цвет фона основного содержимого страниц и записей"
+
+#: themeoptions/theme_options.php:2316 themeoptions/theme_options.php:2323
+msgid "Mobile Menu Background"
+msgstr "Фон мобильного меню"
+
+#: themeoptions/theme_options.php:2303 themeoptions/theme_options.php:2310
+msgid "Menu Background"
+msgstr "Фон меню"
+
+#: themeoptions/theme_options.php:2280
+msgid "If background is color, select Transparency"
+msgstr "Если фон цветной, выбрать прозрачность"
+
+#: themeoptions/theme_options.php:2270
+msgid "Header Background Color"
+msgstr "Цвет фона заголовка"
+
+#: themeoptions/theme_options.php:2252
+msgid "Simple"
+msgstr "Простой"
+
+#: themeoptions/theme_options.php:2250
+msgid "Header Background Style"
+msgstr "Стиль фона шапки"
+
+#: themeoptions/theme_options.php:2245 themeoptions/theme_options.php:2263
+msgid "Header Background"
+msgstr "Фон заголовка"
+
+#: themeoptions/theme_options.php:2232 themeoptions/theme_options.php:2239
+msgid "Topbar Background"
+msgstr "Фон верхней панели"
+
+#: themeoptions/theme_options.php:2226
+msgid "Content Background"
+msgstr "Фон содержимого"
+
+#: themeoptions/theme_options.php:2219
+msgid "Main Content Background"
+msgstr "Цвет фона основного содержимого"
+
+#: themeoptions/theme_options.php:2218
+msgid "Advanced Styling"
+msgstr "Расширенная стилизация"
+
+#: themeoptions/theme_options.php:2203
+msgid "Footer Font Color"
+msgstr "Цвет шрифтов подвала"
+
+#: themeoptions/theme_options.php:2194
+msgid "Sitewide Gray Fonts"
+msgstr "Серые шрифты для сайта"
+
+#: themeoptions/theme_options.php:2185
+msgid "Recomended to be 20% lighter than primary color"
+msgstr "Рекомендуется на 20% светлее, чем основной цвет"
+
+#: themeoptions/theme_options.php:2184
+msgid "Primary Hover Color"
+msgstr "Основной цвет после наведения мыши"
+
+#: themeoptions/theme_options.php:2176
+msgid "Choose the default Highlight color for your site."
+msgstr "Выберите цвет выделения по умоляанию для вашего сайта."
+
+#: themeoptions/theme_options.php:2166
+msgid "Note* changes made in options panel will override this stylesheet. Example: Colors set in typography."
+msgstr "Внимание: изменения, сделанные в настройках темы имеют больший приоритет чем указанные в странице стилей. Например: цвета установленные в разделе Типография."
+
+#: themeoptions/theme_options.php:2165
+msgid "Theme Skin Stylesheet"
+msgstr "Страница стилей скина темы"
+
+#: themeoptions/theme_options.php:2160
+msgid "Basic Stylng"
+msgstr "Базовые настройки стиля"
+
+#: themeoptions/theme_options.php:2159
+msgid "Basic Styling"
+msgstr "Базовые насройки стиля"
+
+#: themeoptions/theme_options.php:2147
+msgid "Turn on to allow comments on pages."
+msgstr "Включите, чтобы разрешить комментирование страниц"
+
+#: themeoptions/theme_options.php:2146
+msgid "Allow Comments on Pages"
+msgstr "Разрешить комментарии на страницах"
+
+#: themeoptions/theme_options.php:2139 themeoptions/theme_options.php:2140
+msgid "Page Options"
+msgstr "Настройки страницы"
+
+#: themeoptions/theme_options.php:2124
+msgid "Choose a Sidebar for your Category/Archive Pages"
+msgstr "Выберите боковую панель для страницы категорий/архива страниц"
+
+#: themeoptions/theme_options.php:2108
+msgid "This determines if there is a sidebar on the blog category pages."
+msgstr "Это определяет будет ли отображаться боковая панель на страницах категорий блога."
+
+#: themeoptions/theme_options.php:2107
+msgid "Display the sidebar on blog archives?"
+msgstr "Отображать боковую панель на странице архива блога?"
+
+#: themeoptions/theme_options.php:2092
+msgid "Category Grid Columns"
+msgstr "Колонки списка категорий"
+
+#: themeoptions/theme_options.php:2079
+msgid "Category Display Type"
+msgstr "Отображение категории"
+
+#: themeoptions/theme_options.php:2073
+msgid "Blog Category/Archive Defaults"
+msgstr "Категория/архив блога по умолчанию"
+
+#: themeoptions/theme_options.php:2061
+msgid "Single Video Post Head Content"
+msgstr "Содержание шапки видео записей блога по умолчанию"
+
+#: themeoptions/theme_options.php:2047
+msgid "Video Blog Post Summary Default"
+msgstr "Настройки краткого содержания видео в записи блога по умолчанию"
+
+#: themeoptions/theme_options.php:2041
+msgid "Blog Post Defaults Video"
+msgstr "Настройки видео записей блога по умолчанию"
+
+#: themeoptions/theme_options.php:2032
+msgid "Carousel Slider (Caroufedsel Slider)"
+msgstr "Слайдер карусель"
+
+#: themeoptions/theme_options.php:2031
+msgid "Image Slider (Flex Slider)"
+msgstr "Слайдер изображений (Flex Slider)"
+
+#: themeoptions/theme_options.php:2028
+msgid "Single Gallery Post Head Content"
+msgstr "Содержание шапки галерейных записей блога"
+
+#: themeoptions/theme_options.php:2019
+msgid "Landscape Slider"
+msgstr "Слайдер пейзажных изображений"
+
+#: themeoptions/theme_options.php:2018
+msgid "Portrait Slider"
+msgstr "Сладер портретных изображений"
+
+#: themeoptions/theme_options.php:2013
+msgid "Gallery Blog Post Summary Default"
+msgstr "Настройки краткого содержания галереи записи блога по умолчанию"
+
+#: themeoptions/theme_options.php:2007
+msgid "Blog Post Defaults gallery"
+msgstr "Настройки галерей записей блога по умолчанию"
+
+#: themeoptions/theme_options.php:1995
+msgid "Single Image Post Head Content"
+msgstr "Содержание шапки записей блога с изображением"
+
+#: themeoptions/theme_options.php:1981
+msgid "Image Blog Post Summary Default"
+msgstr "Настройки краткого содержания записи блога с изображениями по умолчанию"
+
+#: themeoptions/theme_options.php:1976
+msgid "Blog Post Defaults Image"
+msgstr "Настройки изображений записей блога по умолчанию"
+
+#: themeoptions/theme_options.php:1963
+msgid "Standard Blog Post Summary Default"
+msgstr "Настройки краткого содержания записи блога по умолчанию"
+
+#: themeoptions/theme_options.php:1957
+msgid "Blog Post Defaults Standard"
+msgstr "Стандарт записей блога по умолчанию"
+
+#: themeoptions/theme_options.php:1943
+msgid "Blog Post Bottom Carousel Default"
+msgstr "Нижняя карусель записей блога по умолчанию"
+
+#: themeoptions/theme_options.php:1924
+msgid "Blog Post Author Box Default"
+msgstr "Поле автора записи блога по умолчанию"
+
+#: themeoptions/theme_options.php:1915 themeoptions/theme_options.php:1926
+#: themeoptions/theme_options.php:1945
+msgid "No, Do not Show"
+msgstr "Нет, не показывать"
+
+#: themeoptions/theme_options.php:1914 themeoptions/theme_options.php:1927
+msgid "Yes, Show"
+msgstr "Да, показать"
+
+#: themeoptions/theme_options.php:1912
+msgid "Blog Post Sidebar Default"
+msgstr "Настройки боковой панели записей блога по умолчанию"
+
+#: themeoptions/theme_options.php:1907
+msgid "Blog Post Defaults"
+msgstr "Настройки записей блога по умолчанию"
+
+#: themeoptions/theme_options.php:1880
+msgid "Example: Blog"
+msgstr "Например: Блог"
+
+#: themeoptions/theme_options.php:1870
+msgid "Show the post title below the header"
+msgstr "Показывать заголовок записи под шапкой"
+
+#: themeoptions/theme_options.php:1860
+msgid "Post Title"
+msgstr "Заголовок записи"
+
+#: themeoptions/theme_options.php:1859
+msgid "Category"
+msgstr "Категория"
+
+#: themeoptions/theme_options.php:1857
+msgid "Blog Post Default Head Title"
+msgstr "Настройки заголовка записей блога по умолчанию"
+
+#: themeoptions/theme_options.php:1849
+msgid "Show the post title in head by default"
+msgstr "Показывать заголовок записи в шапке по умолчанию"
+
+#: themeoptions/theme_options.php:1844
+msgid "Blog Post Page Header"
+msgstr "Заголовок страницы записей Блога"
+
+#: themeoptions/theme_options.php:1837
+msgid "Makes the excerpt images the same size instead of whatever ratio was uploaded."
+msgstr "Делает изображения одинакового размера вне зависимости от размеров при загрузке."
+
+#: themeoptions/theme_options.php:1836
+msgid "Hard Crop excerpt images to the same height."
+msgstr "Обрезайте изображения отрывков до одинаковой высоты."
+
+#: themeoptions/theme_options.php:1829
+msgid "Choose to show or hide previous and next post links in the footer of a single post."
+msgstr "Выберите, чтобы показать или скрыть ссылки на предыдущую и следующую запись в подвале отдельной записи."
+
+#: themeoptions/theme_options.php:1828
+msgid "Show Previous and Next posts links?"
+msgstr "Отображать ссылки на предыдущие и последующие записи?"
+
+#: themeoptions/theme_options.php:1821
+msgid "Choose to show or hide date under post title."
+msgstr "Выберите отображать или нет дату под заголовком записи."
+
+#: themeoptions/theme_options.php:1820
+msgid "Show date with posts?"
+msgstr "Отображать дату в записях?"
+
+#: themeoptions/theme_options.php:1813
+msgid "Choose to show or hide comment count under post title."
+msgstr "Выберите отображать или нет счетчик комментариев под заголовком записи."
+
+#: themeoptions/theme_options.php:1812
+msgid "Show comment count with posts?"
+msgstr "Отображать счетчик комментариев в записях?"
+
+#: themeoptions/theme_options.php:1805
+msgid "Choose to show or hide tags in the post footer."
+msgstr "Выберите отображать или нет тэги в подвале записи."
+
+#: themeoptions/theme_options.php:1804
+msgid "Show tags with posts?"
+msgstr "Отображать тэги в записях?"
+
+#: themeoptions/theme_options.php:1797
+msgid "Choose to show or hide categories in the post footer."
+msgstr "Выберите отображать или нет категории в подвале записи."
+
+#: themeoptions/theme_options.php:1796
+msgid "Show categories with posts?"
+msgstr "Отображать категорию в записях?"
+
+#: themeoptions/theme_options.php:1789
+msgid "Choose to show or hide author name under post title."
+msgstr "Выберите отображать или нет имя автора под заголовком записи."
+
+#: themeoptions/theme_options.php:1788
+msgid "Show author name with posts?"
+msgstr "Отображать имя автора в записях?"
+
+#: themeoptions/theme_options.php:1781
+msgid "Choose to show or hide author image beside post title."
+msgstr "Выберите отображать или нет иконку автора рядом с заголовком записи."
+
+#: themeoptions/theme_options.php:1780
+msgid "Show Author image with posts?"
+msgstr "Отображать иконку автора в записях?"
+
+#: themeoptions/theme_options.php:1773
+msgid "Choose to show or hide comments closed alert below posts."
+msgstr "Выберите отображать или нет предупреждение о закрытии возможности оставлять комментарии внизу страницы записи."
+
+#: themeoptions/theme_options.php:1772
+msgid "Show Comments Closed Text?"
+msgstr "Отображать текст \"Комментарии закрыты\"?"
+
+#: themeoptions/theme_options.php:1765 themeoptions/theme_options.php:1766
+msgid "Blog Options"
+msgstr "Настройки блога"
+
+#: themeoptions/theme_options.php:1750
+msgid "Choose how many portfolio columns to show on portfolio catagory pages."
+msgstr "Укажите, сколько колонок элементов портфолио размещается на странице категорий портфолио"
+
+#: themeoptions/theme_options.php:1744
+msgid "Portfolio Category Pages"
+msgstr "Страницы категорий портфолио"
+
+#: themeoptions/theme_options.php:1734
+msgid "Choose how many columns to show on recent portfolio carousel."
+msgstr "Укажите, сколько элементов показывается в карусели портфолио"
+
+#: themeoptions/theme_options.php:1725
+msgid "Only of same Portfolio Type"
+msgstr "Только тот же тип Портфолио"
+
+#: themeoptions/theme_options.php:1724
+msgid "All Portfolio Posts"
+msgstr "Все  портфолио посты"
+
+#: themeoptions/theme_options.php:1722
+msgid "Bottom Portfolio Carousel Items"
+msgstr "Элементы нижней карусели портфолио"
+
+#: themeoptions/theme_options.php:1710
+msgid "Display Bottom Portfolio carousel by Default"
+msgstr "Отображать нижнюю Карусель портфолио по умолчанию"
+
+#: themeoptions/theme_options.php:1704
+msgid "Portfolio Post Bottom Carousel"
+msgstr "Нижняя Карусель портфолио"
+
+#: themeoptions/theme_options.php:1698
+msgid "This sets the link in every portfolio post."
+msgstr "Это установит ссылку на всех записях портфолио."
+
+#: themeoptions/theme_options.php:1697
+msgid "All Projects Default Portfolio Page"
+msgstr "Страница портфолио всех проектов по умолчанию"
+
+#: themeoptions/theme_options.php:1688
+msgid "Show portfolio nav below post title"
+msgstr "Показывать навигацию портфолио под заголовком записи"
+
+#: themeoptions/theme_options.php:1682
+msgid "Single Portfolio Navigation Options"
+msgstr "Опции навигации страницы Портфолио"
+
+#: themeoptions/theme_options.php:1656
+msgid "Portfolio Title"
+msgstr "Заголовок портфолио"
+
+#: themeoptions/theme_options.php:1655
+msgid "Category of Portfolio"
+msgstr "Категория портфолио"
+
+#: themeoptions/theme_options.php:1633
+msgid "Single Portfolio Page Header"
+msgstr "Заголовок шапки страницы портфолио"
+
+#: themeoptions/theme_options.php:1626
+msgid "Dark Style"
+msgstr "Тёмный стиль"
+
+#: themeoptions/theme_options.php:1625
+msgid "Light Style"
+msgstr "Светлый стиль"
+
+#: themeoptions/theme_options.php:1624
+msgid "Primary Color Style"
+msgstr "Стиль основного цвета"
+
+#: themeoptions/theme_options.php:1622
+msgid "This sets the defualt hover style for the portfolio post."
+msgstr "Это устанавливает стандартный стиль при наведении курсора на запись портфолио."
+
+#: themeoptions/theme_options.php:1621
+msgid "Default Hover Style"
+msgstr "Стиль при наведении"
+
+#: themeoptions/theme_options.php:1609
+msgid "This sets the defualt layout style for the portfolio post."
+msgstr "Это устанавливает стандартный стиль разметки для записи портфолио."
+
+#: themeoptions/theme_options.php:1608
+msgid "Default Portfolio Layout Style"
+msgstr "Стиль макета портфолио по умолчанию"
+
+#: themeoptions/theme_options.php:1600
+msgid "Portfolio Grid Options"
+msgstr "Параметры сетки портфолио"
+
+#: themeoptions/theme_options.php:1593
+msgid "Turn on to allow Comments on Portfolio posts"
+msgstr "Включите, чтобы разрешить комментарии на страницах элементов портфолио."
+
+#: themeoptions/theme_options.php:1592
+msgid "Allow Comments on Portfolio Posts"
+msgstr "Разрешить комментарии к записям портфолио"
+
+#: themeoptions/theme_options.php:1586
+msgid "Portfolio Options (Kadence Toolkit plugin required)"
+msgstr "Настройки портфолио (требуется плагин Kadence Toolkit)"
+
+#: themeoptions/theme_options.php:1585
+msgid "Portfolio Options"
+msgstr "Параметры портфолио"
+
+#: themeoptions/theme_options.php:1573
+msgid "This determines related products are displayed"
+msgstr "Это определяет будут ли отображаться связанные продукты"
+
+#: themeoptions/theme_options.php:1572
+msgid "Display related products?"
+msgstr "Отображать связанные продукты?"
+
+#: themeoptions/theme_options.php:1565
+msgid "This determines if product tabs are displayed"
+msgstr "Это определяет будут ли отображаться закладки для товаров"
+
+#: themeoptions/theme_options.php:1564
+msgid "Display product tabs?"
+msgstr "Отображать закладки продуктов?"
+
+#: themeoptions/theme_options.php:1545 themeoptions/theme_options.php:1675
+#: themeoptions/theme_options.php:1887
+msgid "Post Default Subtitle"
+msgstr "Подзаголовок записи по умолчанию"
+
+#: themeoptions/theme_options.php:1538 themeoptions/theme_options.php:1668
+msgid "Example: My Shop"
+msgstr "Например: Мой Магазин"
+
+#: themeoptions/theme_options.php:1537 themeoptions/theme_options.php:1667
+#: themeoptions/theme_options.php:1879
+msgid "Post Default Title"
+msgstr "Заголовок записи по умолчанию"
+
+#: themeoptions/theme_options.php:1528 themeoptions/theme_options.php:1657
+#: themeoptions/theme_options.php:1861
+msgid "Custom"
+msgstr "Пользовательский"
+
+#: themeoptions/theme_options.php:1527
+msgid "Product Title"
+msgstr "Заголовок товара"
+
+#: themeoptions/theme_options.php:1526
+msgid "Category of product"
+msgstr "Категория продукта"
+
+#: themeoptions/theme_options.php:1524
+msgid "Product Default Title Text"
+msgstr "Текст заголовка продукта по умолчанию"
+
+#: themeoptions/theme_options.php:1517 themeoptions/theme_options.php:1647
+msgid "Show the Title in post"
+msgstr "Показывать заголовок в записи"
+
+#: themeoptions/theme_options.php:1509 themeoptions/theme_options.php:1639
+msgid "Show the Title in header by default"
+msgstr "Показывать заголовок в шапке по умолчанию"
+
+#: themeoptions/theme_options.php:1503
+msgid "Single Product Page Header (Woocommerce plugin required)"
+msgstr "Шапка страницы товара (требуется плагин Woocommerce)"
+
+#: themeoptions/theme_options.php:1502
+msgid "Product Settings"
+msgstr "Настройки товаров"
+
+#: themeoptions/theme_options.php:1490
+msgid "If turned off image dimensions are set by woocommerce settings - recommended width: 468px for Single Product Image"
+msgstr "Если выключено, размер изображений будет установлен настройками плагина WooCommerce на основании рекомендованных: 486 пикселов для единичного изображения продукта"
+
+#: themeoptions/theme_options.php:1489
+msgid "Enable Product Image Aspect Ratio on product Page"
+msgstr "Включить обрезку изображений на странице продукта"
+
+#: themeoptions/theme_options.php:1482
+msgid "If turned off image dimensions are set by woocommerce settings - recommended width: 270px for Catalog Images"
+msgstr "Если выключено, размер изображений будет установлен настройками плагина WooCommerce на основании рекомендованных: 270 пикселов для изображений в каталоге"
+
+#: themeoptions/theme_options.php:1481
+msgid "Enable Product Image Aspect Ratio on Catalog pages"
+msgstr "Включить обрезку изображений продукта на страницах Каталога"
+
+#: themeoptions/theme_options.php:1475
+msgid "Product Image Sizes"
+msgstr "Размеры изображения товара"
+
+#: themeoptions/theme_options.php:1465
+msgid "If your titles are long increase this to help align your products height."
+msgstr "Если ваши заголовки длинные, увеличьте их, чтобы выровнять высоту ваших товаров."
+
+#: themeoptions/theme_options.php:1464
+msgid "Product title Min Height"
+msgstr "Мин. высота заголовка товара"
+
+#: themeoptions/theme_options.php:1457
+msgid "This makes your product titles uppercase on Category pages"
+msgstr "Это позволит использовать заглавные буквы в названиях продуктов на страницах категорий."
+
+#: themeoptions/theme_options.php:1456
+msgid "Set Product Title to Uppercase?"
+msgstr "Перевести заголовок товаров в ВЕРХНИЙ РЕГИСТР?"
+
+#: themeoptions/theme_options.php:1443
+msgid "Choose Size and Style for product titles on category and archive pages."
+msgstr "Выберите размер и стиль для заголовков товаров на страницах Каталога и архивов."
+
+#: themeoptions/theme_options.php:1431
+msgid "Shop & archive Product title Font"
+msgstr "Шрифт заголовков товара в магазине и каталоге"
+
+#: themeoptions/theme_options.php:1426
+msgid "Shop Product Title Settings"
+msgstr "Настройки заголовка товара в магазине"
+
+#: themeoptions/theme_options.php:1414
+msgid "Choose how many Category Image columns to show on the shop and category pages"
+msgstr "Выберите, сколько столбцов изображений категории отобразится на страницах магазина и категории"
+
+#: themeoptions/theme_options.php:1413
+msgid "Shop Category Column Layout"
+msgstr "Макет колонок категорий Магазина"
+
+#: themeoptions/theme_options.php:1407
+msgid "Shop Category Image Size"
+msgstr "Размер изображения категории магазина"
+
+#: themeoptions/theme_options.php:1400
+msgid "Turn this off if you would like to use browser added plus and minus for number boxes"
+msgstr "Отключите это, если вы хотите использовать добавленные браузером плюсы и минусы для числовых полей"
+
+#: themeoptions/theme_options.php:1399
+msgid "Quantity box plus and minus"
+msgstr "Плюс и минус в поле количества"
+
+#: themeoptions/theme_options.php:1392
+msgid "This determines if add to cart button will be hidden till the mouse hovers over the product"
+msgstr "Это определяет будет ли кнопка Добавить в Корзину скрыта до наведения мыши на продукт"
+
+#: themeoptions/theme_options.php:1391
+msgid "Hide Add to Cart Till Mouse Hover"
+msgstr "Скрыть Добавить в корзину до наведения мыши"
+
+#: themeoptions/theme_options.php:1384
+msgid "This determines if the rating is displayed in the product archive pages"
+msgstr "Это определяет будет ли отображаться рейтинг на странице Каталога товаров"
+
+#: themeoptions/theme_options.php:1383
+msgid "Show Ratings in Shop and Category Pages"
+msgstr "Отображать рейтинг на страницах Магазина и Категорий"
+
+#: themeoptions/theme_options.php:1373
+msgid "How many products per page"
+msgstr "Количество продуктов на страницу"
+
+#: themeoptions/theme_options.php:1364
+msgid "Choose a Sidebar for your Product Category Pages"
+msgstr "Выберите боковую панель для страницы категорий продукта"
+
+#: themeoptions/theme_options.php:1347
+msgid "This determines if there is a sidebar on the product category pages."
+msgstr "Это определяет будет ли отображаться боковая панель на страницах категорий товаров."
+
+#: themeoptions/theme_options.php:1346
+msgid "Display the sidebar on Product Category Pages?"
+msgstr "Отображать боковую панель на странице категорий товаров?"
+
+#: themeoptions/theme_options.php:1336
+msgid "Choose a Sidebar for your shop page"
+msgstr "Выберите боковую панель для страницы Магазина"
+
+#: themeoptions/theme_options.php:1319
+msgid "This determines if there is a sidebar on the shop page."
+msgstr "Это определяет будет ли отображаться боковая панель на странице Магазина."
+
+#: themeoptions/theme_options.php:1318
+msgid "Display the sidebar on Shop Page?"
+msgstr "Отображать боковую панель на странице Магазина?"
+
+#: themeoptions/theme_options.php:1305
+msgid "Choose how many product columns on the shop and category pages"
+msgstr "Выберите количество столбцов товаров на страницах магазина и категории"
+
+#: themeoptions/theme_options.php:1304
+msgid "Shop Product Column Layout"
+msgstr "Макет колонок продуктов в Магазине"
+
+#: themeoptions/theme_options.php:1298
+msgid "Shop Archive Page Settings (Woocommerce plugin required)"
+msgstr "Настройки страницы архива магазина (требуется плагин Woocommerce)"
+
+#: themeoptions/theme_options.php:1297
+msgid "Shop Settings"
+msgstr "Настройки магазина"
+
+#: themeoptions/theme_options.php:1275 themeoptions/theme_options.php:2096
+msgid "Four"
+msgstr "Четыре"
+
+#: themeoptions/theme_options.php:1274 themeoptions/theme_options.php:2095
+msgid "Three"
+msgstr "Три"
+
+#: themeoptions/theme_options.php:1273 themeoptions/theme_options.php:2094
+msgid "Two"
+msgstr "Два"
+
+#: themeoptions/theme_options.php:1271
+msgid "Post Grid Columns"
+msgstr "Сетка колонок записей"
+
+#: themeoptions/theme_options.php:1262 themeoptions/theme_options.php:2083
+msgid "Grid Post"
+msgstr "Записи сеткой"
+
+#: themeoptions/theme_options.php:1261 themeoptions/theme_options.php:2082
+msgid "Normal Full Post"
+msgstr "Обычная полная Запись блога"
+
+#: themeoptions/theme_options.php:1260 themeoptions/theme_options.php:2081
+msgid "Normal Post Excerpt"
+msgstr "Нормальная выдержка описания записи"
+
+#: themeoptions/theme_options.php:1258
+msgid "If Latest Post page is front page. Choose how to show the posts."
+msgstr "Если страница «Последние записи» является главной страницей. Выберите, как показывать записи."
+
+#: themeoptions/theme_options.php:1257
+msgid "Latest Post Display"
+msgstr "Отображение самых свежих записей"
+
+#: themeoptions/theme_options.php:1251
+msgid "Page Content Options (if home page is latest post page)"
+msgstr "Параметры содержимого страницы (если главная страница является страницей блога)"
+
+#: themeoptions/theme_options.php:1245
+msgid "Call to action background"
+msgstr "Фон призыва к действию"
+
+#: themeoptions/theme_options.php:1234
+msgid "Call to action top and bottom padding."
+msgstr "Отступ сверху и снизу для призыва к действию."
+
+#: themeoptions/theme_options.php:1225
+msgid "Button Hover Background Color"
+msgstr "Цвет фона кнопки после наведения мыши"
+
+#: themeoptions/theme_options.php:1215
+msgid "Button Hover Text Color"
+msgstr "Цвет текста кнопки при наведении"
+
+#: themeoptions/theme_options.php:1206
+msgid "Button Background Color"
+msgstr "Цвет фона кнопки"
+
+#: themeoptions/theme_options.php:1196
+msgid "Button Text Color"
+msgstr "Цвет текста кнопки"
+
+#: themeoptions/theme_options.php:1190
+msgid "Call to Action Button Link"
+msgstr "Ссылка на кнопку с призывом к действию"
+
+#: themeoptions/theme_options.php:1183
+msgid "Call to Action Button Text"
+msgstr "Текст кнопки призыва к действию"
+
+#: themeoptions/theme_options.php:1160
+msgid "Call to Action Text Color"
+msgstr "Цвет текста призыва к действию"
+
+#: themeoptions/theme_options.php:1154
+msgid "Call to Action Text"
+msgstr "Текст призыва к действию"
+
+#: themeoptions/theme_options.php:1148
+msgid "Home Call To Action Settings"
+msgstr "Настройки призыва к действию домашней страницы"
+
+#: themeoptions/theme_options.php:1135
+msgid "Choose the color for icon menu title and description Font."
+msgstr "Выберите цвет для заголовков меню иконок и  шрифта описания."
+
+#: themeoptions/theme_options.php:1134
+msgid "Title and Description Font Color"
+msgstr "Цвет шрифта заголовка и описания"
+
+#: themeoptions/theme_options.php:1125
+msgid "Choose the background color for icon. * Note the hover color is set by your primary color in basic styling."
+msgstr "Выберете цвет фона для иконки. *Помните цвет после наведения установлен вашим основным цветом в настройках базового стиля."
+
+#: themeoptions/theme_options.php:1124
+msgid "Icon Background Color"
+msgstr "Цвет фона значка"
+
+#: themeoptions/theme_options.php:1113
+msgid "Choose the color for icon."
+msgstr "Выберите цвет иконки."
+
+#: themeoptions/theme_options.php:1112
+msgid "Icon Color"
+msgstr "Цвет значка"
+
+#: themeoptions/theme_options.php:1106 themeoptions/theme_options.php:1184
+msgid "e.g. = Read More"
+msgstr "напр. = Читать далее"
+
+#: themeoptions/theme_options.php:1105
+msgid "Icon menu button text (optional)"
+msgstr "Настройки текста кнопки меню иконок (не обязательно)"
+
+#: themeoptions/theme_options.php:1095
+msgid "Choose how many columns in each row"
+msgstr "Выберите, сколько столбцов в каждой строке"
+
+#: themeoptions/theme_options.php:1089
+msgid "Choose your icons for the icon menu."
+msgstr "Выберите значки для меню значков."
+
+#: themeoptions/theme_options.php:1082
+msgid "Home Icon Menu"
+msgstr "Меню значков главной страницы"
+
+#: themeoptions/theme_options.php:1075
+msgid "Display Portfolio excerpt under Title"
+msgstr "Отображать отрывок из портфолио под заголовком"
+
+#: themeoptions/theme_options.php:1068
+msgid "Display Portfolio Types under Title"
+msgstr "Отображать тип элемента портфолио под заголовком"
+
+#: themeoptions/theme_options.php:1061
+msgid "Display lightbox link in portfolio item?"
+msgstr "Отображать ссылку Lightbox в элементах портфолио?"
+
+#: themeoptions/theme_options.php:1051
+msgid "Random"
+msgstr "Случайный"
+
+#: themeoptions/theme_options.php:1050
+msgid "Date"
+msgstr "Дата"
+
+#: themeoptions/theme_options.php:1048
+msgid "Menu Order"
+msgstr "Порядок меню"
+
+#: themeoptions/theme_options.php:1046
+msgid "Choose how the portfolio items should be ordered in the carousel."
+msgstr "Выберите в каком порядке будут сортироваться элементы карусели портфолио."
+
+#: themeoptions/theme_options.php:1045
+msgid "Portfolio Carousel Order by"
+msgstr "Порядок сортировки элементов карусели"
+
+#: themeoptions/theme_options.php:1036
+msgid "All Visible"
+msgstr "Все видимые"
+
+#: themeoptions/theme_options.php:1035
+msgid "One Item"
+msgstr "Один элемент"
+
+#: themeoptions/theme_options.php:1033
+msgid "Choose how the portfolio items scroll."
+msgstr "Укажите тип перелистывания карусели портфолио"
+
+#: themeoptions/theme_options.php:1032
+msgid "Portfolio Carousel Scroll"
+msgstr "Перелистывание Карусели портфолио"
+
+#: themeoptions/theme_options.php:1022
+msgid "Choose the carousel speed (in seconds)."
+msgstr "Выберите скорость карусели (в секундах)."
+
+#: themeoptions/theme_options.php:1012
+msgid "Choose how many portfolio items are in carousel"
+msgstr "Укажите, сколько элементов размещается в карусели"
+
+#: themeoptions/theme_options.php:1003
+msgid "Wide Landscape 4:2"
+msgstr "Широкая альбомная 4:2"
+
+#: themeoptions/theme_options.php:1002
+msgid "Landscape 4:3"
+msgstr "Альбомная 4:3"
+
+#: themeoptions/theme_options.php:1001
+msgid "Portrait 3:4"
+msgstr "Книжная 3:4"
+
+#: themeoptions/theme_options.php:1000
+msgid "Square 1:1"
+msgstr "Квадратная 1:1"
+
+#: themeoptions/theme_options.php:997
+msgid "Portfolio Image Ratio"
+msgstr "Пропорции изображения в Портфолио"
+
+#: lib/init.php:33 themeoptions/theme_options.php:988
+#: themeoptions/theme_options.php:2175
+msgid "Primary Color"
+msgstr "Основной цвет"
+
+#: themeoptions/theme_options.php:987
+msgid "Dark"
+msgstr "Тёмная"
+
+#: themeoptions/theme_options.php:986
+msgid "Light"
+msgstr "Светлая"
+
+#: themeoptions/theme_options.php:983
+msgid "Portfolio Hover Style"
+msgstr "Стиль портфолио после наведения мыши"
+
+#: themeoptions/theme_options.php:974 themeoptions/theme_options.php:1612
+msgid "Flat with Margin"
+msgstr "Плоский с гранями"
+
+#: themeoptions/theme_options.php:973 themeoptions/theme_options.php:1611
+msgid "Post Boxes"
+msgstr "Рамки записей"
+
+#: themeoptions/theme_options.php:970
+msgid "Portfolio Layout Style"
+msgstr "Стиль макета портфолио"
+
+#: themeoptions/theme_options.php:960
+msgid "Choose how many columns are in carousel"
+msgstr "Укажите, сколько колонокразмещается в карусели"
+
+#: themeoptions/theme_options.php:954
+msgid "Leave blank to select all types"
+msgstr "Оставьте пустым для отображения всех категорий"
+
+#: themeoptions/theme_options.php:953
+msgid "Portfolio Carousel Category Type"
+msgstr "Тип категории для карусели портфолио"
+
+#: themeoptions/theme_options.php:942
+msgid "e.g. = Portfolio Carousel title"
+msgstr "напр. = Заголовок карусели портфолио"
+
+#: themeoptions/theme_options.php:941
+msgid "Home Portfolio Carousel title"
+msgstr "Заголовок карусели портфолио главной страницы"
+
+#: themeoptions/theme_options.php:935
+msgid "Home Portfolio Carousel Settings"
+msgstr "Настройки карусели портфолио для главной страницы"
+
+#: themeoptions/theme_options.php:928
+msgid "Leave blank to select all"
+msgstr "Оставьте пустым для отображения всех записей"
+
+#: themeoptions/theme_options.php:927
+msgid "Limit posts to a Category"
+msgstr "Ограничить записи категорией"
+
+#: themeoptions/theme_options.php:915
+msgid "Choose how many post columns on Homepage"
+msgstr "Укажите сколько колонок записей блога отображать на домашней странице"
+
+#: themeoptions/theme_options.php:905
+msgid "Choose How many posts on Homepage"
+msgstr "Укажите сколько записей блога отображать на главной странице"
+
+#: themeoptions/theme_options.php:900
+msgid "e.g. = Latest from the blog"
+msgstr "напр. = Самое свежее из блога"
+
+#: themeoptions/theme_options.php:899
+msgid "Home Blog Title"
+msgstr "Название блога главной страницы"
+
+#: themeoptions/theme_options.php:893
+msgid "Home Blog Settings"
+msgstr "Настройки записей блога для главной страницы"
+
+#: themeoptions/theme_options.php:882
+msgid "Latest Blog Posts"
+msgstr "Самые свежие записи блога"
+
+#: themeoptions/theme_options.php:885
+msgid "Page Content"
+msgstr "Содержимое страницы"
+
+#: themeoptions/theme_options.php:881
+msgid "Call to Action"
+msgstr "Призыв к действию"
+
+#: themeoptions/theme_options.php:880 themeoptions/theme_options.php:1088
+msgid "Icon Menu"
+msgstr "Меню значков"
+
+#: themeoptions/theme_options.php:879
+msgid "Portfolio Carousel"
+msgstr "Карусель портфолио"
+
+#: themeoptions/theme_options.php:876
+msgid "Organize how you want the layout to appear on the homepage"
+msgstr "Организуйте, как вы хотите, чтобы макет отображался на главной странице"
+
+#: themeoptions/theme_options.php:875
+msgid "Homepage Layout Manager"
+msgstr "Менеджер макета главной страницы"
+
+#: themeoptions/theme_options.php:866
+msgid "Choose a Sidebar for your Home Page"
+msgstr "Выберите боковую панель для вашей главной страницы"
+
+#: themeoptions/theme_options.php:849
+msgid "This determines if there is a sidebar on the home page."
+msgstr "Это определяет будет ли отображаться боковая панель на главной странице."
+
+#: themeoptions/theme_options.php:848
+msgid "Display a sidebar on the Home Page?"
+msgstr "Отображать боковую панель на главной странице?"
+
+#: themeoptions/theme_options.php:840
+msgid "Home Layout"
+msgstr "Макет главной страницы"
+
+#: themeoptions/theme_options.php:676
+msgid "Choose which slider you would like to show for mobile viewers."
+msgstr "Укажите какой слайдер вы хотите использовать для мобильной версии сайта."
+
+#: themeoptions/theme_options.php:675
+msgid "Choose a Slider for Mobile"
+msgstr "Выберите слайдер для мобильной версии сайта"
+
+#: themeoptions/theme_options.php:668
+msgid "Choose if you would like to show a different slider on your home page for your mobile visitors."
+msgstr "Выберите, если вы хотите отображать специальный слайдер на главной странице для ваших мобильных посетителей."
+
+#: themeoptions/theme_options.php:667
+msgid "Would you like to use this feature?"
+msgstr "Хотите использовать эту возможность?"
+
+#: themeoptions/theme_options.php:661
+msgid "Create a different home slider for your mobile visitors."
+msgstr "Создайте слайдер домашней страницы для мобильной версии сайта."
+
+#: themeoptions/theme_options.php:660
+msgid "Home Mobile Slider"
+msgstr "Мобильный слайдер главной страницы"
+
+#: themeoptions/theme_options.php:646 themeoptions/theme_options.php:827
+msgid "If your using a video on the home page place video embed code here."
+msgstr "Если вы используете видео на главной странице разместите код встраиваемого видео здесь."
+
+#: themeoptions/theme_options.php:645 themeoptions/theme_options.php:826
+msgid "Video Embed Code"
+msgstr "Код встраиваемого видео"
+
+#: themeoptions/theme_options.php:637 themeoptions/theme_options.php:818
+msgid "Choose to show or hide captions"
+msgstr "Выберите отображать подписи или нет"
+
+#: themeoptions/theme_options.php:636 themeoptions/theme_options.php:817
+msgid "Show Captions?"
+msgstr "Отображать подписи?"
+
+#: themeoptions/theme_options.php:625 themeoptions/theme_options.php:806
+msgid "How long for slide transitions, in milliseconds."
+msgstr "Как долго происходит смена слайдов, миллисекунды."
+
+#: themeoptions/theme_options.php:624 themeoptions/theme_options.php:805
+msgid "Slider Transition Time"
+msgstr "Время перехода"
+
+#: themeoptions/theme_options.php:614 themeoptions/theme_options.php:795
+msgid "Fade"
+msgstr "Исчезание"
+
+#: themeoptions/theme_options.php:612 themeoptions/theme_options.php:793
+msgid "Choose a transition type"
+msgstr "Выберите тип перехода"
+
+#: themeoptions/theme_options.php:611 themeoptions/theme_options.php:792
+msgid "Transition Type"
+msgstr "Тип перехода"
+
+#: themeoptions/theme_options.php:600 themeoptions/theme_options.php:781
+msgid "How long to pause on each slide, in milliseconds."
+msgstr "Как долго отображается один слайд, миллисекунды."
+
+#: themeoptions/theme_options.php:599 themeoptions/theme_options.php:780
+msgid "Slider Pause Time"
+msgstr "Время паузы слайдера"
+
+#: themeoptions/theme_options.php:591 themeoptions/theme_options.php:772
+msgid "This determines if a slider automatically scrolls"
+msgstr "Это определеяет, прокручивается ли слайдер автоматически"
+
+#: themeoptions/theme_options.php:590 themeoptions/theme_options.php:771
+msgid "Auto Play?"
+msgstr "Автозапуск?"
+
+#: themeoptions/theme_options.php:578 themeoptions/theme_options.php:759
+msgid "Slider Max Width"
+msgstr "Макс. ширина слайдера."
+
+#: themeoptions/theme_options.php:567 themeoptions/theme_options.php:579
+#: themeoptions/theme_options.php:748 themeoptions/theme_options.php:760
+msgid "Note: does not work if images are smaller than max."
+msgstr "Внимание: не используется если размер изображений меньше максимального размера слайдера."
+
+#: themeoptions/theme_options.php:566 themeoptions/theme_options.php:747
+msgid "Slider Max Height"
+msgstr "Макс. высота слайдера"
+
+#: themeoptions/theme_options.php:559 themeoptions/theme_options.php:740
+msgid "Use large images for best results."
+msgstr "Используйте крупные изображения для лучших результатов."
+
+#: themeoptions/theme_options.php:558 themeoptions/theme_options.php:739
+msgid "Slider Images"
+msgstr "Изображения слайдера"
+
+#: themeoptions/theme_options.php:541 themeoptions/theme_options.php:721
+msgid "Home Page Title Padding Bottom"
+msgstr "Отступ снизу заголовка домашней страницы"
+
+#: themeoptions/theme_options.php:530 themeoptions/theme_options.php:710
+msgid "Home Page Title Padding Top"
+msgstr "Отступ сверху заголовка главной страницы"
+
+#: themeoptions/theme_options.php:521 themeoptions/theme_options.php:701
+msgid "optional text below home page title"
+msgstr "Необязательный текст под заголовком домашней страницы"
+
+#: themeoptions/theme_options.php:520 themeoptions/theme_options.php:700
+msgid "Home Page SubTitle"
+msgstr "Подзаголовок главной страницы"
+
+#: themeoptions/theme_options.php:511 themeoptions/theme_options.php:691
+msgid "Home Page Title"
+msgstr "Заголовок главной страницы"
+
+#: themeoptions/theme_options.php:504
+msgid "This enabled the transparent header on the home page."
+msgstr "Это включит прозрачную шапку на главной странице."
+
+#: themeoptions/theme_options.php:503
+msgid "Place behind Header"
+msgstr "Расположить за шапкой"
+
+#: themeoptions/theme_options.php:493 themeoptions/theme_options.php:681
+#: themeoptions/theme_options.php:2052 themeoptions/theme_options.php:2064
+msgid "Video"
+msgstr "Видео"
+
+#: themeoptions/theme_options.php:491
+msgid "Carousel Slider"
+msgstr "Cлайдер Карусель"
+
+#: themeoptions/theme_options.php:490 themeoptions/theme_options.php:679
+msgid "Flex Slider"
+msgstr "Гибкий слайдер"
+
+#: themeoptions/theme_options.php:486
+msgid "If you don't want an image slider on your home page choose none."
+msgstr "Если вы не хотите использовать слайдер на главной странице укажите \"никакой\"."
+
+#: themeoptions/theme_options.php:485
+msgid "Choose a Home Image Slider"
+msgstr "Выберите слайдер главной страницы"
+
+#: themeoptions/theme_options.php:474
+msgid "Home Page Slider Options"
+msgstr "Параметры слайдера главной страницы"
+
+#: themeoptions/theme_options.php:473
+msgid "Home Slider"
+msgstr "Слайдер главной страницы"
+
+#: themeoptions/theme_options.php:461
+msgid "This moves the left items to the right and right items to the left."
+msgstr "Это поменяет местами правые и левые элементы."
+
+#: themeoptions/theme_options.php:460
+msgid "Topbar Layout Switch"
+msgstr "Переключатель макета верхней панели"
+
+#: themeoptions/theme_options.php:453
+msgid "Enable widget area in left of Topbar?"
+msgstr "Активировать область виджетов в левой части чердака?"
+
+#: themeoptions/theme_options.php:446
+msgid "Choose to show or hide search in topbar"
+msgstr "Выберите, чтобы показать или скрыть поиск на верхней панели"
+
+#: themeoptions/theme_options.php:445
+msgid "Display Search in Topbar?"
+msgstr "Отображать поиск в верхней панели?"
+
+#: themeoptions/theme_options.php:438
+msgid "This only works if using woocommerce"
+msgstr "Это работает только при использовании woocommerce"
+
+#: themeoptions/theme_options.php:437
+msgid "Show Cart total in topbar?"
+msgstr "Показывать общие данные корзины в меню верхней панали?"
+
+#: themeoptions/theme_options.php:426
+msgid "Icon menu font size"
+msgstr "Размер шрифта меню иконок"
+
+#: themeoptions/theme_options.php:421
+msgid "Choose your icons for the topbar icon menu."
+msgstr "Выберите значок для меню верхней панели."
+
+#: themeoptions/theme_options.php:420
+msgid "Topbar Icon Menu"
+msgstr "Значок меню верхней панели"
+
+#: themeoptions/theme_options.php:413
+msgid "Choose to show or hide topbar icon Menu"
+msgstr "Выберите, чтобы показать или скрыть значок меню верхней панели"
+
+#: themeoptions/theme_options.php:412
+msgid "Use Topbar Icon Menu?"
+msgstr "Использовать меню значков верхней панели?"
+
+#: themeoptions/theme_options.php:405
+msgid "Choose to show or hide topbar on mobile"
+msgstr "Укажите, отображать или нет иконки меню чердака на мобильных устройствах"
+
+#: themeoptions/theme_options.php:404
+msgid "Hide on mobile?"
+msgstr "Скрыть на мобильном устройстве?"
+
+#: themeoptions/theme_options.php:394
+msgid "Topbar Height"
+msgstr "Высота верхней панели"
+
+#: themeoptions/theme_options.php:387
+msgid "Choose to show or hide topbar"
+msgstr "Выберите, чтобы показать или скрыть верхнюю панель"
+
+#: themeoptions/theme_options.php:386
+msgid "Use Topbar?"
+msgstr "Использовать верхнюю панель?"
+
+#: themeoptions/theme_options.php:380
+msgid "Topbar Settings"
+msgstr "Настройки верхней панели"
+
+#: themeoptions/theme_options.php:354
+msgid "Select how many columns for footer widgets"
+msgstr "Выберите количество колонок для виджета подвала"
+
+#: themeoptions/theme_options.php:353
+msgid "Footer Widget Layout"
+msgstr "Макет виджета подвала"
+
+#: themeoptions/theme_options.php:347
+msgid "Footer Layout"
+msgstr "Макет подвала"
+
+#: themeoptions/theme_options.php:326
+msgid "Right"
+msgstr "Справа"
+
+#: themeoptions/theme_options.php:325
+msgid "Left"
+msgstr "Слева"
+
+#: themeoptions/theme_options.php:324
+msgid "Center"
+msgstr "По центру"
+
+#: themeoptions/theme_options.php:322
+msgid "Page Title Align"
+msgstr "Выравнивание названия страницы"
+
+#: themeoptions/theme_options.php:312
+msgid "Choose the default subtitle color for your site."
+msgstr "Выберите цвет подзаголовка по умолчанию для вашего сайта."
+
+#: themeoptions/theme_options.php:311
+msgid "Page Subtitle Color"
+msgstr "Цвет подзаголовка страницы"
+
+#: themeoptions/theme_options.php:301
+msgid "Choose the default pagetitle color for your site."
+msgstr "Выберите цвет заголовка по умолчанию для вашего сайта."
+
+#: themeoptions/theme_options.php:300
+msgid "Page Title Color"
+msgstr "Цвет заголовка страницы"
+
+#: themeoptions/theme_options.php:295
+msgid "Page Header Default Background"
+msgstr "Фон шапки страницы по умолчанию"
+
+#: themeoptions/theme_options.php:287 themeoptions/theme_options.php:1510
+#: themeoptions/theme_options.php:1640 themeoptions/theme_options.php:1850
+msgid "This can be overridden on each page."
+msgstr "Это может быть отменено на каждой странице."
+
+#: themeoptions/theme_options.php:286
+msgid "Show the page title by default"
+msgstr "Показывать заголовок страницы по умолчанию"
+
+#: themeoptions/theme_options.php:280 themeoptions/theme_options.php:489
+#: themeoptions/theme_options.php:680
+msgid "Page Title"
+msgstr "Заголовок страницы"
+
+#: themeoptions/theme_options.php:263
+msgid "Choose size and style your sitename, if you don't use an image logo."
+msgstr "Выберите размер и стиль шрифта для текстового логотипа, если вы не используете графический логотип."
+
+#: themeoptions/theme_options.php:249
+msgid "Sitename Logo Font"
+msgstr "Шрифт логотипа названия сайта"
+
+#: themeoptions/theme_options.php:243
+msgid "Upload Your @2x Logo for Retina Screens"
+msgstr "Загрузите ваш логотип @2x для ретинных дисплеев"
+
+#: themeoptions/theme_options.php:236
+msgid "Upload your Logo. If left blank theme will use site name."
+msgstr "Загрузите ваш логотип. Если его нет, тема будет использовать название сайта в качестве логотипа."
+
+#: themeoptions/theme_options.php:235
+msgid "Logo"
+msgstr "Логотип"
+
+#: themeoptions/theme_options.php:225
+msgid "50%"
+msgstr "50%"
+
+#: themeoptions/theme_options.php:224
+msgid "41%"
+msgstr "41%"
+
+#: themeoptions/theme_options.php:223
+msgid "33%"
+msgstr "33%"
+
+#: themeoptions/theme_options.php:222
+msgid "25%"
+msgstr "25%"
+
+#: themeoptions/theme_options.php:221
+msgid "16%"
+msgstr "16%"
+
+#: themeoptions/theme_options.php:219
+msgid "Logo Container Width"
+msgstr "Ширина контейнера логотипа"
+
+#: themeoptions/theme_options.php:213
+msgid "Logo Options"
+msgstr "Параметры логотипа"
+
+#: themeoptions/theme_options.php:202 themeoptions/theme_options.php:244
+msgid "Should be twice the pixel size of your normal logo."
+msgstr "Размер в пикселях должен быть в два раза больше, чем у обычного логотипа."
+
+#: themeoptions/theme_options.php:201
+msgid "@2x Logo (For Transparent Header) "
+msgstr "@2x Logo (Для прозрачной шапки) "
+
+#: themeoptions/theme_options.php:194
+msgid "Upload your Logo."
+msgstr "Загрузите ваш Логотип"
+
+#: themeoptions/theme_options.php:193
+msgid "Logo (For Transparent Header)"
+msgstr "Логотип (Для прозрачной шапки)"
+
+#: themeoptions/theme_options.php:181
+msgid "Choose the font color for the logo while background is transparent"
+msgstr "Выберете цвет шрифта для логотипа при прозрачном фоне"
+
+#: themeoptions/theme_options.php:180
+msgid "Site title font Color (For Transparent Header)"
+msgstr "Цвет заголовка сайта (для прозрачной шапки)"
+
+#: themeoptions/theme_options.php:170
+msgid "Choose the color of bottom border while background is transparent"
+msgstr "Выберете цвет нижней границы при прозрачном фоне"
+
+#: themeoptions/theme_options.php:169
+msgid "Border Color (For Transparent Header)"
+msgstr "Цвет границ (для прозрачной шапки)"
+
+#: themeoptions/theme_options.php:159
+msgid "Choose the font color of the menu font while background is transparent"
+msgstr "Выберете цвет шрифта для меню при прозрачном фоне"
+
+#: themeoptions/theme_options.php:158
+msgid "Menu Text Color (For Transparent Header)"
+msgstr "Цвет текста меню (для прозрачной шапки)"
+
+#: themeoptions/theme_options.php:152
+msgid "This will make the page header background fill to the top of the page."
+msgstr "Это заставит фон заголовка страницы заполнять верхнюю часть страницы."
+
+#: themeoptions/theme_options.php:151
+msgid "Enable Transparent header?"
+msgstr "Включить прозрачную шапку"
+
+#: themeoptions/theme_options.php:145
+msgid "Transparent Header"
+msgstr "Прозрачный заголовок"
+
+#: themeoptions/theme_options.php:134
+msgid "Header Height"
+msgstr "Максимальная высота шапки"
+
+#: themeoptions/theme_options.php:126
+msgid "For support please visit"
+msgstr "Для получения поддержки перейдите по ссылке"
+
+#: themeoptions/theme_options.php:124
+msgid "For theme documentation visit"
+msgstr "Для просмотра документации перейдите по ссылке"
+
+#: themeoptions/theme_options.php:123
+msgid "This theme was developed by"
+msgstr "Эта тема была разработана"
+
+#: themeoptions/theme_options.php:122
+msgid "Welcome to Pinnacle Theme Options"
+msgstr "Добро пожаловать в настройки темы Pinnacle"
+
+#: themeoptions/theme_options.php:119
+msgid "Site Header"
+msgstr "Название сайта"
+
+#: themeoptions/redux/templates/panel/header_stickybar.tpl.php:15
+msgid "Expand"
+msgstr "Развернуть"
+
+#: themeoptions/redux/templates/panel/footer.tpl.php:67
+#: themeoptions/redux/templates/panel/header_stickybar.tpl.php:29
+msgid "Working..."
+msgstr "Выполняется..."
+
+#: themeoptions/redux/templates/panel/footer.tpl.php:62
+#: themeoptions/redux/templates/panel/header_stickybar.tpl.php:26
+msgid "Reset All"
+msgstr "Очистить всё"
+
+#: themeoptions/redux/templates/panel/footer.tpl.php:61
+#: themeoptions/redux/templates/panel/header_stickybar.tpl.php:25
+msgid "Reset Section"
+msgstr "Очистить секцию"
+
+#: themeoptions/redux/templates/panel/footer.tpl.php:57
+#: themeoptions/redux/templates/panel/header_stickybar.tpl.php:21
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#: themeoptions/redux/inc/validation/url/validation_url.php:16
+msgid "You must provide a valid URL for this option."
+msgstr "Вы должны предоставить действительный URL для этой опции."
+
+#: themeoptions/redux/inc/validation/unique_slug/validation_unique_slug.php:16
+msgid "That URL slug is in use, please choose another. <code>%s</code> is open for use."
+msgstr "Этот URL-слаг используется, выберите другой. <code>%s</code> открыт для использования."
+
+#: themeoptions/redux/inc/validation/numeric/validation_numeric.php:16
+#: themeoptions/redux/inc/validation/numeric_not_empty/validation_numeric_not_empty.php:16
+msgid "You must provide a numerical value for this option."
+msgstr "Вы должны использовать числовое значение для данной опции."
+
+#: themeoptions/redux/inc/validation/not_empty/validation_not_empty.php:16
+msgid "This field cannot be empty. Please provide a value."
+msgstr "Это поле не может быть пустым. Укажите значение."
+
+#: themeoptions/redux/inc/validation/no_special_chars/validation_no_special_chars.php:16
+msgid "You must not enter any special characters in this field, all special characters have been removed."
+msgstr "Вы не должны вводить какие-либо специальные символы в это поле, все специальные символы были удалены."
+
+#: themeoptions/redux/inc/validation/no_html/validation_no_html.php:15
+msgid "You must not enter any HTML in this field, all HTML tags have been removed."
+msgstr "Вы не должны вводить HTML в это поле, все HTML-теги были удалены."
+
+#: themeoptions/redux/inc/validation/email/validation_email.php:16
+#: themeoptions/redux/inc/validation/email_not_empty/validation_email_not_empty.php:16
+msgid "You must provide a valid email for this option."
+msgstr "Вы должны использовать корректный email для данной опции."
+
+#: themeoptions/redux/inc/validation/date/validation_date.php:16
+msgid "This field must be a valid date."
+msgstr "Данное поле должно содержать корректную дату."
+
+#: themeoptions/redux/inc/validation/css/validation_css.php:39
+msgid "Unsafe strings were found in your CSS and have been filtered out."
+msgstr "Небезопасные строки были найдены в вашем CSS и были отфильтрованы."
+
+#: themeoptions/redux/inc/validation/comma_numeric/validation_comma_numeric.php:16
+msgid "You must provide a comma separated list of numerical values for this option."
+msgstr "Вы должны предоставить список числовых значений через запятую для этой опции."
+
+#: themeoptions/redux/inc/validation/color/validation_color.php:18
+#: themeoptions/redux/inc/validation/colorrgba/validation_colorrgba.php:16
+#: themeoptions/redux/inc/validation/color_rgba/validation_color_rgba.php:14
+msgid "This field must be a valid color value."
+msgstr "Это поле должно быть допустимым значением цвета."
+
+#: themeoptions/redux/inc/fields/typography/field_typography.php:993
+msgid "Google Webfonts"
+msgstr "Google Webfonts"
+
+#: themeoptions/redux/inc/fields/typography/field_typography.php:892
+msgid "Standard Fonts"
+msgstr "Стандартные шрифты"
+
+#: themeoptions/redux/inc/fields/typography/field_typography.php:482
+msgid "Font color"
+msgstr "Цвет шрифта"
+
+#: themeoptions/redux/inc/fields/typography/field_typography.php:480
+msgid "Font Color"
+msgstr "Цвет шрифта"
+
+#: themeoptions/redux/inc/fields/typography/field_typography.php:461
+#: themeoptions/redux/inc/fields/typography/field_typography.php:462
+msgid "Letter Spacing"
+msgstr "Межсимвольный интервал"
+
+#: themeoptions/redux/inc/fields/typography/field_typography.php:452
+#: themeoptions/redux/inc/fields/typography/field_typography.php:453
+msgid "Word Spacing"
+msgstr "Интервал между словами"
+
+#: themeoptions/redux/inc/fields/typography/field_typography.php:444
+msgid "Height"
+msgstr "Высота"
+
+#: themeoptions/redux/inc/fields/typography/field_typography.php:443
+#: themeoptions/redux/inc/fields/typography/field_typography.php:444
+msgid "Line Height"
+msgstr "Высота строки"
+
+#: themeoptions/redux/inc/fields/typography/field_typography.php:435
+msgid "Size"
+msgstr "Размер"
+
+#: themeoptions/redux/inc/fields/typography/field_typography.php:434
+#: themeoptions/redux/inc/fields/typography/field_typography.php:435
+msgid "Font Size"
+msgstr "Размер шрифта"
+
+#: themeoptions/redux/inc/fields/typography/field_typography.php:410
+#: themeoptions/redux/inc/fields/typography/field_typography.php:411
+#: themeoptions/redux/inc/fields/typography/field_typography.php:412
+msgid "Text Decoration"
+msgstr "Оформление текста"
+
+#: themeoptions/redux/inc/fields/typography/field_typography.php:390
+#: themeoptions/redux/inc/fields/typography/field_typography.php:391
+#: themeoptions/redux/inc/fields/typography/field_typography.php:392
+msgid "Font Variant"
+msgstr "Вариант шрифта"
+
+#: themeoptions/redux/inc/fields/typography/field_typography.php:367
+#: themeoptions/redux/inc/fields/typography/field_typography.php:368
+#: themeoptions/redux/inc/fields/typography/field_typography.php:369
+msgid "Text Transform"
+msgstr "Преобразование текста"
+
+#: themeoptions/redux/inc/fields/typography/field_typography.php:344
+#: themeoptions/redux/inc/fields/typography/field_typography.php:345
+#: themeoptions/redux/inc/fields/typography/field_typography.php:346
+msgid "Text Align"
+msgstr "Выравнивание текста"
+
+#: themeoptions/redux/inc/fields/typography/field_typography.php:327
+msgid "Font script"
+msgstr "Скрипт шрифта"
+
+#: themeoptions/redux/inc/fields/typography/field_typography.php:327
+msgid "Subsets"
+msgstr "Подмножества"
+
+#: themeoptions/redux/inc/fields/typography/field_typography.php:325
+msgid "Font Subsets"
+msgstr "Подмножества шрифта"
+
+#: themeoptions/redux/inc/fields/typography/field_typography.php:323
+msgid "Font subsets"
+msgstr "Подмножества шрифтов"
+
+#: themeoptions/redux/inc/fields/typography/field_typography.php:283
+msgid "Style"
+msgstr "Стиль"
+
+#: themeoptions/redux/inc/fields/typography/field_typography.php:276
+msgid "Font Weight &amp; Style"
+msgstr "Насыщенность и стиль шрифта"
+
+#: themeoptions/redux/inc/fields/typography/field_typography.php:275
+#: themeoptions/redux/inc/fields/typography/field_typography.php:283
+msgid "Font style"
+msgstr "Стиль шрифта"
+
+#: themeoptions/redux/inc/fields/typography/field_typography.php:260
+#: themeoptions/redux/inc/fields/typography/field_typography.php:261
+msgid "Backup Font Family"
+msgstr "Семейство шрифтов Backup"
+
+#: themeoptions/redux/inc/fields/typography/field_typography.php:234
+msgid "Font family"
+msgstr "Семейство шрифтов"
+
+#: themeoptions/redux/inc/fields/typography/field_typography.php:233
+msgid "Font Family"
+msgstr "Семейство шрифтов"
+
+#: themeoptions/redux/inc/fields/switch/field_switch.php:46
+msgid "Off"
+msgstr "Откл"
+
+#: themeoptions/redux/inc/fields/switch/field_switch.php:43
+msgid "On"
+msgstr "Вкл"
+
+#: themeoptions/redux/inc/fields/select/field_select.php:136
+#: themeoptions/redux/inc/fields/select_image/field_select_image.php:136
+msgid "No items of this type were found."
+msgstr "Не найдено ни одного элемента заданного типа."
+
+#: themeoptions/redux/inc/fields/select/field_select.php:85
+#: themeoptions/redux/inc/fields/select_image/field_select_image.php:56
+msgid "Select an item"
+msgstr "Выбрать элемент"
+
+#: themeoptions/redux/inc/fields/multi_text/field_multi_text.php:66
+msgid "Add More"
+msgstr "Добавить ещё"
+
+#: themeoptions/redux/inc/fields/background/field_background.php:279
+#: themeoptions/redux/inc/fields/media/field_media.php:155
+msgid "No media selected"
+msgstr "Медиа не выбрано"
+
+#: themeoptions/redux/inc/fields/background/field_background.php:225
+msgid "Background Position"
+msgstr "Позиция фона"
+
+#: themeoptions/redux/inc/fields/background/field_background.php:205
+msgid "Background Attachment"
+msgstr "Привязка фона"
+
+#: themeoptions/redux/inc/fields/background/field_background.php:190
+msgid "Background Size"
+msgstr "Размер фона"
+
+#: themeoptions/redux/inc/fields/background/field_background.php:175
+msgid "Background Origin"
+msgstr "Источник фона"
+
+#: themeoptions/redux/inc/fields/background/field_background.php:159
+msgid "Background Clip"
+msgstr "Background Clip"
+
+#: themeoptions/redux/inc/fields/background/field_background.php:143
+msgid "Background Repeat"
+msgstr "Повторение фона"
+
+#: themeoptions/redux/inc/fields/background/field_background.php:126
+#: themeoptions/redux/inc/fields/color/field_color.php:75
+msgid "Transparent"
+msgstr "Прозрачный"
+
+#: themeoptions/redux/inc/extensions/import_export/import_export/field_import_export.php:141
+msgid "Copy Export URL"
+msgstr "Скопировать URL экспорта"
+
+#: themeoptions/redux/inc/extensions/import_export/import_export/field_import_export.php:140
+msgid "Download Data File"
+msgstr "Скачать файл данных"
+
+#: themeoptions/redux/inc/extensions/import_export/import_export/field_import_export.php:139
+msgid "Copy Data"
+msgstr "Копировать данные"
+
+#: themeoptions/redux/inc/extensions/import_export/import_export/field_import_export.php:131
+msgid "Here you can copy/download your current option settings. Keep this safe as you can use it as a backup should anything go wrong, or you can use it to restore your settings on this site (or any other site)."
+msgstr "Здесь вы можете скопировать / скачать ваши текущие настройки параметров. Сохраняйте это в безопасности, так как вы можете использовать его в качестве резервной копии на случай, если что-то пойдет не так, или вы можете использовать его для восстановления настроек на этом сайте (или любом другом сайте)."
+
+#: themeoptions/redux/inc/extensions/import_export/import_export/field_import_export.php:127
+msgid "Export Options"
+msgstr "Параметры экспорта"
+
+#: themeoptions/redux/inc/extensions/import_export/import_export/field_import_export.php:123
+msgid "WARNING! This will overwrite all existing option values, please proceed with caution!"
+msgstr "ПРЕДУПРЕЖДЕНИЕ! Это перезапишет все существующие значения параметров, будьте осторожны!"
+
+#: themeoptions/redux/inc/extensions/import_export/import_export/field_import_export.php:123
+msgid "Import"
+msgstr "Импорт"
+
+#: themeoptions/redux/inc/extensions/import_export/import_export/field_import_export.php:118
+msgid "Input the URL to another sites options set and hit Import to load the options from that site."
+msgstr "Введите URL-адрес для набора параметров других сайтов и нажмите «Импорт», чтобы загрузить параметры с этого сайта."
+
+#: themeoptions/redux/inc/extensions/import_export/import_export/field_import_export.php:105
+msgid "Import from URL"
+msgstr "Импорт из URL"
+
+#: themeoptions/redux/inc/extensions/import_export/import_export/field_import_export.php:98
+msgid "Import Options"
+msgstr "Параметры импорта"
+
+#: themeoptions/redux/inc/extensions/import_export/extension_import_export.php:116
+#: themeoptions/theme_options.php:2797
+msgid "Import / Export"
+msgstr "Импорт / экспорт"
+
+#: themeoptions/redux/inc/extensions/customizer/extension_customizer.php:741
+msgid "Your current options will be replaced with the values of this preset.  Would you like to proceed?"
+msgstr "Ваши текущие параметры будут заменены значениями этого набора настроек. Хотите продолжить?"
+
+#: themeoptions/redux/inc/extensions/customizer/extension_customizer.php:740
+msgid "Are you sure?  Resetting will lose all custom values."
+msgstr "Вы уверены? Сброс удалит все индивидуальные настройки."
+
+#: themeoptions/redux/inc/extensions/customizer/extension_customizer.php:739
+msgid "You have changes that are not saved.  Would you like to save them now?"
+msgstr "Некоторые настройки не сохранены. Хотите сохранить их сейчас?"
+
+#: themeoptions/redux/inc/class.redux_helpers.php:425
+msgid "<code>%s</code> version <strong style=\"color:red\">%s</strong> is out of date. The core version is %s"
+msgstr "<code>%s</code> версия <strong style=\"color:red\">%s</strong> устарела. Версия ядра %s"
+
+#: lib/plugin-activate.php:49
+#: themeoptions/redux/inc/class.redux_admin_notices.php:111
+msgid "Dismiss"
+msgstr "Отклонить"
+
+#: themeoptions/redux/framework.php:2819
+msgid "Your panel has no fields. Nothing to save."
+msgstr "Ваша панель не имеет полей. Нечего сохранять."
+
+#: themeoptions/redux/framework.php:2730
+msgid "Invalid security credential.  Please reload the page and try again."
+msgstr "Неверные учетные данные безопасности. Перезагрузите страницу и повторите попытку."
+
+#: themeoptions/redux/framework.php:1723
+msgid "Hints"
+msgstr "Советы"
+
+#: themeoptions/redux/framework.php:1718
+msgid "Hints are tooltips that popup when %d the hint icon, offering addition information about the field in which they appear.  They can be %d d by using the link below."
+msgstr "Подсказки - это всплывающие подсказки, когда %d отображается значок подсказки, предлагающий дополнительную информацию о поле, в котором они появляются. Они могут быть %d d по ссылке ниже."
+
+#: themeoptions/redux/framework.php:1714
+msgid "clicking"
+msgstr "нажатие"
+
+#: themeoptions/redux/framework.php:1712
+msgid "moving the mouse over"
+msgstr "перемещение мыши по"
+
+#: themeoptions/redux/framework.php:1706
+msgid "Disable"
+msgstr "Отключить"
+
+#: themeoptions/redux/framework.php:1701
+msgid "Enable"
+msgstr "Включить"
+
+#: themeoptions/redux/framework.php:233 themeoptions/redux/framework.php:237
+msgid "Options"
+msgstr "Параметры"
+
+#: themeoptions/redux/framework.php:229
+msgid "Redux Framework"
+msgstr "Redux Framework"
+
+#: themeoptions/redux/framework.php:229
+msgid "Options panel created using %1$s"
+msgstr "Панель параметров, созданная с помощью %1$s"
+
+#: themeoptions/redux/core/panel.php:309
+msgid "<strong>Your panel has bundled outdated copies of Redux Framework template files</strong> &#8211; if you encounter functionality issues this could be the reason. Ensure you update or remove them."
+msgstr "<strong>На вашей панели имеются устаревшие копии файлов шаблонов Redux Framework </strong> &#8211;. Это может быть причиной возникновения проблем с функциональностью. Убедитесь, что вы обновили или удалили их."
+
+#: themeoptions/redux/core/panel.php:217
+msgid "warning(s) were found!"
+msgstr "обнаружены предупреждение(я)!"
+
+#: themeoptions/redux/core/panel.php:209
+msgid "error(s) were found!"
+msgstr "ошибка(и)!"
+
+#: themeoptions/redux/core/panel.php:201
+msgid "Settings have changed, you should save them!"
+msgstr "Настройки изменились, не забудьте их сохранить!"
+
+#: themeoptions/redux/core/panel.php:181
+msgid "Settings Saved!"
+msgstr "Настройки сохранены!"
+
+#: themeoptions/redux/core/panel.php:167
+msgid "Section Defaults Restored!"
+msgstr "Настройки сейкции востановлены по умолчанию!"
+
+#: themeoptions/redux/core/panel.php:153
+msgid "All Defaults Restored!"
+msgstr "Все настройки востановлены по умолчанию!"
+
+#: themeoptions/redux/core/panel.php:138
+msgid "Settings Imported!"
+msgstr "Настройки импортированы!"
+
+#: themeoptions/redux/core/panel.php:61
+msgid "Warning- This options panel will not work properly without javascript!"
+msgstr "Предупреждение. Эта панель параметров не будет работать должным образом без JavaScript!"
+
+#: themeoptions/redux/core/enqueue.php:489
+msgid "There was a problem with your action. Please try again or reload the page."
+msgstr "Возникла проблема с вашими действиями. Попробуйте еще раз или перезагрузите страницу."
+
+#: themeoptions/redux/core/enqueue.php:488
+msgid "There was an error saving. Here is the result of your action:"
+msgstr "При сохранении произошла ошибка. Вот результат ваших действий:"
+
+#: themeoptions/redux/core/enqueue.php:477
+msgid "Please Wait"
+msgstr "Подождите немного"
+
+#: themeoptions/redux/core/enqueue.php:470
+#: themeoptions/redux/inc/extensions/customizer/extension_customizer.php:706
+msgid "Your current options will be replaced with the values of this preset. Would you like to proceed?"
+msgstr "Ваши текущие параметры будут заменены значениями по умолчанию. Продолжить?"
+
+#: themeoptions/redux/core/enqueue.php:462
+msgid "Are you sure? Resetting will lose all custom values in this section."
+msgstr "Уверены ли вы? Сброс потеряет все пользовательские значения в этом разделе."
+
+#: themeoptions/redux/core/enqueue.php:454
+#: themeoptions/redux/inc/extensions/customizer/extension_customizer.php:705
+msgid "Are you sure? Resetting will lose all custom values."
+msgstr "Вы уверены? Сброс удалит все индивидуальные настройки."
+
+#: themeoptions/redux/core/enqueue.php:446
+#: themeoptions/redux/inc/extensions/customizer/extension_customizer.php:704
+msgid "You have changes that are not saved. Would you like to save them now?"
+msgstr "У вас есть несохраненные изменения. Хотите сохранить их сейчас?"
+
+#: themeoptions/options_assets/extensions/kad_slides/kad_slides/field_kad_slides.php:191
+msgid "Add %s"
+msgstr "Добавить %s"
+
+#: themeoptions/options_assets/extensions/kad_slides/kad_slides/field_kad_slides.php:140
+#: themeoptions/options_assets/extensions/kad_slides/kad_slides/field_kad_slides.php:188
+msgid "Delete Slide"
+msgstr "Удалить слайд"
+
+#: themeoptions/options_assets/extensions/kad_slides/kad_slides/field_kad_slides.php:127
+#: themeoptions/options_assets/extensions/kad_slides/kad_slides/field_kad_slides.php:175
+msgid "Slide Link"
+msgstr "Ссылка слайда"
+
+#: themeoptions/options_assets/extensions/kad_slides/kad_slides/field_kad_slides.php:52
+#: themeoptions/theme_options.php:615 themeoptions/theme_options.php:796
+msgid "Slide"
+msgstr "Слайд"
+
+#: themeoptions/options_assets/extensions/kad_icons/kad_icons/field_kad_icons.php:228
+msgid "Add Icon"
+msgstr "Добавить значок"
+
+#: themeoptions/options_assets/extensions/kad_icons/kad_icons/field_kad_icons.php:158
+#: themeoptions/options_assets/extensions/kad_icons/kad_icons/field_kad_icons.php:225
+msgid "Delete Icon"
+msgstr "Удалить значок"
+
+#: themeoptions/options_assets/extensions/kad_icons/kad_icons/field_kad_icons.php:148
+#: themeoptions/options_assets/extensions/kad_icons/kad_icons/field_kad_icons.php:216
+#: themeoptions/options_assets/extensions/kad_slides/kad_slides/field_kad_slides.php:131
+#: themeoptions/options_assets/extensions/kad_slides/kad_slides/field_kad_slides.php:180
+msgid "Open Link in New Tab/Window"
+msgstr "Открыть ссылку в новой вкладке/окне"
+
+#: themeoptions/options_assets/extensions/kad_icons/kad_icons/field_kad_icons.php:144
+#: themeoptions/options_assets/extensions/kad_icons/kad_icons/field_kad_icons.php:211
+msgid "Icon Link"
+msgstr "Ссылка значка"
+
+#: themeoptions/options_assets/extensions/kad_icons/kad_icons/field_kad_icons.php:143
+#: themeoptions/options_assets/extensions/kad_icons/kad_icons/field_kad_icons.php:209
+#: themeoptions/options_assets/extensions/kad_slides/kad_slides/field_kad_slides.php:126
+#: themeoptions/options_assets/extensions/kad_slides/kad_slides/field_kad_slides.php:173
+msgid "Description"
+msgstr "Описание"
+
+#: themeoptions/options_assets/extensions/kad_icons/kad_icons/field_kad_icons.php:142
+#: themeoptions/options_assets/extensions/kad_icons/kad_icons/field_kad_icons.php:207
+#: themeoptions/options_assets/extensions/kad_slides/kad_slides/field_kad_slides.php:125
+#: themeoptions/options_assets/extensions/kad_slides/kad_slides/field_kad_slides.php:171
+#: themeoptions/theme_options.php:1049
+msgid "Title"
+msgstr "Заголовок"
+
+#: themeoptions/options_assets/extensions/kad_icons/kad_icons/field_kad_icons.php:141
+#: themeoptions/options_assets/extensions/kad_icons/kad_icons/field_kad_icons.php:205
+#: themeoptions/options_assets/extensions/kad_slides/kad_slides/field_kad_slides.php:124
+#: themeoptions/options_assets/extensions/kad_slides/kad_slides/field_kad_slides.php:169
+msgid "URL"
+msgstr "URL"
+
+#: themeoptions/options_assets/extensions/kad_icons/kad_icons/field_kad_icons.php:121
+#: themeoptions/options_assets/extensions/kad_icons/kad_icons/field_kad_icons.php:186
+msgid "Select an Icon"
+msgstr "Выбрать значок"
+
+#: themeoptions/options_assets/extensions/kad_icons/kad_icons/field_kad_icons.php:112
+#: themeoptions/options_assets/extensions/kad_icons/kad_icons/field_kad_icons.php:180
+msgid "Upload Icon"
+msgstr "Добавить значок"
+
+#: themeoptions/options_assets/extensions/kad_icons/kad_icons/field_kad_icons.php:57
+#: themeoptions/options_assets/extensions/kad_slides/kad_slides/field_kad_slides.php:57
+msgid "New %s"
+msgstr "Новый %s"
+
+#: themeoptions/options_assets/extensions/kad_icons/kad_icons/field_kad_icons.php:52
+msgid "Icon"
+msgstr "Значок"
+
+#: templates/similarblog-carousel.php:6
+msgid "Similar Posts"
+msgstr "Похожие записи"
+
+#: templates/home/blog-home.php:6
+msgid "Latest from the Blog"
+msgstr "Самое новое из блога"
+
+#: templates/header.php:72
+msgid "No menu assigned"
+msgstr "Меню не назначено"
+
+#: templates/entry-meta.php:5
+msgid "By"
+msgstr "От"
+
+#: templates/entry-meta-subhead.php:6
+msgid "with"
+msgstr "с"
+
+#: templates/entry-meta-subhead.php:5
+msgid "on"
+msgstr " "
+
+#: templates/entry-meta-subhead.php:3
+msgid "by"
+msgstr "автор"
+
+#: templates/content-fullpost.php:132 templates/content-fullpostfull.php:132
+#: templates/content-single.php:148 templates/content-singleportfolio.php:214
+msgid "Pages:"
+msgstr "Страницы:"
+
+#: templates/comments.php:78
+msgid "Submit Comment"
+msgstr "Добавить комментарий"
+
+#: templates/comments.php:69
+msgid "Comment"
+msgstr "Комментарий"
+
+#: templates/comments.php:65
+msgid "Website"
+msgstr "Сайт"
+
+#: templates/comments.php:63
+msgid "Email (will not be published)"
+msgstr "Эл.почта (не публикуется)"
+
+#: templates/comments.php:61
+msgid "Name"
+msgstr "Имя"
+
+#: templates/comments.php:77
+msgid "Leave a Reply to %s"
+msgstr "Добавить комментарий для %s"
+
+#: templates/comments.php:76
+msgid "Leave a Reply"
+msgstr "Оставьте ответ"
+
+#: templates/comments.php:34 templates/comments.php:51
+msgid "Comments are closed."
+msgstr "Обсуждение закрыто."
+
+#: templates/comments.php:21
+msgid "Newer comments &rarr;"
+msgstr "Следующие комментарии &rarr;"
+
+#: templates/comments.php:18
+msgid "&larr; Older comments"
+msgstr "&larr; Предыдущие комментарии"
+
+#: templates/comments.php:9
+msgid "One Response "
+msgid_plural "%1$s Responses "
+msgstr[0] "Один ответ"
+msgstr[1] "%1$s ответов"
+msgstr[2] "%1$s ответов"
+
+#: templates/comment.php:15
+msgid "(Edit)"
+msgstr "(Изменить)"
+
+#: templates/bottomportfolio-carousel.php:142
+msgid "Recent Projects"
+msgstr "Свежие проекты"
+
+#: templates/account-sidebar.php:21
+msgid "Logout"
+msgstr "Выйти"
+
+#: templates/account-sidebar.php:18
+msgid "Edit Account"
+msgstr "Изменить учётную запись"
+
+#: template-portfolio-grid.php:156 templates/home/portfolio-carousel.php:233
+msgid "Sorry, no portfolio entries found."
+msgstr "Извините, записей портфолио не найдено."
+
+#: template-blog-grid.php:59 template-blog.php:77
+#: templates/home/blog-home.php:51 templates/home/latest-slider.php:60
+#: templates/recentblog-carousel.php:39 templates/similarblog-carousel.php:45
+msgid "Sorry, no blog entries found."
+msgstr "Приносим извинения, записи блога не найдены."
+
+#: templates/bottomportfolio-carousel.php:166
+#: templates/content-loop-portfolio.php:22
+#: templates/home/portfolio-carousel.php:188
+msgid "View details"
+msgstr "Посмотреть деталей"
+
+#: searchform.php:3
+msgid "Search"
+msgstr "Поиск"
+
+#: product-searchform.php:26 searchform.php:2
+msgid "Search for:"
+msgstr "Поиск:"
+
+#: product-searchform.php:27
+msgid "Search for products"
+msgstr "Искать среди товаров:"
+
+#: lib/widgets.php:761
+msgid "Text/Caption (optional)"
+msgstr "Текст/Подпись (необязательно)"
+
+#: lib/widgets.php:757
+msgid "Image Link (optional)"
+msgstr "Ссылка на изображение (необязательно)"
+
+#: lib/widgets.php:753
+msgid "Image opens in"
+msgstr "Изображение откроется в"
+
+#: lib/widgets.php:750
+#: themeoptions/options_assets/extensions/kad_slides/kad_slides/field_kad_slides.php:111
+#: themeoptions/options_assets/extensions/kad_slides/kad_slides/field_kad_slides.php:162
+#: themeoptions/redux/inc/fields/background/field_background.php:316
+#: themeoptions/redux/inc/fields/media/field_media.php:208
+msgid "Upload"
+msgstr "Загрузить"
+
+#: lib/widgets.php:748
+msgid "Image URL"
+msgstr "URL изображения"
+
+#: lib/widgets.php:736
+msgid "No Link"
+msgstr "Нет ссылки"
+
+#: lib/widgets.php:735
+msgid "Same Window"
+msgstr "Текущее окно"
+
+#: lib/widgets.php:734
+msgid "New Window"
+msgstr "Новое окно"
+
+#: lib/widgets.php:733
+msgid "Lightbox"
+msgstr "Лайтбокс"
+
+#: lib/widgets.php:677
+msgid "Pinnacle: Image"
+msgstr "Pinnacle: Изображение"
+
+#: lib/widgets.php:676
+msgid "This allows for an image and a simple about text."
+msgstr "Позволяет разместить изображение и краткое текстовое описание."
+
+#: lib/widgets.php:664
+msgid "Number of images to show:"
+msgstr "Количество отображаемых изображений:"
+
+#: lib/widgets.php:661
+msgid "If Portfolio - Choose Type (Optional):"
+msgstr "Если портфолио - выберите тип (опция):"
+
+#: lib/widgets.php:658
+msgid "If Post - Choose Category (Optional):"
+msgstr "Если запись - выберите категорию (опция):"
+
+#: lib/widgets.php:655
+msgid "Portfolio"
+msgstr "Портфолио"
+
+#: lib/widgets.php:654
+msgid "Blog Posts"
+msgstr "Записи блога"
+
+#: lib/widgets.php:652
+msgid "Grid Choice:"
+msgstr "Выбор сетки:"
+
+#: lib/widgets.php:549
+msgid "Pinnacle: Post Grid"
+msgstr "Pinnacle: Сетка записей"
+
+#: lib/widgets.php:548
+msgid "This shows a grid of featured images from recent posts or portfolio items"
+msgstr "Это показывает сетку изображений записи из последних сообщений или элементов портфолио."
+
+#: lib/widgets.php:533
+msgid "Limit to Catagory (Optional):"
+msgstr "Ограничить категорией (опция):"
+
+#: lib/widgets.php:530
+msgid "Number of posts to show:"
+msgstr "Количество записей для показа:"
+
+#: lib/widgets.php:472 templates/recentblog-carousel.php:7
+msgid "Recent Posts"
+msgstr "Свежие записи"
+
+#: lib/widgets.php:459
+msgid "Pinnacle: Recent Posts"
+msgstr "Pinnacle: свежие посты"
+
+#: lib/widgets.php:458
+msgid "This shows the most recent posts on your site with a thumbnail"
+msgstr "Показывает наиболее свежие записи на вашем сайте с миниатюрой"
+
+#: lib/widgets.php:443
+msgid "RSS:"
+msgstr "RSS:"
+
+#: lib/widgets.php:439
+msgid "VK:"
+msgstr "VK:"
+
+#: lib/widgets.php:435
+msgid "Tumblr:"
+msgstr "Tumblr:"
+
+#: lib/widgets.php:431
+msgid "Linkedin:"
+msgstr "Linkedin:"
+
+#: lib/widgets.php:427
+msgid "Dribbble:"
+msgstr "Dribbble:"
+
+#: lib/widgets.php:423
+msgid "Pinterest:"
+msgstr "Pinterest:"
+
+#: lib/widgets.php:419
+msgid "Youtube:"
+msgstr "YouTube:"
+
+#: lib/widgets.php:415
+msgid "Vimeo:"
+msgstr "Vimeo:"
+
+#: lib/widgets.php:411
+msgid "Flickr:"
+msgstr "Flickr:"
+
+#: lib/widgets.php:407
+msgid "GooglePlus:"
+msgstr "GooglePlus:"
+
+#: lib/widgets.php:403
+msgid "Instagram:"
+msgstr "Instagram:"
+
+#: lib/widgets.php:399
+msgid "Twitter:"
+msgstr "Twitter:"
+
+#: lib/widgets.php:395
+msgid "Facebook:"
+msgstr "Facebook:"
+
+#: lib/widgets.php:296
+msgid "Pinnacle: Social Links"
+msgstr "Pinnacle: Ссылки соцсетей"
+
+#: lib/widgets.php:295
+msgid "Simple way to add Social Icons"
+msgstr "Простой способ добавить значки соцсетей"
+
+#: lib/widgets.php:283
+msgid "Email:"
+msgstr "Email:"
+
+#: lib/widgets.php:279
+msgid "Fixed Telephone:"
+msgstr "Стационарный телефон:"
+
+#: lib/widgets.php:275
+msgid "Mobile Telephone:"
+msgstr "Мобильный телефон:"
+
+#: lib/widgets.php:271
+msgid "Zipcode/Postal Code:"
+msgstr "Почтовый индекс:"
+
+#: lib/widgets.php:267
+msgid "State/Region:"
+msgstr "Область/Регион:"
+
+#: lib/widgets.php:263
+msgid "City/Locality:"
+msgstr "Город:"
+
+#: lib/widgets.php:259
+msgid "Street Address:"
+msgstr "Адрес:"
+
+#: lib/widgets.php:255
+msgid "Name:"
+msgstr "Имя:"
+
+#: lib/widgets.php:251
+msgid "Company Name:"
+msgstr "Название компании:"
+
+#: lib/widgets.php:247 lib/widgets.php:391 lib/widgets.php:527
+#: lib/widgets.php:649
+msgid "Title:"
+msgstr "Заголовок:"
+
+#: lib/widgets.php:179
+msgid "Pinnacle: Contact/Vcard"
+msgstr "Virtue: Контакт/vCard"
+
+#: lib/widgets.php:178
+msgid "Use this widget to add a Vcard to your site"
+msgstr "Используйте это виджет для добавления VCard на ваш сайт"
+
+#: lib/widgets.php:101
+msgid "Footer Column 4"
+msgstr "Столбец подвала 4"
+
+#: lib/widgets.php:91 lib/widgets.php:132
+msgid "Footer Column 3"
+msgstr "Столбец подвала 3"
+
+#: lib/widgets.php:81 lib/widgets.php:122 lib/widgets.php:153
+msgid "Footer Column 2"
+msgstr "Столбец подвала 2"
+
+#: lib/widgets.php:71 lib/widgets.php:112 lib/widgets.php:143
+msgid "Footer Column 1"
+msgstr "Столбец подвала 1"
+
+#: lib/widgets.php:48
+msgid "Topbar Widget"
+msgstr "Виджет верхней панели"
+
+#: lib/widgets.php:6 lib/widgets.php:58
+msgid "Primary Sidebar"
+msgstr "Основная область виджетов"
+
+#: lib/utils.php:24
+msgid "Not Found"
+msgstr "Не найдено"
+
+#. translators: %s is the search term
+#: lib/utils.php:22
+msgid "Search Results for %s"
+msgstr "Результаты поиска по запросу %s"
+
+#: lib/plugin-activate.php:177
+msgid "All plugins installed and activated successfully. %s"
+msgstr "Все плагины успешно установлены и активированы. %s"
+
+#: lib/plugin-activate.php:174
+msgid "Activate installed plugin"
+msgid_plural "Activate installed plugins"
+msgstr[0] "Активируйте установленный плагин"
+msgstr[1] "Активируйте установленные плагины"
+msgstr[2] "Активируйте установленные плагины"
+
+#: lib/class-tgm-plugin-activation.php:306 lib/plugin-activate.php:164
+msgid "Something went wrong with the plugin API."
+msgstr "Что-то пошло не так с API плагина."
+
+#: lib/metaboxes.php:397
+msgid "Sidebar Options"
+msgstr "Параметры области виджетов"
+
+#: lib/metaboxes.php:392
+msgid "Two Column"
+msgstr "Два столбца"
+
+#: lib/metaboxes.php:391 themeoptions/theme_options.php:1307
+#: themeoptions/theme_options.php:1416
+msgid "Three Column"
+msgstr "Три столбца"
+
+#: lib/metaboxes.php:390 themeoptions/theme_options.php:1308
+#: themeoptions/theme_options.php:1417
+msgid "Four Column"
+msgstr "Четыре столбца"
+
+#: lib/metaboxes.php:385
+msgid "Choose Column Layout:"
+msgstr "Выберете макет колонок:"
+
+#: lib/metaboxes.php:349
+msgid "Blog Grid Options"
+msgstr "Настройки сетки блога"
+
+#: lib/metaboxes.php:343 themeoptions/theme_options.php:2253
+msgid "Full"
+msgstr "По ширине"
+
+#: lib/metaboxes.php:342
+msgid "Summary"
+msgstr "Резюме"
+
+#: lib/metaboxes.php:337
+msgid "Display Post Content as:"
+msgstr "Отобразить содержимое записи как:"
+
+#: lib/metaboxes.php:313 lib/metaboxes.php:361
+msgid "How Many Posts Per Page"
+msgstr "Сколько записей на странице"
+
+#: lib/metaboxes.php:308 lib/metaboxes.php:356
+msgid "Select all blog posts or a specific category to show"
+msgstr "Выберите все записей или категорию записей для отображения"
+
+#: lib/metaboxes.php:307 lib/metaboxes.php:355
+msgid "Blog Category"
+msgstr "Категория блога"
+
+#: lib/metaboxes.php:301
+msgid "Blog List Options"
+msgstr "Параметры списка блога"
+
+#: lib/metaboxes.php:293
+msgid "ex. Similar Posts"
+msgstr "напр., Похожие записи"
+
+#: lib/metaboxes.php:292
+msgid "Carousel Title"
+msgstr "Заголовок карусели"
+
+#: lib/metaboxes.php:288 themeoptions/theme_options.php:1947
+msgid "Yes - Display Similar Posts"
+msgstr "Да - отображать похожие записи"
+
+#: lib/metaboxes.php:287 themeoptions/theme_options.php:1946
+msgid "Yes - Display Recent Posts"
+msgstr "Да - отображать свежие записи"
+
+#: lib/metaboxes.php:281
+msgid "Display a carousel with similar or recent posts?"
+msgstr "Отображать карусель похожих или свежих записей?"
+
+#: lib/metaboxes.php:280
+msgid "Posts Carousel"
+msgstr "Карусель записей"
+
+#: lib/metaboxes.php:270
+msgid "Display an author info box?"
+msgstr "Отображать информацию об авторе?"
+
+#: lib/metaboxes.php:269
+msgid "Author Info"
+msgstr "Инфо об авторе"
+
+#: lib/metaboxes.php:262 lib/metaboxes.php:413
+msgid "Choose Sidebar"
+msgstr "Выберите боковую панель"
+
+#: lib/metaboxes.php:258 lib/metaboxes.php:275 lib/metaboxes.php:286
+#: lib/metaboxes.php:408 themeoptions/theme_options.php:1712
+msgid "No"
+msgstr "Нет"
+
+#: lib/metaboxes.php:257 lib/metaboxes.php:276 lib/metaboxes.php:409
+#: themeoptions/theme_options.php:1713
+msgid "Yes"
+msgstr "Да"
+
+#: lib/metaboxes.php:252 lib/metaboxes.php:404
+msgid "Choose if layout is fullwidth or sidebar"
+msgstr "Выберите, тип страницы: во всю ширину или с боковой панелью"
+
+#: lib/metaboxes.php:251 lib/metaboxes.php:403
+msgid "Display Sidebar?"
+msgstr "Показать боковую панель?"
+
+#: lib/metaboxes.php:246
+msgid "Post Options"
+msgstr "Параметры записи"
+
+#: lib/metaboxes.php:228
+msgid "Default is: 848 or 1140 on fullwidth posts (Note: just input number, example: 650)"
+msgstr "По умолчанию: 848 или 1170 в полноразмерных постах (Внимание: просто введите значение, например: 650)"
+
+#: lib/metaboxes.php:227
+msgid "Max Image Width"
+msgstr "Максимальная ширина Изображения"
+
+#: lib/metaboxes.php:223 themeoptions/theme_options.php:488
+#: themeoptions/theme_options.php:678 themeoptions/theme_options.php:1997
+#: themeoptions/theme_options.php:2030 themeoptions/theme_options.php:2063
+msgid "None"
+msgstr "Отсутствует"
+
+#: lib/metaboxes.php:222 themeoptions/theme_options.php:1998
+msgid "Image"
+msgstr "Изображение"
+
+#: lib/metaboxes.php:221 lib/metaboxes.php:238
+msgid "Image Post Default"
+msgstr "Настройки записей блога с изображениями по умолчанию"
+
+#: lib/metaboxes.php:216
+msgid "Head Content"
+msgstr "Содержимое заголовка страницы"
+
+#: lib/metaboxes.php:210
+msgid "Image Post Options"
+msgstr "Опции записи с изображениями"
+
+#: lib/metaboxes.php:204 lib/metaboxes.php:241
+#: themeoptions/theme_options.php:1967 themeoptions/theme_options.php:1985
+#: themeoptions/theme_options.php:2017 themeoptions/theme_options.php:2051
+msgid "Landscape Image"
+msgstr "Пейзажное изображение"
+
+#: lib/metaboxes.php:203 lib/metaboxes.php:240
+#: themeoptions/theme_options.php:1966 themeoptions/theme_options.php:1984
+#: themeoptions/theme_options.php:2016 themeoptions/theme_options.php:2050
+msgid "Portrait Image"
+msgstr "Портретное изображение"
+
+#: lib/metaboxes.php:202 lib/metaboxes.php:239
+#: themeoptions/theme_options.php:1965 themeoptions/theme_options.php:1983
+#: themeoptions/theme_options.php:2015 themeoptions/theme_options.php:2049
+msgid "Text"
+msgstr "Текст"
+
+#: lib/metaboxes.php:201
+msgid "Standard Post Default"
+msgstr "Стандартная запись по умолчанию"
+
+#: lib/metaboxes.php:196 lib/metaboxes.php:233
+msgid "Post Summary"
+msgstr "Краткое содержание записи"
+
+#: lib/metaboxes.php:191
+msgid "Standard Post Options"
+msgstr "Опции стандартной записи"
+
+#: lib/metaboxes.php:35 lib/metaboxes.php:106
+msgid "All Blog Posts"
+msgstr "Все записи блога"
+
+#: lib/metaboxes.php:90 lib/metaboxes.php:318 lib/metaboxes.php:366
+msgid "All"
+msgstr "Все"
+
+#: lib/init.php:17
+msgid "Footer Navigation"
+msgstr "Навигация в подвале"
+
+#: lib/init.php:16
+msgid "Topbar Navigation"
+msgstr "Навигация в верхней панели"
+
+#: lib/init.php:15
+msgid "Primary Navigation"
+msgstr "Основная навигация"
+
+#: lib/custom.php:467 templates/entry-post-links.php:6
+msgid "Next Post"
+msgstr "Следующая запись"
+
+#: lib/custom.php:467 templates/entry-post-links.php:3
+msgid "Previous Post"
+msgstr "Предыдущая запись"
+
+#: lib/custom.php:73
+msgid "The Image could not be loaded."
+msgstr "Изображение не может быть загружено."
+
+#: lib/custom.php:72
+msgid "of"
+msgstr "из"
+
+#: lib/custom.php:71
+msgid "Loading..."
+msgstr "Загрузка…"
+
+#: lib/comments.php:49 templates/comment.php:19
+msgid "Your comment is awaiting moderation."
+msgstr "Ваш комментарий ожидает проверки."
+
+#: lib/comments.php:43
+msgid "| (Edit)"
+msgstr "| (Изменить)"
+
+#: lib/comments.php:38 templates/comment.php:11
+msgid "%1$s"
+msgstr "%1$s"
+
+#: lib/metaboxes.php:10 lib/metaboxes.php:256 lib/metaboxes.php:274
+#: lib/metaboxes.php:285 themeoptions/redux/framework.php:1850
+#: themeoptions/theme_options.php:972 themeoptions/theme_options.php:985
+#: themeoptions/theme_options.php:999
+msgid "Default"
+msgstr "По умолчанию"
+
+#: themeoptions/options_assets/extensions/kad_icons/kad_icons/field_kad_icons.php:118
+#: themeoptions/options_assets/extensions/kad_icons/kad_icons/field_kad_icons.php:182
+#: themeoptions/options_assets/extensions/kad_slides/kad_slides/field_kad_slides.php:118
+#: themeoptions/options_assets/extensions/kad_slides/kad_slides/field_kad_slides.php:164
+#: themeoptions/redux/inc/fields/background/field_background.php:323
+#: themeoptions/redux/inc/fields/media/field_media.php:215
+#: themeoptions/redux/inc/fields/multi_text/field_multi_text.php:76
+#: themeoptions/redux/inc/fields/multi_text/field_multi_text.php:83
+#: themeoptions/redux/inc/fields/multi_text/field_multi_text.php:93
+msgid "Remove"
+msgstr "Удалить"
+
+#: lib/cleanup.php:81 lib/custom.php:150
+#: templates/content-post-grid-carousel.php:36
+msgid "Read More"
+msgstr "Читайте далее"
+
+#: lib/class-tgm-plugin-activation.php:3409
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Установка плагина %1$s (%2$d/%3$d)"
+
+#: lib/class-tgm-plugin-activation.php:3408
+msgid "All installations have been completed."
+msgstr "Все установки завершены."
+
+#: lib/class-tgm-plugin-activation.php:3407
+msgid "%1$s installed successfully."
+msgstr "%1$s успешно установлен."
+
+#: lib/class-tgm-plugin-activation.php:3406
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr "Начался процесс установки, он может занять некоторое время, особенно на медленных серверах, будьте терпеливы."
+
+#: lib/class-tgm-plugin-activation.php:3402
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Установка и активация плагина %1$s (%2$d/%3$d)"
+
+#: lib/class-tgm-plugin-activation.php:3401
+msgid "All installations and activations have been completed."
+msgstr "Все установки и активации были завершены."
+
+#: lib/class-tgm-plugin-activation.php:3400
+#: lib/class-tgm-plugin-activation.php:3407
+msgid "Hide Details"
+msgstr "Скрыть детали"
+
+#: lib/class-tgm-plugin-activation.php:3400
+#: lib/class-tgm-plugin-activation.php:3407
+msgid "Show Details"
+msgstr "Показать подробности"
+
+#: lib/class-tgm-plugin-activation.php:3400
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s установлен и активирован успешно."
+
+#: lib/class-tgm-plugin-activation.php:3399
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr "Началась установка и активация. Этот процесс может занять некоторое время, особенно на медленных серверах, будьте терпеливы."
+
+#: lib/class-tgm-plugin-activation.php:3395
+msgid "The installation of %1$s failed."
+msgstr "Установка %1$s не удалась."
+
+#: lib/class-tgm-plugin-activation.php:3394
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "Возникла ошибка при установке %1$s: <strong>%2$s</strong>."
+
+#: lib/class-tgm-plugin-activation.php:3051
+msgid "Plugin activation failed."
+msgstr "Активация плагина не удалась."
+
+#: lib/class-tgm-plugin-activation.php:2855
+msgid "No plugins are available to be activated at this time."
+msgstr "Сейчас нет доступных плагинов для активации."
+
+#: lib/class-tgm-plugin-activation.php:2730
+msgid "No plugins are available to be installed at this time."
+msgstr "Сейчас нет доступных плагинов для установки."
+
+#: lib/class-tgm-plugin-activation.php:2669
+msgid "Activate"
+msgstr "Активировать"
+
+#: lib/class-tgm-plugin-activation.php:2660
+msgid "Install"
+msgstr "Установить"
+
+#: lib/class-tgm-plugin-activation.php:2520
+msgid "Status"
+msgstr "Статус"
+
+#: lib/class-tgm-plugin-activation.php:2515
+msgid "Type"
+msgstr "Тип"
+
+#: lib/class-tgm-plugin-activation.php:2514
+msgid "Source"
+msgstr "Источник"
+
+#: lib/class-tgm-plugin-activation.php:2513
+msgid "Plugin"
+msgstr "Плагин"
+
+#: lib/class-tgm-plugin-activation.php:2497
+msgid "No plugins to install, update or activate. <a href=\"%1$s\">Return to the Dashboard</a>"
+msgstr "Нет плагинов для установки, обновления или активации. <a href=\"%1$s\">Вернуться в консоль</a>"
+
+#: lib/class-tgm-plugin-activation.php:2556
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Activate %2$s"
+msgstr "Aктивировать %2$s"
+
+#: lib/class-tgm-plugin-activation.php:2544
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Install %2$s"
+msgstr "Установить %2$s"
+
+#: lib/class-tgm-plugin-activation.php:2269
+msgid "Installed But Not Activated"
+msgstr "Установлен, но не активирован"
+
+#: lib/class-tgm-plugin-activation.php:2265
+msgid "Not Installed"
+msgstr "Не установлен"
+
+#: lib/class-tgm-plugin-activation.php:2221
+msgid "Recommended"
+msgstr "Рекомендуется"
+
+#: lib/class-tgm-plugin-activation.php:2218
+msgid "Required"
+msgstr "Требуется"
+
+#: lib/class-tgm-plugin-activation.php:2238
+msgid "WordPress Repository"
+msgstr "Репозиторий WordPress"
+
+#: lib/class-tgm-plugin-activation.php:2246
+msgid "Pre-Packaged"
+msgstr "Предварительно упакованный"
+
+#: lib/class-tgm-plugin-activation.php:2242
+msgid "External Source"
+msgstr "Внешний источник"
+
+#: lib/class-tgm-plugin-activation.php:1115
+#: lib/class-tgm-plugin-activation.php:2869
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr "и"
+
+#: lib/class-tgm-plugin-activation.php:372
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "Действие не требовалось. Плагин %1$s уже активен."
+
+#: lib/class-tgm-plugin-activation.php:930
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr "Пакет удаленного плагина состоит из нескольких файлов, но файлы не упакованы в папку."
+
+#: lib/class-tgm-plugin-activation.php:926
+#: lib/class-tgm-plugin-activation.php:930
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr "Свяжитесь с поставщиком плагина и попросите его упаковать плагин в соответствии с рекомендациями WordPress."
+
+#: lib/class-tgm-plugin-activation.php:926
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr "В пакете удаленного плагина нет папки с нужным ярлыком и переименование не помогло."
+
+#: lib/class-tgm-plugin-activation.php:811
+#: lib/class-tgm-plugin-activation.php:3470
+msgid "Return to the Dashboard"
+msgstr "Вернуться в консоль"
+
+#: lib/class-tgm-plugin-activation.php:375
+msgid "Dismiss this notice"
+msgstr "Отклонить это уведомление"
+
+#: lib/class-tgm-plugin-activation.php:374
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Все плагины успешно установлены и активированы. %1$s"
+
+#: lib/class-tgm-plugin-activation.php:371
+#: lib/class-tgm-plugin-activation.php:2873
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] "Следующий плагин был успешно активирован:"
+msgstr[1] "Следующие плагина были успешно активированы:"
+msgstr[2] "Следующих плагинов были успешно активированы:"
+
+#: lib/class-tgm-plugin-activation.php:370
+#: lib/class-tgm-plugin-activation.php:3052 lib/plugin-activate.php:176
+msgid "Plugin activated successfully."
+msgstr "Плагин успешно активирован."
+
+#: lib/class-tgm-plugin-activation.php:369
+msgid "Return to the dashboard"
+msgstr "Вернуться в консоль"
+
+#: lib/class-tgm-plugin-activation.php:368 lib/plugin-activate.php:175
+msgid "Return to Required Plugins Installer"
+msgstr "Вернуться к установке требуемых плагинов"
+
+#: lib/class-tgm-plugin-activation.php:362
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] "Начать активацию плагина"
+msgstr[1] "Начать активацию плагинов"
+msgstr[2] "Начать активацию плагинов"
+
+#: lib/class-tgm-plugin-activation.php:352 lib/plugin-activate.php:173
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "Начать установку плагина"
+msgstr[1] "Начать установку плагинов"
+msgstr[2] "Начать установку плагинов"
+
+#: lib/plugin-activate.php:172
+msgid "Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated."
+msgid_plural "Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated."
+msgstr[0] ""
+"Просим прощения, но у вас нет прав для обновления %s плагина.\n"
+"Свяжитесь с администратором для помощи в установке."
+msgstr[1] ""
+"Просим прощения, но у вас нет прав для обновления %s плагинов.\n"
+"Свяжитесь с администратором для помощи в установке."
+msgstr[2] ""
+"Просим прощения, но у вас нет прав для обновления %s плагинов.\n"
+"Свяжитесь с администратором для помощи в установке."
+
+#: lib/class-tgm-plugin-activation.php:322 lib/plugin-activate.php:171
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] "Для обеспечения максимальной совместимости с данной темой необходимо обновить следующий плагин до последней версии: %1$s."
+msgstr[1] "Для обеспечения максимальной совместимости с данной темой необходимо обновить следующие плагина до последней версии: %1$s."
+msgstr[2] "Для обеспечения максимальной совместимости с данной темой необходимо обновить следующих плагинов до последней версии: %1$s."
+
+#: lib/plugin-activate.php:170
+msgid "Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated."
+msgid_plural "Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated."
+msgstr[0] ""
+"Просим прощения, но у вас нет прав для активации %s плагина.\n"
+"Свяжитесь с администратором для помощи в установке."
+msgstr[1] ""
+"Просим прощения, но у вас нет прав для активации %s плагинов.\n"
+"Свяжитесь с администратором для помощи в установке."
+msgstr[2] ""
+"Просим прощения, но у вас нет прав для активации %s плагинов.\n"
+"Свяжитесь с администратором для помощи в установке."
+
+#: lib/class-tgm-plugin-activation.php:342 lib/plugin-activate.php:169
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] "Следующий рекомендуемый плагин в настоящее время неактивен: %1$s."
+msgstr[1] "Следующие рекомендуемые плагины в настоящее время неактивны: %1$s."
+msgstr[2] "Следующие рекомендуемые плагины в настоящее время неактивны: %1$s."
+
+#: lib/class-tgm-plugin-activation.php:337 lib/plugin-activate.php:168
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] "Следующий требуемый плагин в настоящее время не активен: %1$s."
+msgstr[1] "Следующие требуемые плагины в настоящее время не активны: %1$s."
+msgstr[2] "Следующие требуемые плагины в настоящее время не активны: %1$s."
+
+#: lib/plugin-activate.php:167
+msgid "Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed."
+msgid_plural "Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed."
+msgstr[0] ""
+"Просим прощения, но у вас нет прав для установки %s плагина.\n"
+"Свяжитесь с администратором для помощи в установке."
+msgstr[1] ""
+"Просим прощения, но у вас нет прав для установки %s плагинов.\n"
+"Свяжитесь с администратором для помощи в установке."
+msgstr[2] ""
+"Просим прощения, но у вас нет прав для установки %s плагинов.\n"
+"Свяжитесь с администратором для помощи в установке."
+
+#: lib/class-tgm-plugin-activation.php:312
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] "Для этой темы рекомендуется следующий плагин: %1$s."
+msgstr[1] "Для этой темы рекомендуются следующие плагины: %1$s."
+msgstr[2] "Для этой темы рекомендуются следующие плагины: %1$s."
+
+#: lib/class-tgm-plugin-activation.php:307 lib/plugin-activate.php:165
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] "Эта тема требует следующий плагин: %1$s."
+msgstr[1] "Эта тема требует следующие плагины: %1$s."
+msgstr[2] "Эта тема требует следующие плагины: %1$s."
+
+#: lib/class-tgm-plugin-activation.php:305 lib/plugin-activate.php:163
+msgid "Installing Plugin: %s"
+msgstr "Установка плагина: %s"
+
+#: lib/class-tgm-plugin-activation.php:304 lib/plugin-activate.php:162
+msgid "Install Plugins"
+msgstr "Установить плагины"
+
+#: lib/class-tgm-plugin-activation.php:303 lib/plugin-activate.php:161
+msgid "Install Required Plugins"
+msgstr "Установить необходимыe плагины"
+
+#: lib/authorbox.php:69
+msgid "Latest posts from"
+msgstr "Последние записи от"
+
+#: lib/authorbox.php:52
+msgid "on Instagram"
+msgstr "на Instagram"
+
+#: lib/authorbox.php:48
+msgid "on Pinterest"
+msgstr "на Pinterest"
+
+#: lib/authorbox.php:44
+msgid "on Dribbble"
+msgstr "на Dribbble"
+
+#: lib/authorbox.php:40
+msgid "on linkedin"
+msgstr "на linkedin"
+
+#: lib/authorbox.php:36
+msgid "on Vimeo"
+msgstr "на Vimeo"
+
+#: lib/authorbox.php:32
+msgid "on Flickr"
+msgstr "на Flickr"
+
+#: lib/authorbox.php:28
+msgid "on YouTube"
+msgstr "на YouTube"
+
+#: lib/authorbox.php:24
+msgid "on Google Plus"
+msgstr "на Google Plus"
+
+#: lib/authorbox.php:20
+msgid "on Twitter"
+msgstr "на Twitter"
+
+#: lib/authorbox.php:16
+msgid "on Facebook"
+msgstr "на Facebook"
+
+#: lib/authorbox.php:13 lib/authorbox.php:16 lib/authorbox.php:20
+#: lib/authorbox.php:24 lib/authorbox.php:28 lib/authorbox.php:32
+#: lib/authorbox.php:36 lib/authorbox.php:40 lib/authorbox.php:44
+#: lib/authorbox.php:48 lib/authorbox.php:52
+msgid "Follow"
+msgstr "Подписаться"
+
+#: lib/authorbox.php:7 lib/utils.php:16 themeoptions/theme_options.php:492
+msgid "Latest Posts"
+msgstr "Последние записи"
+
+#: lib/authorbox.php:6
+msgid "About Author"
+msgstr "Об авторе"
+
+#: archive.php:83 front-page.php:160 home.php:54 index.php:26 search.php:44
+#: taxonomy-portfolio-type.php:113 template-blog-grid.php:71
+#: template-blog.php:89 template-portfolio-grid.php:166
+msgid "Newer posts &rarr;"
+msgstr "Следующие записи &rarr;"
+
+#: archive.php:82 front-page.php:159 home.php:53 index.php:25 search.php:43
+#: taxonomy-portfolio-type.php:112 template-blog-grid.php:70
+#: template-blog.php:88 template-portfolio-grid.php:165
+msgid "&larr; Older posts"
+msgstr "&larr; Предыдущие записи"
+
+#: archive.php:42 home.php:26 index.php:10 search.php:9
+#: taxonomy-portfolio-type.php:78
+msgid "Sorry, no results were found."
+msgstr "Приносим извинения, результаты не найдены."
+
+#: 404.php:15
+msgid "You can return back to the site's homepage and see if you can find what you are looking for or use the search form below."
+msgstr "Вы можете вернуться на главную страницу сайта, возможно вы найдете то, что ищете, или же используйте форму поиска ниже."
+
+#: 404.php:13
+msgid "incorrect permalink settings"
+msgstr "неправильные настройки постоянной ссылки"
+
+#: 404.php:12
+msgid "an out-of-date link"
+msgstr "устаревшая ссылка"
+
+#: 404.php:11
+msgid "a mistyped address"
+msgstr "ошибочный адрес"
+
+#: 404.php:9
+msgid "It looks like this was the result of either:"
+msgstr "Похоже, что это явилось результатом одного из:"
+
+#: 404.php:7
+msgid "Sorry, but the page you were trying to view does not exist."
+msgstr "Приносим извинения, но страница, которую вы пытаетесь просмотреть, не существует."
+
+#. Author URI of the theme
+#: style.css
+#, gp-priority: low
+msgid "https://www.kadencewp.com/"
+msgstr "https://www.kadencewp.com/"
+
+#. Author of the theme
+#: style.css
+#, gp-priority: low
+msgid "Kadence WP"
+msgstr "Kadence WP"
+
+#. Theme URI of the theme
+#: style.css
+#, gp-priority: low
+msgid "https://kadencewp.com/product/pinnacle-free-theme/"
+msgstr "https://kadencewp.com/product/pinnacle-free-theme/"

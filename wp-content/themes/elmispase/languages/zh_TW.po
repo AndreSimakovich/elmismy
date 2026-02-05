@@ -1,0 +1,876 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Elmispase\n"
+"POT-Creation-Date: 2014-06-16 10:16+0800\n"
+"PO-Revision-Date: 2014-06-16 18:27+0800\n"
+"Last-Translator: \n"
+"Language-Team: ThemeGrill <themegrill@gmail.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_x;_x;_nx;_ex;esc_attr__;esc_attr_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:22
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! �o�ӭ����w�g���s�b�F�C"
+
+#: 404.php:24
+msgid "It looks like nothing was found at this location. Try the search below."
+msgstr "�b�o�̦��G�䤣�����F��A�յۦb�U���j�M�C"
+
+#: comments.php:31
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgstr ""
+
+#: comments.php:38 comments.php:55
+msgid "Comment navigation"
+msgstr "�j�T�ɯ�"
+
+#: comments.php:39 comments.php:56
+msgid "&larr; Older Comments"
+msgstr "&larr; ���ª��j�T"
+
+#: comments.php:40 comments.php:57
+msgid "Newer Comments &rarr;"
+msgstr "���s���j�T &rarr;"
+
+#: comments.php:67
+msgid "Comments are closed."
+msgstr "�w�g�����j�T"
+
+#: content-blog-full-content.php:23 content-page.php:17
+#: content-single-o.php:65 content-single.php:65
+msgid "Pages:"
+msgstr "�����G"
+
+#: content-blog-full-content.php:39 content-blog-image-large.php:52
+#: content-blog-image-medium.php:54 content-single-o.php:81
+#: content-single.php:81 content.php:60
+msgid "No Comments"
+msgstr "�S���j�T"
+
+#: content-blog-full-content.php:39 content-blog-image-large.php:52
+#: content-blog-image-medium.php:54 content-single-o.php:81
+#: content-single.php:81 content.php:60
+msgid "1 Comment"
+msgstr "1 �h�j�T"
+
+#: content-blog-full-content.php:39 content-blog-image-large.php:52
+#: content-blog-image-medium.php:54 content-single-o.php:81
+#: content-single.php:81 content.php:60
+msgid "% Comments"
+msgstr "% �h�j�T"
+
+#: content-blog-full-content.php:39 content-blog-image-large.php:52
+#: content-blog-image-medium.php:54 content-single-o.php:81
+#: content-single.php:81 content.php:60
+msgid "Comments Off"
+msgstr "�����j�T"
+
+#: content-blog-full-content.php:41 content-blog-image-large.php:54
+#: content-blog-image-medium.php:56 content-page.php:26
+#: content-single-o.php:83 content-single.php:83 content.php:62
+msgid "Edit"
+msgstr "�s��"
+
+#: content-blog-image-large.php:55 content-blog-image-medium.php:57
+#: content.php:63 inc/header-functions.php:111 inc/widgets/widgets.php:258
+#: inc/widgets/widgets.php:357
+msgid "Read more"
+msgstr "�~��\Ū"
+
+#: content-single-o.php:22 content-single.php:22
+msgid "Tagged on: "
+msgstr "���ҡG"
+
+#: header.php:84
+msgid "Menu"
+msgstr "���"
+
+#: inc/admin/meta-boxes.php:16 inc/admin/meta-boxes.php:18
+msgid "Select Layout"
+msgstr "��ܧG��"
+
+#: inc/admin/meta-boxes.php:28
+msgid "Default Layout"
+msgstr "�w�]�G��"
+
+#: inc/admin/meta-boxes.php:33 inc/widgets/widgets.php:18
+msgid "Right Sidebar"
+msgstr "�k�䰼����"
+
+#: inc/admin/meta-boxes.php:38 inc/widgets/widgets.php:29
+msgid "Left Sidebar"
+msgstr "���䰼����"
+
+#: inc/admin/meta-boxes.php:43
+msgid "No Sidebar Full Width"
+msgstr "�����L������"
+
+#: inc/admin/meta-boxes.php:48
+msgid "No Sidebar Content Centered"
+msgstr "�L�������r�m��"
+
+#: inc/admin/options/includes/class-options-framework-admin.php:85
+#: inc/admin/options/includes/class-options-framework-admin.php:86
+#: inc/admin/options/includes/class-options-framework-admin.php:307
+msgid "Theme Options"
+msgstr "�G���ﶵ"
+
+#: inc/admin/options/includes/class-options-framework-admin.php:173
+msgid "Save Options"
+msgstr "�x�s�]�w"
+
+#: inc/admin/options/includes/class-options-framework-admin.php:174
+msgid "Restore Defaults"
+msgstr "�^�_�w�]��"
+
+#: inc/admin/options/includes/class-options-framework-admin.php:174
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr "�I��OK�ӭ��]�A����G���]�w�N�|�����I"
+
+#: inc/admin/options/includes/class-options-framework-admin.php:205
+msgid "Default options restored."
+msgstr "�w�^�_���w�]��"
+
+#: inc/admin/options/includes/class-options-framework-admin.php:259
+msgid "Options saved."
+msgstr "�]�w�w�x�s"
+
+#: inc/admin/options/includes/class-options-media-uploader.php:63
+msgid "No file chosen"
+msgstr "�S������ɮ�"
+
+#: inc/admin/options/includes/class-options-media-uploader.php:66
+#: inc/admin/options/includes/class-options-media-uploader.php:119
+msgid "Upload"
+msgstr "�W��"
+
+#: inc/admin/options/includes/class-options-media-uploader.php:68
+#: inc/admin/options/includes/class-options-media-uploader.php:120
+msgid "Remove"
+msgstr "����"
+
+#: inc/admin/options/includes/class-options-media-uploader.php:71
+msgid "Upgrade your version of WordPress for full media support."
+msgstr "�ɯŧA��WordPress�����䴩�h�C��C"
+
+#: inc/admin/options/includes/class-options-media-uploader.php:95
+msgid "View File"
+msgstr "�˵��ɮ�"
+
+#: inc/admin/options/includes/class-options-sanitization.php:241
+msgid "No Repeat"
+msgstr "�S������"
+
+#: inc/admin/options/includes/class-options-sanitization.php:242
+msgid "Repeat Horizontally"
+msgstr "��������"
+
+#: inc/admin/options/includes/class-options-sanitization.php:243
+msgid "Repeat Vertically"
+msgstr "��������"
+
+#: inc/admin/options/includes/class-options-sanitization.php:244
+msgid "Repeat All"
+msgstr "���ƩҦ�"
+
+#: inc/admin/options/includes/class-options-sanitization.php:257
+msgid "Top Left"
+msgstr "�W��"
+
+#: inc/admin/options/includes/class-options-sanitization.php:258
+msgid "Top Center"
+msgstr "�W��"
+
+#: inc/admin/options/includes/class-options-sanitization.php:259
+msgid "Top Right"
+msgstr "�W�k"
+
+#: inc/admin/options/includes/class-options-sanitization.php:260
+msgid "Middle Left"
+msgstr "����"
+
+#: inc/admin/options/includes/class-options-sanitization.php:261
+msgid "Middle Center"
+msgstr "����"
+
+#: inc/admin/options/includes/class-options-sanitization.php:262
+msgid "Middle Right"
+msgstr "���k"
+
+#: inc/admin/options/includes/class-options-sanitization.php:263
+msgid "Bottom Left"
+msgstr "�U��"
+
+#: inc/admin/options/includes/class-options-sanitization.php:264
+msgid "Bottom Center"
+msgstr "�U��"
+
+#: inc/admin/options/includes/class-options-sanitization.php:265
+msgid "Bottom Right"
+msgstr "�U�k"
+
+#: inc/admin/options/includes/class-options-sanitization.php:278
+msgid "Scroll Normally"
+msgstr "���`����"
+
+#: inc/admin/options/includes/class-options-sanitization.php:279
+msgid "Fixed in Place"
+msgstr "�T�w�b�A����m"
+
+#: inc/admin/options/includes/class-options-sanitization.php:353
+msgid "Normal"
+msgstr "���`"
+
+#: inc/admin/options/includes/class-options-sanitization.php:354
+msgid "Italic"
+msgstr "����"
+
+#: inc/admin/options/includes/class-options-sanitization.php:355
+msgid "Bold"
+msgstr "����"
+
+#: inc/admin/options/includes/class-options-sanitization.php:356
+msgid "Bold Italic"
+msgstr "�ʱ���"
+
+#: inc/functions.php:325
+msgid "Post navigation"
+msgstr "�峹�ɯ�"
+
+#: inc/functions.php:329 navigation.php:42
+msgid "&larr;"
+msgstr "&larr;"
+
+#: inc/functions.php:330 navigation.php:43
+msgid "&rarr;"
+msgstr "&rarr;"
+
+#: inc/functions.php:335
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> ���ª��峹"
+
+#: inc/functions.php:339
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "���s���峹 <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/functions.php:365
+msgid "Pingback:"
+msgstr "�ޥγq�i�G"
+
+#: inc/functions.php:365
+msgid "(Edit)"
+msgstr "(Edit)"
+
+#: inc/functions.php:380
+msgid "Post author"
+msgstr "�峹�@��"
+
+#: inc/functions.php:383
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s �b %2$s"
+
+#: inc/functions.php:385
+#, php-format
+msgid "<a class=\"comment-permalink\" href=\"%1$s\">Permalink</a>"
+msgstr "<a class=\"comment-permalink\" href=\"%1$s\">�ä[�s��</a>"
+
+#: inc/functions.php:391
+msgid "Your comment is awaiting moderation."
+msgstr "�z�����ץ��b���ݼf�֡C"
+
+#: inc/functions.php:396
+msgid "Reply"
+msgstr "�^��"
+
+#: inc/functions.php:450
+msgid "WordPress"
+msgstr "WordPress"
+
+#: inc/functions.php:459
+msgid "ThemeGrill"
+msgstr "ThemeGrill"
+
+#: inc/functions.php:468
+msgid "Copyright &copy; "
+msgstr "Copyright &copy; "
+
+#: inc/functions.php:468
+msgid "Theme by: "
+msgstr "Theme : "
+
+#: inc/functions.php:468
+msgid "Powered by: "
+msgstr "Powered : "
+
+#: inc/header-functions.php:47
+#, php-format
+msgid "Page %s"
+msgstr "Page %s"
+
+#: inc/header-functions.php:145
+#, php-format
+msgid "Author: %s"
+msgstr "�@�̡G %s"
+
+#: inc/header-functions.php:153
+#, php-format
+msgid "Day: %s"
+msgstr "��: %s"
+
+#: inc/header-functions.php:156
+#, php-format
+msgid "Month: %s"
+msgstr "��: %s"
+
+#: inc/header-functions.php:159
+#, php-format
+msgid "Year: %s"
+msgstr "�~: %s"
+
+#: inc/header-functions.php:162
+msgid "Asides"
+msgstr "�ǥ�"
+
+#: inc/header-functions.php:165
+msgid "Images"
+msgstr "�Ϥ�"
+
+#: inc/header-functions.php:168
+msgid "Videos"
+msgstr "�v��"
+
+#: inc/header-functions.php:171
+msgid "Quotes"
+msgstr "�ޥ�"
+
+#: inc/header-functions.php:174
+msgid "Links"
+msgstr "�s��"
+
+#: inc/header-functions.php:177 sidebar-left.php:29 sidebar.php:29
+msgid "Archives"
+msgstr "Archives"
+
+#: inc/header-functions.php:182
+msgid "Page NOT Found"
+msgstr "�䤣�쭶��"
+
+#: inc/header-functions.php:185
+msgid "Search Results"
+msgstr "�j�M���G"
+
+#: inc/header-functions.php:214
+msgid "You are here:"
+msgstr "�A�b�o�̡G"
+
+#: inc/widgets/widgets.php:20
+msgid "Shows widgets at Right side."
+msgstr "�b�k����ܤp�u��"
+
+#: inc/widgets/widgets.php:31
+msgid "Shows widgets at Left side."
+msgstr "�b������ܤp�u��"
+
+#: inc/widgets/widgets.php:40
+msgid "Header Sidebar"
+msgstr "�������"
+
+#: inc/widgets/widgets.php:42
+msgid "Shows widgets in header section just above the main navigation menu."
+msgstr "�b������ܤp�u��A�N�b�ɯ�C�W��"
+
+#: inc/widgets/widgets.php:51
+msgid "Business Top Sidebar"
+msgstr "�Ӱȭ���������"
+
+#: inc/widgets/widgets.php:53
+msgid "Shows widgets on Business Page Template Top Section. Sutiable widget: "
+msgstr "��ܤF�ӰȪ��������ϰ쪺�p�u��C Sutiable�p�u��G"
+
+#: inc/widgets/widgets.php:62
+msgid "Business Middle Left Sidebar"
+msgstr "�ӰȤ������䰼����"
+
+#: inc/widgets/widgets.php:64
+msgid ""
+"Shows widgets on Business Page Template Middle Section Left Half. Sutiable "
+"widget: "
+msgstr "��ܤF�ӰȪ��������ϰ쥪�b�䪺�p�u��C Sutiable�p�u��G"
+
+#: inc/widgets/widgets.php:73
+msgid "Business Middle Right Sidebar"
+msgstr "�ӰȤ����k�䰼����"
+
+#: inc/widgets/widgets.php:75
+msgid ""
+"Shows widgets on Business Page Template Middle Section Right Half. Sutiable "
+"widget: "
+msgstr "��ܤF�ӰȪ��������ϰ�k�b�䪺�p�u��C Sutiable�p�u��G"
+
+#: inc/widgets/widgets.php:85
+msgid "Business Bottom Sidebar"
+msgstr "�Ӱȩ���������"
+
+#: inc/widgets/widgets.php:87
+msgid ""
+"Shows widgets on Business Page Template Bottom Section. Sutiable widget: "
+msgstr "��ܤF�ӰȪ��������ϰ�p�u��C Sutiable�p�u��G"
+
+#: inc/widgets/widgets.php:96
+msgid "Contact Page Sidebar"
+msgstr "�p���ڭ̭���������"
+
+#: inc/widgets/widgets.php:98
+msgid "Shows widgets on Contact Page Template."
+msgstr "�b�p���ڭ̪�������ܤp�u��"
+
+#: inc/widgets/widgets.php:107
+msgid "Error 404 Page Sidebar"
+msgstr "404���~����������"
+
+#: inc/widgets/widgets.php:109
+msgid "Shows widgets on Error 404 page."
+msgstr "�b404���~������ܤp�u��"
+
+#: inc/widgets/widgets.php:118
+msgid "Footer Sidebar One"
+msgstr "�������@"
+
+#: inc/widgets/widgets.php:120
+msgid "Shows widgets at footer sidebar one."
+msgstr "��ܤp�u��b�������@"
+
+#: inc/widgets/widgets.php:129
+msgid "Footer Sidebar Two"
+msgstr "�������G"
+
+#: inc/widgets/widgets.php:131
+msgid "Shows widgets at footer sidebar two."
+msgstr "��ܤp�u��b�������G"
+
+#: inc/widgets/widgets.php:140
+msgid "Footer Sidebar Three"
+msgstr "�������T"
+
+#: inc/widgets/widgets.php:142
+msgid "Shows widgets at footer sidebar three."
+msgstr "��ܤp�u��b�������T"
+
+#: inc/widgets/widgets.php:151
+msgid "Footer Sidebar Four"
+msgstr "�������|"
+
+#: inc/widgets/widgets.php:153
+msgid "Shows widgets at footer sidebar four."
+msgstr "��ܤp�u��b�������|"
+
+#: inc/widgets/widgets.php:176
+msgid "Display Featured Single Page"
+msgstr "��ܯS���@����"
+
+#: inc/widgets/widgets.php:187
+msgid ""
+"Suitable for Home Top Sidebar, Home Bottom Left Sidebar and Side Sidbar."
+msgstr ""
+
+#: inc/widgets/widgets.php:190 inc/widgets/widgets.php:522
+#: inc/widgets/widgets.php:567
+msgid "Title:"
+msgstr "���D�G"
+
+#: inc/widgets/widgets.php:193
+msgid "Displays the title of the Page if title input is empty."
+msgstr "�p�G���D��J��O�Ū��ܡA��ܭ��������D"
+
+#: inc/widgets/widgets.php:196 inc/widgets/widgets.php:294
+#: inc/widgets/widgets.php:576
+msgid "Page"
+msgstr "����"
+
+#: inc/widgets/widgets.php:200
+msgid "Remove Featured image"
+msgstr "�����S��Ϥ�"
+
+#: inc/widgets/widgets.php:205 inc/widgets/widgets.php:210
+msgid "Show Image Before Title"
+msgstr "�b���D�e��ܹϤ�"
+
+#: inc/widgets/widgets.php:206 inc/widgets/widgets.php:211
+msgid "Show Image After Title"
+msgstr "�b���D����ܹϤ�"
+
+#: inc/widgets/widgets.php:276
+msgid ""
+"Display some pages as services. Best for Business Top or Bottom sidebar."
+msgstr ""
+
+#: inc/widgets/widgets.php:278
+msgid "TG: Services"
+msgstr "TG: Services"
+
+#: inc/widgets/widgets.php:377
+msgid "Use this widget to show the call to action section."
+msgstr ""
+
+#: inc/widgets/widgets.php:379
+msgid "TG: Call To Action Widget"
+msgstr ""
+
+#: inc/widgets/widgets.php:395
+msgid "Call to Action Main Text"
+msgstr ""
+
+#: inc/widgets/widgets.php:397
+msgid "Call to Action Additional Text"
+msgstr ""
+
+#: inc/widgets/widgets.php:400
+msgid "Button Text:"
+msgstr "���s��r�G"
+
+#: inc/widgets/widgets.php:404
+msgid "Button Redirect Link:"
+msgstr "���s���w�V�s���G"
+
+#: inc/widgets/widgets.php:477
+msgid "Display Testimonial"
+msgstr ""
+
+#: inc/widgets/widgets.php:479
+msgid "TG: Testimonial"
+msgstr ""
+
+#: inc/widgets/widgets.php:524
+msgid "Testimonial Description"
+msgstr ""
+
+#: inc/widgets/widgets.php:527
+msgid "Name:"
+msgstr "�W�١G"
+
+#: inc/widgets/widgets.php:530
+msgid "Byline:"
+msgstr ""
+
+#: inc/widgets/widgets.php:544
+msgid ""
+"Show your some pages as recent work. Best for Business Top or Bottom sidebar."
+msgstr ""
+
+#: inc/widgets/widgets.php:546
+msgid "TG: Featured Widget"
+msgstr ""
+
+#: inc/widgets/widgets.php:570
+msgid "Description"
+msgstr "�y�z"
+
+#: navigation.php:22
+msgid "&laquo; Previous"
+msgstr "&laquo; �W�@��"
+
+#: navigation.php:23
+msgid "Next &raquo;"
+msgstr "�U�@�� &raquo;"
+
+#: navigation.php:34
+msgid "&larr; Previous"
+msgstr "&larr; �W�@��"
+
+#: navigation.php:35
+msgid "Next &rarr;"
+msgstr "�U�@�� &rarr;"
+
+#: no-results.php:18
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "�ǳƵo�G�z���Ĥ@�g�峹�ܡH <a href=\"%1$s\">�q�o�̶}�l</a>."
+
+#: no-results.php:22
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "��p�A�S���ŦX�z���j�M���r���C�Чﴫ�䥦������A�ոաC"
+
+#: no-results.php:27
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "�ݨӧڭ̤�����A�n�䪺���e�C�]�\�j�M�i�H�������U�C"
+
+#: options.php:31
+msgid "Header"
+msgstr "����"
+
+#: options.php:37
+msgid "Header Logo"
+msgstr "���� Logo"
+
+#: options.php:38
+msgid "Upload logo for your header."
+msgstr "���z�������W�Ǥ@��Logo�C"
+
+#: options.php:45
+msgid "Header Logo Only"
+msgstr "�����u��Logo"
+
+#: options.php:46
+msgid "Header Text Only"
+msgstr "�����u����r"
+
+#: options.php:47
+msgid "Show Both"
+msgstr "��̳��n"
+
+#: options.php:48
+msgid "Disable"
+msgstr "����"
+
+#: options.php:51
+msgid "Show"
+msgstr "���"
+
+#: options.php:52
+msgid "Choose the option that you want."
+msgstr "��ܱz�Q�n���ﶵ�C"
+
+#: options.php:61
+msgid "Need to replace Header Image?"
+msgstr "�ݭn���N�����Ϥ��ܡH"
+
+#: options.php:62 options.php:167
+#, php-format
+msgid "<a href=\"%1$s\">Click Here</a>"
+msgstr "<a href=\"%1$s\">�I���o��</a>"
+
+#: options.php:68
+msgid "Heder Image Position"
+msgstr "�����Ϥ���m"
+
+#: options.php:69
+msgid "Choose top header image display position."
+msgstr "��ܤW�譶���Ϥ���ܦ�m"
+
+#: options.php:74
+msgid ""
+"Position Above (Default): Display the Header image just above the site title "
+"and main menu part."
+msgstr ""
+
+#: options.php:75
+msgid ""
+"Position Below: Display the Header image just below the site title and main "
+"menu part."
+msgstr ""
+
+#: options.php:83
+msgid "Design"
+msgstr "�]�p"
+
+#: options.php:88
+msgid "Site Layout"
+msgstr "�����G��"
+
+#: options.php:89
+msgid "Choose your site layout. The change is reflected in whole site."
+msgstr "��ܧA�������G���A�o�ӧ��ܬO��Ӻ����C"
+
+#: options.php:94
+msgid "Boxed layout with content width of 1218px"
+msgstr "�����G���A���e�e�׬�1218px"
+
+#: options.php:95
+msgid "Boxed layout with content width of 978px"
+msgstr "�����G���A���e�e�׬�978px"
+
+#: options.php:96
+msgid "Wide layout with content width of 1218px"
+msgstr "�e���G���A���e�e�׬�1218px"
+
+#: options.php:97
+msgid "Wide layout with content width of 978px"
+msgstr "�e���G���A���e�e�׬�978px"
+
+#: options.php:102
+msgid "Default layout"
+msgstr "�w�]�G��"
+
+#: options.php:103
+msgid ""
+"Select default layout. This layout will be reflected in whole site archives, "
+"search etc. The layout for a single post and page can be controlled from "
+"below options."
+msgstr ""
+"��ܹw�]���G���C�o�اG���N�M�Φb�����B�J��B�j�M�����C�峹�M�������G���A�i�H"
+"�b�U��ﶵ��������C"
+
+#: options.php:116
+msgid "Default layout for pages only"
+msgstr "�w�]�������G��"
+
+#: options.php:117
+msgid ""
+"Select default layout for pages. This layout will be reflected in all pages "
+"unless unique layout is set for specific page."
+msgstr ""
+"��ܹw�]�������G���C�o�اG���N�M�β{�b�Ҧ��������A���F�S�w�����]�m�W�S���G��"
+"���~�C"
+
+#: options.php:130
+msgid "Default layout for single posts only"
+msgstr "�w�]�峹���G��"
+
+#: options.php:131
+msgid ""
+"Select default layout for single posts. This layout will be reflected in all "
+"single posts unless unique layout is set for specific post."
+msgstr ""
+"��ܹw�]�峹���G���C�o�اG���N�M�β{�b�Ҧ����峹�A���F�S�w�峹�]�m�W�S���G��"
+"���~�C"
+
+#: options.php:145
+msgid "Primary color option"
+msgstr "�D��t�ﶵ"
+
+#: options.php:146
+msgid ""
+"This will reflect in links, buttons and many others. Choose a color to match "
+"your site."
+msgstr "�o�|�����b�s���B���s�����C��@�ӾA�X�A�������C��C"
+
+#: options.php:154
+msgid "Color Skin"
+msgstr "��t"
+
+#: options.php:155
+msgid "Choose the light or dark skin. This will be reflected in whole site."
+msgstr "��ܫG��t�ηt��t�A�o�|�M�Φb�����C"
+
+#: options.php:166
+msgid "Need to replace default background?"
+msgstr "�ݭn���N�w�]�I���϶ܡH"
+
+#: options.php:167
+msgid ""
+"Note: The background will only be seen if you choose any of the boxed layout "
+"option in site layout option."
+msgstr "�`�N�G�I���N�Ȧb���A��ܥ��@�د����G���ɥi���C"
+
+#: options.php:172
+msgid "Custom CSS"
+msgstr "�۩wCSS"
+
+#: options.php:173
+msgid "Write your custom css."
+msgstr "��J�A���۩wCSS�C"
+
+#: options.php:182
+msgid "Additional"
+msgstr "�B�~"
+
+#: options.php:188
+msgid "Activate favicon"
+msgstr "�ҥκ����p�ϥ�"
+
+#: options.php:189
+msgid "Check to activate favicon. Upload fav icon from below option"
+msgstr "�Ŀ�ҥκ����p�ϥܡA�b�U�����ؤ��W�Ǻ����p�ϥܡC"
+
+#: options.php:197
+msgid "Upload favicon"
+msgstr "�W�Ǻ����p�ϥ�"
+
+#: options.php:198
+msgid "Upload favicon for your site."
+msgstr "���A�������W�Ǻ����p�ϥ�"
+
+#: options.php:206
+msgid "Slider"
+msgstr "����"
+
+#: options.php:212
+msgid "Activate slider"
+msgstr "�ҰʹϤ�����"
+
+#: options.php:213
+msgid "Check to activate slider."
+msgstr "�Ŀ�ӱҰʹϤ�����"
+
+#: options.php:222
+#, php-format
+msgid "Image Upload #%1$s"
+msgstr "�Ϥ��W�� #%1$s"
+
+#: options.php:223
+msgid "Upload slider image."
+msgstr "�W�ǽ����Ϥ��C"
+
+#: options.php:228
+#, php-format
+msgid "Slider Title %1$s"
+msgstr "�������D %1$s"
+
+#: options.php:229
+msgid "Enter title for your slider."
+msgstr "��J�A���������D�C"
+
+#: options.php:235
+#, php-format
+msgid "Slider Description %1$s"
+msgstr "������r�y�z %1$s"
+
+#: options.php:236
+msgid "Enter your slider description."
+msgstr "��J�A�������y�z��r"
+
+#: options.php:242
+#, php-format
+msgid "Slider redirect link %1$s"
+msgstr "�����ɦV�s�� %1$s"
+
+#: options.php:243
+msgid "Enter link to redirect slider when clicked"
+msgstr "��J�I���ɭn�ɦV���s��"
+
+#: options.php:262
+msgid "About Elmispase"
+msgstr "��Elmispaseous"
+
+#: options.php:264
+msgid "Upgrade to Pro"
+msgstr "�ɯŨ�M�~��"
+
+#: options.php:265
+msgid "Free Support"
+msgstr "�K�O�䴩"
+
+#: options.php:266
+msgid "Documentation"
+msgstr "�����"
+
+#: options.php:267
+msgid "View Demo"
+msgstr "�˵��i�ܵe��"
+
+#: options.php:270
+msgid "If you like our work. Buy us a beer."
+msgstr "�p�G�A���w�ڭ̪��@�~�A�٧U�ڭ̤@�M��s���C"
+
+#: searchform.php:12 searchform.php:15
+msgid "Search"
+msgstr "�j�M"
+
+#: sidebar-left.php:36 sidebar.php:36
+msgid "Meta"
+msgstr "Meta"

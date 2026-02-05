@@ -1,0 +1,1014 @@
+# Copyright (C) 2026 Omega Themes
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Maintenance Works 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/maintenance-works\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-01-05T10:47:50+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: maintenance-works\n"
+
+#. Theme Name of the theme
+#: style.css
+#: inc/custom-functions.php:377
+msgid "Maintenance Works"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://www.omegathemes.com/products/maintenance-works"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "The Maintenance Works Theme is a powerful and flexible website solution designed specifically for service providers, technicians, contractors, and facility management businesses. Whether you specialize in building maintenance, repair services, facility maintenance, or property maintenance, this theme gives you everything you need to create a professional and trustworthy online presence with ease. Built for speed, usability, and conversion, the theme features clean layouts, bold typography, and intuitive navigation that helps visitors quickly understand your services. From equipment maintenance companies to home maintenance services, the design adapts perfectly to all types of maintenance-focused businesses. The theme also includes pre-designed sections for showcasing preventive maintenance, routine maintenance, emergency repair offerings, and customer testimonials. With full responsiveness, your website will look flawless on desktops, tablets, and mobile devices. The theme integrates smoothly with popular plugins and supports advanced customization through the Customizer. Whether you're promoting industrial maintenance, commercial maintenance, or residential maintenance, the flexible layout makes content management simple and efficient. SEO-friendly structure and fast loading performance ensure that your maintenance services get the visibility they deserve. Clear call-to-action elements, service grids, and project showcases are included to help you generate leads and build client trust. The theme also supports appointment booking plugins, making it ideal for businesses offering ongoing maintenance solutions and scheduled service packages. If you want a professional website that highlights your expertise in maintenance operations while remaining easy to manage, the Maintenance Works Theme is the perfect foundation for your growing business."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Omega Themes"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://www.omegathemes.com/"
+msgstr ""
+
+#: 404.php:38
+msgid "Homepage"
+msgstr ""
+
+#. translators: %d: ID of a post.
+#: classes/class-walker-menu.php:76
+msgid "#%d (no title)"
+msgstr ""
+
+#: classes/class-walker-menu.php:120
+#: inc/custom-functions.php:45
+msgid "Show sub menu"
+msgstr ""
+
+#. translators: 1: title.
+#: comments.php:22
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:28
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:52
+msgid "Comments are closed."
+msgstr ""
+
+#. Template Name of the theme
+msgid "Front Page Template"
+msgstr ""
+
+#: functions.php:175
+msgid "Primary Menu"
+msgstr ""
+
+#: header.php:36
+msgid "Skip to the content"
+msgstr ""
+
+#: inc/custom-functions.php:162
+msgid "-- Select Category --"
+msgstr ""
+
+#: inc/custom-functions.php:199
+msgid "Previous post:"
+msgstr ""
+
+#: inc/custom-functions.php:200
+msgid "Next post:"
+msgstr ""
+
+#: inc/custom-functions.php:242
+#: template-parts/header/header-layout.php:91
+msgid "Horizontal"
+msgstr ""
+
+#: inc/custom-functions.php:314
+msgid "Footer Image"
+msgstr ""
+
+#: inc/custom-functions.php:319
+msgid "The Maintenance Works Theme is a powerful and flexible website solution designed specifically for service providers, technicians, contractors, and facility management businesses. Whether you specialize in building maintenance, repair services, facility maintenance, or property maintenance, this theme gives you everything you need to create a professional and trustworthy online presence with ease."
+msgstr ""
+
+#: inc/custom-functions.php:326
+msgid "Calendar"
+msgstr ""
+
+#: inc/custom-functions.php:332
+msgid "Enter Keywords Here"
+msgstr ""
+
+#: inc/custom-functions.php:377
+msgid "Theme: "
+msgstr ""
+
+#: inc/custom-functions.php:377
+msgid " By "
+msgstr ""
+
+#: inc/custom-functions.php:377
+msgid "OMEGA "
+msgstr ""
+
+#: inc/custom-functions.php:378
+msgid "Powered by "
+msgstr ""
+
+#: inc/custom-functions.php:378
+msgid "WordPress"
+msgstr ""
+
+#: inc/custom-functions.php:378
+msgid "WordPress."
+msgstr ""
+
+#: inc/custom-functions.php:388
+msgid "To the Top"
+msgstr ""
+
+#: inc/custom-functions.php:625
+msgid "Video"
+msgstr ""
+
+#: inc/custom-functions.php:628
+msgid "Audio"
+msgstr ""
+
+#: inc/custom-functions.php:631
+msgid "Gallery"
+msgstr ""
+
+#: inc/custom-functions.php:634
+msgid "Quote"
+msgstr ""
+
+#: inc/custom-functions.php:637
+msgid "Image"
+msgstr ""
+
+#: inc/custom-functions.php:640
+msgid "Link"
+msgstr ""
+
+#: inc/custom-functions.php:643
+msgid "Status"
+msgstr ""
+
+#: inc/custom-functions.php:646
+msgid "Aside"
+msgstr ""
+
+#: inc/custom-functions.php:649
+msgid "Chat"
+msgstr ""
+
+#: inc/customizer/404-page-settings.php:12
+msgid "404 Page Settings"
+msgstr ""
+
+#: inc/customizer/404-page-settings.php:28
+msgid "404 Main Title"
+msgstr ""
+
+#: inc/customizer/404-page-settings.php:43
+msgid "404 Sub Title One"
+msgstr ""
+
+#: inc/customizer/404-page-settings.php:58
+msgid "404 Para Text One"
+msgstr ""
+
+#: inc/customizer/404-page-settings.php:73
+msgid "404 Sub Title Two"
+msgstr ""
+
+#: inc/customizer/404-page-settings.php:88
+msgid "404 Para Text Two"
+msgstr ""
+
+#: inc/customizer/additional-woocommerce.php:13
+msgid "Additional Woocommerce Options"
+msgstr ""
+
+#: inc/customizer/additional-woocommerce.php:29
+msgid "Products Per Column"
+msgstr ""
+
+#: inc/customizer/additional-woocommerce.php:49
+msgid "Products Per Page"
+msgstr ""
+
+#: inc/customizer/additional-woocommerce.php:69
+msgid "Enable Related Products"
+msgstr ""
+
+#: inc/customizer/additional-woocommerce.php:84
+msgid "Related Products Per Page"
+msgstr ""
+
+#: inc/customizer/additional-woocommerce.php:104
+msgid "Related Products Per Row"
+msgstr ""
+
+#: inc/customizer/colors.php:21
+msgid "Text Color"
+msgstr ""
+
+#: inc/customizer/colors.php:39
+msgid "Border Color"
+msgstr ""
+
+#: inc/customizer/custom-addon.php:10
+msgid "Customizer Custom Settings"
+msgstr ""
+
+#: inc/customizer/custom-addon.php:26
+msgid "Enable Preloader"
+msgstr ""
+
+#: inc/customizer/custom-addon.php:44
+msgid "Enable Pagination"
+msgstr ""
+
+#: inc/customizer/custom-addon.php:60
+msgid "Pagination Style"
+msgstr ""
+
+#: inc/customizer/custom-addon.php:64
+msgid "Numeric (Page Numbers)"
+msgstr ""
+
+#: inc/customizer/custom-addon.php:65
+msgid "Newer/Older (Previous/Next)"
+msgstr ""
+
+#: inc/customizer/custom-addon.php:79
+msgid "Pagination Alignment"
+msgstr ""
+
+#: inc/customizer/custom-addon.php:83
+#: inc/customizer/custom-addon.php:118
+#: inc/customizer/footer.php:68
+#: inc/customizer/post.php:109
+#: inc/customizer/post.php:129
+msgid "Center"
+msgstr ""
+
+#: inc/customizer/custom-addon.php:84
+#: inc/customizer/custom-addon.php:119
+#: inc/customizer/footer.php:69
+#: inc/customizer/post.php:110
+#: inc/customizer/post.php:130
+msgid "Right"
+msgstr ""
+
+#: inc/customizer/custom-addon.php:85
+#: inc/customizer/custom-addon.php:120
+#: inc/customizer/footer.php:67
+#: inc/customizer/post.php:108
+#: inc/customizer/post.php:128
+msgid "Left"
+msgstr ""
+
+#: inc/customizer/custom-addon.php:99
+msgid "Enable Breadcrumb"
+msgstr ""
+
+#: inc/customizer/custom-addon.php:114
+msgid "Breadcrumb Alignment"
+msgstr ""
+
+#: inc/customizer/custom-addon.php:134
+msgid "Breadcrumb Font Size"
+msgstr ""
+
+#: inc/customizer/customizer.php:34
+msgid "Color Options"
+msgstr ""
+
+#: inc/customizer/customizer.php:55
+msgid "General Settings"
+msgstr ""
+
+#: inc/customizer/customizer.php:63
+msgid "Color Settings"
+msgstr ""
+
+#: inc/customizer/customizer.php:72
+#: inc/customizer/footer.php:12
+msgid "Footer Settings"
+msgstr ""
+
+#: inc/customizer/customizer.php:81
+msgid "Frontpage Settings"
+msgstr ""
+
+#: inc/customizer/customizer.php:90
+msgid "Theme Addons"
+msgstr ""
+
+#: inc/customizer/customizer.php:99
+msgid "Theme Options"
+msgstr ""
+
+#: inc/customizer/customizer.php:113
+msgid "Logo width"
+msgstr ""
+
+#: inc/customizer/customizer.php:114
+msgid "Specify the range for logo size with a minimum of 200px and a maximum of 700px, in increments of 20px."
+msgstr ""
+
+#: inc/customizer/customizer.php:134
+msgid "Maintenance Works Pro"
+msgstr ""
+
+#: inc/customizer/customizer.php:135
+msgid "Upgrade To Pro"
+msgstr ""
+
+#: inc/customizer/default.php:14
+msgid "1234567890"
+msgstr ""
+
+#: inc/customizer/default.php:15
+msgid "support@example.com"
+msgstr ""
+
+#: inc/customizer/default.php:16
+msgid "445 S St unit 12, Santa Rosa CA 95404, United States"
+msgstr ""
+
+#: inc/customizer/default.php:48
+msgid "Satisfaction Guarantee"
+msgstr ""
+
+#: inc/customizer/default.php:49
+msgid "24H Availability"
+msgstr ""
+
+#: inc/customizer/default.php:50
+msgid "Local US Professional"
+msgstr ""
+
+#: inc/customizer/default.php:51
+msgid "Flexible Appointments"
+msgstr ""
+
+#: inc/customizer/default.php:64
+msgid "All rights reserved."
+msgstr ""
+
+#: inc/customizer/default.php:84
+msgid "To The Top"
+msgstr ""
+
+#: inc/customizer/default.php:88
+msgid "OUR PROJECTS"
+msgstr ""
+
+#: inc/customizer/default.php:89
+msgid "We are experienced work lovers on Quality"
+msgstr ""
+
+#: inc/customizer/default.php:92
+msgid "Oops! That page can’t be found."
+msgstr ""
+
+#: inc/customizer/default.php:93
+msgid "Maybe it’s out there, somewhere..."
+msgstr ""
+
+#: inc/customizer/default.php:94
+msgid "You can always find insightful stories on our"
+msgstr ""
+
+#: inc/customizer/default.php:95
+msgid "Still feeling lost? You’re not alone."
+msgstr ""
+
+#: inc/customizer/default.php:96
+msgid "Enjoy these stories about getting lost, losing things, and finding what you never knew you were looking for."
+msgstr ""
+
+#: inc/customizer/footer.php:28
+msgid "Enable Footer"
+msgstr ""
+
+#: inc/customizer/footer.php:43
+msgid "Footer Column Layout"
+msgstr ""
+
+#: inc/customizer/footer.php:47
+msgid "One Column"
+msgstr ""
+
+#: inc/customizer/footer.php:48
+msgid "Two Column"
+msgstr ""
+
+#: inc/customizer/footer.php:49
+msgid "Three Column"
+msgstr ""
+
+#: inc/customizer/footer.php:63
+msgid "Footer Widget Title Alignment"
+msgstr ""
+
+#: inc/customizer/footer.php:83
+msgid "Footer Copyright Text"
+msgstr ""
+
+#: inc/customizer/footer.php:98
+msgid "Copyright Font Size"
+msgstr ""
+
+#: inc/customizer/footer.php:116
+msgid "Copyright Section Alignment"
+msgstr ""
+
+#: inc/customizer/footer.php:120
+msgid "Default View"
+msgstr ""
+
+#: inc/customizer/footer.php:121
+msgid "Reverse View"
+msgstr ""
+
+#: inc/customizer/footer.php:122
+msgid "Centered Content"
+msgstr ""
+
+#: inc/customizer/footer.php:131
+msgid "Footer Widget Background Color"
+msgstr ""
+
+#: inc/customizer/footer.php:132
+msgid "It will change the complete footer widget background color."
+msgstr ""
+
+#: inc/customizer/footer.php:142
+msgid "Footer Widget Background Image"
+msgstr ""
+
+#: inc/customizer/footer.php:155
+msgid "Enable To The Top"
+msgstr ""
+
+#: inc/customizer/footer.php:170
+msgid "Edit Text Here"
+msgstr ""
+
+#: inc/customizer/global-color-setting.php:13
+msgid "Global Color Settings"
+msgstr ""
+
+#: inc/customizer/global-color-setting.php:32
+#: inc/customizer/global-color-setting.php:50
+msgid "Global Color"
+msgstr ""
+
+#: inc/customizer/header-button.php:13
+msgid "Header Settings"
+msgstr ""
+
+#: inc/customizer/header-button.php:29
+msgid "Enable Sticky Header"
+msgstr ""
+
+#: inc/customizer/header-button.php:44
+msgid "Phone Number"
+msgstr ""
+
+#: inc/customizer/header-button.php:59
+msgid "Email Id"
+msgstr ""
+
+#: inc/customizer/header-button.php:74
+msgid "Address"
+msgstr ""
+
+#: inc/customizer/header-button.php:89
+msgid "Menu Font Size"
+msgstr ""
+
+#: inc/customizer/header-button.php:109
+msgid "Menu Text Transform"
+msgstr ""
+
+#: inc/customizer/header-button.php:113
+msgid "Capitalize"
+msgstr ""
+
+#: inc/customizer/header-button.php:114
+msgid "Uppercase"
+msgstr ""
+
+#: inc/customizer/header-button.php:115
+msgid "Lowercase"
+msgstr ""
+
+#: inc/customizer/header-button.php:125
+msgid "Main Menu Color"
+msgstr ""
+
+#: inc/customizer/header-button.php:134
+msgid "Main Menu Hover Color"
+msgstr ""
+
+#: inc/customizer/header-button.php:143
+msgid "Submenu Color"
+msgstr ""
+
+#: inc/customizer/header-button.php:152
+msgid "Submenu Hover Color"
+msgstr ""
+
+#: inc/customizer/header-button.php:165
+msgid "Enable Search"
+msgstr ""
+
+#: inc/customizer/homepage-content.php:13
+msgid "Slider Settings"
+msgstr ""
+
+#: inc/customizer/homepage-content.php:27
+msgid "Enable / Disable Site Logo"
+msgstr ""
+
+#: inc/customizer/homepage-content.php:39
+msgid "Enable / Disable Site Title"
+msgstr ""
+
+#: inc/customizer/homepage-content.php:54
+msgid "Enable / Disable Site Tagline"
+msgstr ""
+
+#: inc/customizer/homepage-content.php:69
+msgid "Enable Slider"
+msgstr ""
+
+#: inc/customizer/homepage-content.php:84
+msgid "Slider Post Left Category"
+msgstr ""
+
+#: inc/customizer/homepage-content.php:100
+msgid "Slider Left Image "
+msgstr ""
+
+#: inc/customizer/homepage-content.php:116
+msgid "Slider Right Image "
+msgstr ""
+
+#: inc/customizer/homepage-content.php:132
+#: inc/customizer/homepage-content.php:147
+#: inc/customizer/homepage-content.php:162
+#: inc/customizer/homepage-content.php:177
+msgid "Our Projects Title"
+msgstr ""
+
+#: inc/customizer/homepage-content.php:187
+msgid "Our Projects Settings"
+msgstr ""
+
+#: inc/customizer/homepage-content.php:203
+msgid "Enable Our Projects"
+msgstr ""
+
+#: inc/customizer/homepage-content.php:218
+msgid "Our Projects Short Title"
+msgstr ""
+
+#: inc/customizer/homepage-content.php:233
+msgid "Our Projects Heading"
+msgstr ""
+
+#: inc/customizer/homepage-content.php:258
+msgid "Select Category to display Services"
+msgstr ""
+
+#: inc/customizer/layout-setting.php:13
+msgid "Sidebar Settings"
+msgstr ""
+
+#: inc/customizer/layout-setting.php:29
+msgid "Global Sidebar Layout"
+msgstr ""
+
+#: inc/customizer/layout-setting.php:33
+#: inc/customizer/layout-setting.php:51
+#: inc/customizer/layout-setting.php:68
+msgid "Right Sidebar"
+msgstr ""
+
+#: inc/customizer/layout-setting.php:34
+#: inc/customizer/layout-setting.php:52
+#: inc/customizer/layout-setting.php:69
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/customizer/layout-setting.php:35
+#: inc/customizer/layout-setting.php:53
+#: inc/customizer/layout-setting.php:70
+msgid "No Sidebar"
+msgstr ""
+
+#: inc/customizer/layout-setting.php:47
+msgid "Single Page Sidebar Layout"
+msgstr ""
+
+#: inc/customizer/layout-setting.php:64
+msgid "Single Post Sidebar Layout"
+msgstr ""
+
+#: inc/customizer/layout-setting.php:83
+msgid "Enable/Disable Sticky Sidebar"
+msgstr ""
+
+#: inc/customizer/nothing-found-page-settings.php:12
+msgid "Nothing Found Page Settings"
+msgstr ""
+
+#: inc/customizer/nothing-found-page-settings.php:28
+msgid "Main Title"
+msgstr ""
+
+#: inc/customizer/nothing-found-page-settings.php:43
+msgid "Para Text"
+msgstr ""
+
+#: inc/customizer/nothing-found-page-settings.php:58
+msgid "Enable/Disable Search"
+msgstr ""
+
+#: inc/customizer/post.php:13
+msgid "Single Meta Information Settings"
+msgstr ""
+
+#: inc/customizer/post.php:29
+msgid "Enable Single Posts Image"
+msgstr ""
+
+#: inc/customizer/post.php:44
+msgid "Enable Posts Author"
+msgstr ""
+
+#: inc/customizer/post.php:59
+msgid "Enable Posts Date"
+msgstr ""
+
+#: inc/customizer/post.php:74
+#: inc/customizer/post.php:184
+msgid "Enable Posts Category"
+msgstr ""
+
+#: inc/customizer/post.php:89
+msgid "Enable Posts Tags"
+msgstr ""
+
+#: inc/customizer/post.php:104
+msgid "Single Page Content Alignment"
+msgstr ""
+
+#: inc/customizer/post.php:124
+msgid "Single Post Content Alignment"
+msgstr ""
+
+#: inc/customizer/post.php:138
+msgid "Archive Meta Information Settings"
+msgstr ""
+
+#: inc/customizer/post.php:154
+msgid "Enable Posts Format Icon"
+msgstr ""
+
+#: inc/customizer/post.php:169
+msgid "Enable Posts Image"
+msgstr ""
+
+#: inc/customizer/post.php:199
+msgid "Enable Posts Title"
+msgstr ""
+
+#: inc/customizer/post.php:214
+msgid "Enable Posts Content"
+msgstr ""
+
+#: inc/customizer/post.php:229
+msgid "Enable Posts Button"
+msgstr ""
+
+#: inc/customizer/post.php:244
+msgid "Blog Posts Excerpt limit"
+msgstr ""
+
+#: inc/customizer/post.php:264
+msgid "Blog Posts Image Size"
+msgstr ""
+
+#: inc/customizer/post.php:268
+msgid "Large Size Image"
+msgstr ""
+
+#: inc/customizer/post.php:269
+msgid "Big Size Image"
+msgstr ""
+
+#: inc/customizer/post.php:270
+msgid "Medium Size Image"
+msgstr ""
+
+#: inc/customizer/post.php:271
+msgid "Small Size Image"
+msgstr ""
+
+#: inc/customizer/post.php:272
+msgid "Extra Small Size Image"
+msgstr ""
+
+#: inc/customizer/post.php:273
+msgid "Thumbnail Size Image"
+msgstr ""
+
+#: inc/customizer/post.php:287
+msgid "Blog Posts Per Column"
+msgstr ""
+
+#: inc/customizer/social-media.php:13
+msgid "Social Media Settings"
+msgstr ""
+
+#: inc/customizer/social-media.php:29
+msgid "Facebook Link"
+msgstr ""
+
+#: inc/customizer/social-media.php:44
+msgid "Twitter Link"
+msgstr ""
+
+#: inc/customizer/social-media.php:59
+msgid "Pintrest Link"
+msgstr ""
+
+#: inc/customizer/social-media.php:74
+msgid "Instagram Link"
+msgstr ""
+
+#: inc/customizer/social-media.php:89
+msgid "Youtube Link"
+msgstr ""
+
+#: inc/customizer/typography.php:13
+msgid "Typography Settings"
+msgstr ""
+
+#: inc/customizer/typography.php:22
+msgid "Default Font"
+msgstr ""
+
+#: inc/customizer/typography.php:45
+msgid "General Content Font"
+msgstr ""
+
+#: inc/customizer/typography.php:59
+msgid "General Heading Font"
+msgstr ""
+
+#: inc/metabox.php:12
+msgid "Global sidebar"
+msgstr ""
+
+#: inc/metabox.php:17
+msgid "Right sidebar"
+msgstr ""
+
+#: inc/metabox.php:22
+msgid "Left sidebar"
+msgstr ""
+
+#: inc/metabox.php:27
+msgid "No sidebar"
+msgstr ""
+
+#: inc/pagination.php:26
+msgid "&laquo; Newer"
+msgstr ""
+
+#: inc/pagination.php:27
+msgid "Older &raquo;"
+msgstr ""
+
+#: inc/pagination.php:28
+#: inc/pagination.php:38
+msgid "Posts navigation"
+msgstr ""
+
+#: inc/pagination.php:35
+msgid "&laquo; Previous"
+msgstr ""
+
+#: inc/pagination.php:36
+msgid "Next &raquo;"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:290
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:312
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/widgets/widgets.php:12
+msgid "Main Sidebar"
+msgstr ""
+
+#: inc/widgets/widgets.php:14
+#: inc/widgets/widgets.php:34
+msgid "Add widgets here."
+msgstr ""
+
+#: inc/widgets/widgets.php:27
+msgid "One"
+msgstr ""
+
+#: inc/widgets/widgets.php:28
+msgid "Two"
+msgstr ""
+
+#: inc/widgets/widgets.php:29
+msgid "Three"
+msgstr ""
+
+#: inc/widgets/widgets.php:32
+msgid "Footer Widget "
+msgstr ""
+
+#: lib/breadcrumbs/breadcrumbs.php:308
+msgid "Browse:"
+msgstr ""
+
+#: lib/breadcrumbs/breadcrumbs.php:309
+msgctxt "breadcrumbs aria label"
+msgid "Breadcrumbs"
+msgstr ""
+
+#: lib/breadcrumbs/breadcrumbs.php:310
+msgid "Home"
+msgstr ""
+
+#: lib/breadcrumbs/breadcrumbs.php:311
+msgid "404 Not Found"
+msgstr ""
+
+#: lib/breadcrumbs/breadcrumbs.php:312
+#: sidebar.php:35
+msgid "Archives"
+msgstr ""
+
+#. Translators: %s is the search query.
+#: lib/breadcrumbs/breadcrumbs.php:314
+msgid "Search results for: %s"
+msgstr ""
+
+#. Translators: %s is the page number.
+#: lib/breadcrumbs/breadcrumbs.php:316
+msgid "Page %s"
+msgstr ""
+
+#. Translators: %s is the page number.
+#: lib/breadcrumbs/breadcrumbs.php:318
+msgid "Comment Page %s"
+msgstr ""
+
+#. Translators: Minute archive title. %s is the minute time format.
+#: lib/breadcrumbs/breadcrumbs.php:320
+msgid "Minute %s"
+msgstr ""
+
+#. Translators: Weekly archive title. %s is the week date format.
+#: lib/breadcrumbs/breadcrumbs.php:322
+msgid "Week %s"
+msgstr ""
+
+#: lib/breadcrumbs/breadcrumbs.php:782
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr ""
+
+#: lib/breadcrumbs/breadcrumbs.php:799
+msgctxt "minute archives time format"
+msgid "i"
+msgstr ""
+
+#: lib/breadcrumbs/breadcrumbs.php:816
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr ""
+
+#: lib/breadcrumbs/breadcrumbs.php:832
+#: lib/breadcrumbs/breadcrumbs.php:861
+#: lib/breadcrumbs/breadcrumbs.php:888
+#: lib/breadcrumbs/breadcrumbs.php:915
+#: lib/breadcrumbs/breadcrumbs.php:1255
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: lib/breadcrumbs/breadcrumbs.php:833
+#: lib/breadcrumbs/breadcrumbs.php:889
+#: lib/breadcrumbs/breadcrumbs.php:1259
+msgctxt "monthly archives date format"
+msgid "F"
+msgstr ""
+
+#: lib/breadcrumbs/breadcrumbs.php:834
+#: lib/breadcrumbs/breadcrumbs.php:1263
+msgctxt "daily archives date format"
+msgid "j"
+msgstr ""
+
+#: lib/breadcrumbs/breadcrumbs.php:862
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr ""
+
+#: searchform.php:11
+msgid "Search..."
+msgstr ""
+
+#: sidebar.php:19
+msgid "Search"
+msgstr ""
+
+#: sidebar.php:24
+msgid "Pages"
+msgstr ""
+
+#: sidebar.php:42
+msgid "Categories"
+msgstr ""
+
+#: sidebar.php:49
+msgid "Tags"
+msgstr ""
+
+#: sidebar.php:60
+msgid "No tags found."
+msgstr ""
+
+#: template-parts/content-none.php:11
+msgid "Nothing Found"
+msgstr ""
+
+#. translators: %1$s: Link to create a new post.
+#: template-parts/content-none.php:22
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:34
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:45
+msgid "It seems we can’t find what you’re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content-single.php:27
+msgid "Maintenance Works Default Image"
+msgstr ""
+
+#. translators: %s: Name of current post.
+#: template-parts/content-single.php:69
+msgid "Read More %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: template-parts/content-single.php:74
+#: template-parts/content.php:95
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content.php:102
+msgid "Read More"
+msgstr ""
