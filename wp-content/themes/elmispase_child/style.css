@@ -1,39 +1,75 @@
+
 /*
-Theme Name: elmispase_child
-Template:   elmispase
+Theme Name: Elmispase Child
+Description: elmispase_child
+Author: ELMIS
+Template: elmispase
+Version: 1.0.0
 */
 
-body { border: 5px solid red !important; }
-
-.entry-content, .post, .page {
-    border: 2px dashed blue !important; /* Синяя рамка для контента */
-    max-width: 100% !important;
+/* 1. ПРОВЕРКА СВЯЗИ: Если видите красную рамку — всё работает! */
+#header-left-section { 
+    border: 5px solid red !important; 
 }
 
+/* 2. ШРИФТЫ (Путь должен вести в папку вашей дочерней темы) 
 @font-face {
- font-family: IBMPlexSans-MediumItalic;
- src: url(http://gomel-osp.by/wp-content/themes/twentyfifteen/fonts/Lobster-Regular.ttf);
- font-weight: normal;
- }
-
-
-/* ����������� ��������� ��������
-.site-content,
-.container,
-.entry-content {
-    max-width: 100% !important;
-    padding-left: 0;
-    padding-right: 0;
+    font-family: 'Lobster';
+    src: url('fonts/Lobster-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 */
-/* Растягиваем контентную область главной страницы */
-.home #main .inner-wrap {
+/* 3. ВЕРСТКА 
+.entry-content, .post, .page {
+    border: 2px dashed blue !important;
+    max-width: 100% !important;
+}
+/* 1. РАЗБЛОКИРОВКА ШИРИНЫ (Оставляем, иначе флексу не хватит места) */
+#page, 
+.site,
+header#masthead,
+#header-text-nav-container,
+#header-text-nav-container .inner-wrap {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+/* 2. ЛОГИКА FLEXBOX (Заменяет старые флоаты) */
+#header-text-nav-wrap {
+    display: flex !important;
+    justify-content: space-between; /* Лого влево, меню вправо */
+    align-items: center;           /* Выравнивание по вертикали */
+    flex-wrap: wrap;               /* Чтобы на мобильных не ломалось */
+}
+
+/* Сброс старых правил темы для дочерних элементов */
+#header-left-section, 
+#header-right-section {
+    float: none !important;
+    width: auto !important; 
+    margin: 0 !important;
+}
+
+/* 3. РЕГУЛИРОВКА ОТСТУПОВ ОТ КРАЕВ (Ваш пульт управления) */
+#header-text-nav-container .inner-wrap {
+    padding-left: 30px !important;  /* Отступ ЛОГО от края */
+    padding-right: 30px !important; /* Отступ МЕНЮ от края */
+    box-sizing: border-box !important;
+}
+
+#header-right-section {
+    float: right;
+    max-width: 80%; /* Чтобы меню не наезжало на логотип на средних экранах */
+}
+/* 5. Растягиваем контейнер навигации и текста */
+#header-text-nav-container {
+    width: 100%;
+}
+
+/* 6. Убеждаемся, что внутренний блок тоже на всю ширину */
+#header-text-nav-wrap {
     max-width: 100%;
     width: 100%;
-    padding: 0;
-}
-
-/* Убираем лишние отступы у секций */
-.home .entry-content {
-    margin: 0;
 }

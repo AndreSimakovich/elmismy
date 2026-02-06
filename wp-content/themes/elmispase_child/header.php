@@ -7,6 +7,14 @@
  * @since Elmispase 1.0
  */
 ?>
+<?php 
+// Создаем безопасную функцию-заглушку, если плагин Options Framework не активен
+if ( ! function_exists( 'of_get_option' ) ) {
+    function of_get_option( $name, $default = false ) {
+        return $default;
+    }
+}
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
