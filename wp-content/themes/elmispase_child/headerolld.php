@@ -42,28 +42,32 @@ if ( ! function_exists( 'of_get_option' ) ) {
         if( of_get_option( 'elmispase_header_image_position', 'above' ) == 'above' ) { elmispase_render_header_image(); }
          */?>
 
-<!-- БЛОК 3.1: Изображение шапки с текстом и затемнением -->
-<div class="custom-header-wrapper"> 
+<!-- БЛОК 3.1: Изображение шапки с текстом поверх -->
+<div class="custom-header-wrapper" style="position: relative;"> 
     
-    <?php 
+    <?php // Это стандартная функция Spacious, которая выводит тот самый <div> с картинкой
     if( of_get_option( 'elmispase_header_image_position', 'above' ) == 'above' ) { 
         elmispase_render_header_image(); 
     } ?>
 
-    <!-- Слой затемнения -->
-    <div class="header-dark-overlay"></div>
-
-    <!-- Контейнер с контентом -->
-    <div class="header-overlay-content">
+    <!-- Вставляем ваш текст ПЕРЕД закрытием обертки -->
+    <div class="header-overlay-text">
         <h1 class="hero-title">На высоте новых технологий</h1>
         <p class="hero-subtitle">«Элмис» — вдыхаем новую жизнь в ваше оборудование</p>
-         <a href="#callback-form" class="btn-callback popmake-975">Рассчитать проект</a>
-        <a href="<?php echo esc_url(  home_url( path: '?page_id=931' ) ); ?>
-        "class="hero-subtitle">
-            Получить консультацию 
-        </a>
-    </div>
+    
 </div>
+        
+    <!-- Кнопка действия -->
+    <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="btn btn-primary btn-lg mt-3">
+        Закзать звонок 
+    </a>
+</div>
+
+
+  <!-- Кнопка с призывом -->
+    <a href="#callback-form" class="btn-callback">Рассчитать проект</a>
+</div>
+
 </div> <!-- Конец обертки -->
 
 
@@ -151,6 +155,6 @@ if ( ! function_exists( 'of_get_option' ) ) {
     <div id="main" class="clearfix">
         <div class="inner-wrap">
             <div class="inner-wrap">
- 
-</div>
+    <!-- Ваша кнопка -->
+    <a href="#" class="btn-callback">Рассчитать проект</a>
 </div>

@@ -1,0 +1,193 @@
+
+/*
+Theme Name: Elmispase Child
+Description: elmispase_child
+Author: ELMIS
+Template: elmispase
+Version: 1.0.0
+*/
+
+/* 1. ПРОВЕРКА СВЯЗИ: Если видите красную рамку — всё работает! */
+#header-left-section { 
+    border: 5px solid red !important; 
+}
+
+/* 1. РАЗБЛОКИРОВКА ШИРИНЫ (Оставляем, иначе флексу не хватит места) */
+#page, 
+.site,
+header#masthead,
+#header-text-nav-container,
+#header-text-nav-container .inner-wrap {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+/* 2. ЛОГИКА FLEXBOX (Заменяет старые флоаты) */
+/* Делаем обертку шапки флекс-контейнером */
+#header-text-nav-wrap {
+    display: flex;
+    justify-content: space-between; /* Лого слева, меню справа */
+    align-items: center;           /* Центрирование по вертикали */
+    flex-wrap: wrap;               /* Чтобы на мобилках блоки переносились */
+}
+/*Регулировка высоты блока  класса*/
+.wp-custom-header {
+    height: 20vh; /* % от высоты видимой части экрана */
+}
+
+
+/* Если нужно, чтобы правая часть (меню + виджеты) тоже была флексом */
+#header-right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Выравнивание элементов по правому краю */
+}
+
+/* Сброс старых правил темы для дочерних элементов */
+#header-left-section, 
+#header-right-section {
+    float: none !important;
+    width: auto !important; 
+    margin: 0 !important;
+}
+
+/* изменение размера изображение логотипа, подготовка картинки в файле function в функции  add_theme_support */
+#header-logo-image img, 
+.custom-logo-link img {
+    max-height: 75px !important; /* Укажите нужную высоту */
+    width: auto !important;      /* Ширина подстроится автоматически */
+    display: block;
+}
+
+/* Убираем лишние отступы вокруг контейнера логотипа, если они есть */
+#header-logo-image {
+    padding: 5px 0;
+}
+
+
+/*  РЕГУЛИРОВКА ОТСТУПОВ ОТ КРАЕВ (Ваш пульт управления) */
+#header-text-nav-container .inner-wrap {
+    padding-left: 30px !important;  /* Отступ ЛОГО от края */
+    padding-right: 30px !important; /* Отступ МЕНЮ от края */
+    box-sizing: border-box !important;
+}
+
+#header-right-section {
+    float: right;
+    max-width: 80%; /* Чтобы меню не наезжало на логотип на средних экранах */
+}
+/*  Растягиваем контейнер навигации и текста */
+#header-text-nav-container {
+    width: 100%;
+}
+/* стили в блоке логотипа header-left-section */
+
+/* Делаем блок флекс-контейнером */
+#header-left-section {
+    display: flex;
+    align-items: center; /* Выравнивание по вертикали (по центру) */
+    gap: 20px;           /* Расстояние между логотипом и текстом */
+}
+
+/* На всякий случай убираем лишние отступы у заголовков */
+#header-text h1, 
+#header-text h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Убеждаемся, что внутренний блок тоже на всю ширину */
+#header-text-nav-wrap {
+    max-width: 100%;
+    width: 100%;
+}
+
+/*   стили текста поверх картинки в header */
+/* 1. Делаем контейнер главным ориентиром для позиционирования */
+#wp-custom-header {
+    position: relative; /* Обязательно! */
+    display: block;
+    overflow: hidden;
+}
+
+/* 2. Настраиваем слой с текстом */
+
+
+/* Основной контейнер с картинкой */
+.hero-container {
+    background-image: url('путь-к-вашему-фото.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 500px; /* Высота блока */
+    display: flex;
+    align-items: center; /* Центровка по вертикали */
+    justify-content: flex-start; /* Текст слева (поменяйте на center если нужно) */
+    padding: 0 10%;
+}
+
+/* Затемнение фона для читаемости букв */
+.hero-container::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Темный слой прозрачностью 40% */
+    z-index: 1;
+}
+
+/* Контейнер текста (поверх затемнения) */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #ffffff; /* Текст белый для темного фона */
+    max-width: 700px;
+}
+
+/* Заголовок с мягкой тенью для объема */
+.hero-title {
+    font-size: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5); /* Тень делает текст четким на любом фоне */
+    margin: 0 0 15px 0;
+}
+
+/* Подзаголовок */
+.hero-subtitle {
+    font-size: 22px;
+    border-left: 4px solid #ffcc00; /* Яркий акцент (например, желтый или корпоративный синий) */
+    padding-left: 20px;
+    line-height: 1.4;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+/* Адаптивность для мобильных */
+@media screen and (max-width: 768px) {
+    .hero-container { padding: 0 5%; min-height: 350px; }
+    .hero-title { font-size: 28px; }
+    .hero-subtitle { font-size: 18px; }
+}
+
+
+
+
+.header-overlay-text {
+    position: absolute; /* Текст "летает" внутри контейнера */
+    top: 50%;           /* Сдвиг на середину сверху */
+    left: 50%;          /* Сдвиг на середину слева */
+    transform: translate(-50%, -50%); /* Точное центрирование */
+    
+    text-align: center;
+    color: #ffffff;     /* Белый цвет текста */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Тень, чтобы текст читался на светлом фоне */
+    z-index: 10;        /* Поднимаем над картинкой */
+    width: 100%;        /* Чтобы текст не сжимался */
+}
+
+/* 3. Оформляем шрифт */
+.header-overlay-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}

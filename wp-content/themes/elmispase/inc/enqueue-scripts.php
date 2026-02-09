@@ -121,8 +121,8 @@ function elmispase_scripts_styles_method() {
 
 	wp_enqueue_script( 'elmispase-custom', ELMISPASE_JS_URL . '/elmispase-custom.js', array( 'jquery' ) );
 
-	wp_enqueue_script( 'html5', ELMISPASE_JS_URL . '/html5shiv.min.js', true );
-	wp_script_add_data( 'html5', 'conditional', 'lte IE 8' );
+	//wp_enqueue_script( 'html5', ELMISPASE_JS_URL . '/html5shiv.min.js', true );
+	//wp_script_add_data( 'html5', 'conditional', 'lte IE 8' );
 }
 
 add_action( 'wp_enqueue_scripts', 'elmispase_scripts_styles_method' );

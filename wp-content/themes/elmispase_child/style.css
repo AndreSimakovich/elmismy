@@ -1,194 +1,215 @@
-
+css
 /*
 Theme Name: Elmispase Child
-Description: elmispase_child
-Author: ELMIS
+Description: elmispase_child - Полная версия со всеми исправлениями
 Template: elmispase
-Version: 1.0.0
+Version: 1.1.0
 */
 
-/* 1. ПРОВЕРКА СВЯЗИ: Если видите красную рамку — всё работает! */
-#header-left-section { 
-    border: 5px solid red !important; 
+/* 1. ГЛАВНЫЙ КОНТЕЙНЕР: делаем его флексом для легкого управления */
+#main .inner-wrap {
+    display: flex !important;
+    flex-direction: row; /* Ряд: Слева направо */
+    justify-content: space-between;
+    max-width: 100% !important; /* Растягиваем на весь экран */
+    width: 100% !important;
 }
 
-/* 1. РАЗБЛОКИРОВКА ШИРИНЫ (Оставляем, иначе флексу не хватит места) */
-#page, 
-.site,
-header#masthead,
-#header-text-nav-container,
-#header-text-nav-container .inner-wrap {
-    max-width: 100% !important;
-    width: 100% !important;
+/* 2. ЛЕВЫЙ САЙДБАР (Secondary) */
+#secondary {
+    order: 1;           /* Ставим первым в очереди (слева) */
+    width: 25% !important;
+    float: left !important;
     margin: 0 !important;
 }
 
-/* 2. ЛОГИКА FLEXBOX (Заменяет старые флоаты) */
-/* Делаем обертку шапки флекс-контейнером */
+/* 3. ОСНОВНОЙ КОНТЕНТ (Primary) */
+#primary {
+    order: 2;           /* Ставим вторым (справа от сайдбара) */
+    width: 70% !important;
+    float: right !important;
+    margin: 0 !important;
+}
+
+/* АДАПТИВНОСТЬ: на мобилках в колонку */
+@media screen and (max-width: 768px) {
+    #main .inner-wrap {
+        flex-direction: column !important;
+    }
+    #primary, #secondary {
+        width: 100% !important;
+        order: unset; /* Возвращаем стандартный порядок */
+    }
+}
+
+
+
+/* ==========================================================================
+   1. ШАПКА И ЛОГОТИП (Header Sections)
+   ========================================================================== */
+
+/* Флекс-контейнер для всей шапки */
 #header-text-nav-wrap {
     display: flex;
-    justify-content: space-between; /* Лого слева, меню справа */
-    align-items: center;           /* Центрирование по вертикали */
-    flex-wrap: wrap;               /* Чтобы на мобилках блоки переносились */
-}
-/*Регулировка высоты блока  класса*/
-.wp-custom-header {
-    height: 20vh; /* % от высоты видимой части экрана */
-}
-
-
-/* Если нужно, чтобы правая часть (меню + виджеты) тоже была флексом */
-#header-right-section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; /* Выравнивание элементов по правому краю */
-}
-
-/* Сброс старых правил темы для дочерних элементов */
-#header-left-section, 
-#header-right-section {
-    float: none !important;
-    width: auto !important; 
-    margin: 0 !important;
-}
-
-/* изменение размера изображение логотипа, подготовка картинки в файле function в функции  add_theme_support */
-#header-logo-image img, 
-.custom-logo-link img {
-    max-height: 75px !important; /* Укажите нужную высоту */
-    width: auto !important;      /* Ширина подстроится автоматически */
-    display: block;
-}
-
-/* Убираем лишние отступы вокруг контейнера логотипа, если они есть */
-#header-logo-image {
-    padding: 5px 0;
-}
-
-
-/*  РЕГУЛИРОВКА ОТСТУПОВ ОТ КРАЕВ (Ваш пульт управления) */
-#header-text-nav-container .inner-wrap {
-    padding-left: 30px !important;  /* Отступ ЛОГО от края */
-    padding-right: 30px !important; /* Отступ МЕНЮ от края */
-    box-sizing: border-box !important;
-}
-
-#header-right-section {
-    float: right;
-    max-width: 80%; /* Чтобы меню не наезжало на логотип на средних экранах */
-}
-/*  Растягиваем контейнер навигации и текста */
-#header-text-nav-container {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
+    max-width: 100%;
 }
-/* стили в блоке логотипа header-left-section */
 
-/* Делаем блок флекс-контейнером */
+/* Блок логотипа и названия (Left Section) */
 #header-left-section {
     display: flex;
-    align-items: center; /* Выравнивание по вертикали (по центру) */
-    gap: 20px;           /* Расстояние между логотипом и текстом */
+    align-items: center;
+    gap: 20px;
+    float: none !important; /* Убираем старые флоаты */
+    width: auto !important;
 }
 
-/* На всякий случай убираем лишние отступы у заголовков */
-#header-text h1, 
-#header-text h2 {
+#header-text h1, #header-text h2 {
     margin: 0;
     padding: 0;
 }
 
-/* Убеждаемся, что внутренний блок тоже на всю ширину */
-#header-text-nav-wrap {
-    max-width: 100%;
-    width: 100%;
+/* Ограничение высоты логотипа */
+#header-logo-image img, .custom-logo-link img {
+    max-height: 75px !important;
+    width: auto !important;
+    display: block;
 }
 
-/*   стили текста поверх картинки в header */
-/* 1. Делаем контейнер главным ориентиром для позиционирования */
-#wp-custom-header {
-    position: relative; /* Обязательно! */
-    display: block;
+/* ==========================================================================
+   2. HERO-БЛОК (Текст поверх картинки в Header)
+   ========================================================================== */
+
+   /* Главная обертка должна иметь относительное позиционирование */
+.custom-header-wrapper {
+    position: relative;
+    width: 100%;
     overflow: hidden;
 }
-
-/* 2. Настраиваем слой с текстом */
-/* Основной контейнер с картинкой */
-.hero-container {
-    background-image: url(' ');
+/* Контейнер обертки */
+#wp-custom-header, .hero-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* По умолчанию по центру */
+    min-height: 250px;
+    overflow: hidden;
     background-size: cover;
     background-position: center;
-    position: relative;
-    min-height: 500px; /* Высота блока */
-    display: flex;
-    align-items: center; /* Центровка по вертикали */
-    justify-content: flex-start; /* Текст слева (поменяйте на center если нужно) */
-    padding: 0 10%;
 }
 
-/* Затемнение фона для читаемости букв */
+/* Общий слой затемнения (Overlay) */
 .hero-container::before {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.4); /* Темный слой прозрачностью 40% */
+    background: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 
-/* Контейнер текста (поверх затемнения) */
-/* Указываем полную цепочку, чтобы перебить родителя */
-.header-overlay-text h1.hero-title {
-    font-size: 48px !important;
-    color: #ffffff !important;
-    text-transform: uppercase !important;
-    font-weight: 800 !important;
-    line-height: 1.2 !important;
-    margin-bottom: 15px !important;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.5) !important;
-}
-
-.header-overlay-text p.hero-subtitle {
-    font-size: 50px !important;
-    color: #eeeeee !important;
-    border-left: 8px solid #0056b3 !important; /* Ваш цвет */
-    padding-left: 35px !important;
-}
-
-/* Адаптивность для мобильных */
-@media screen and (max-width: 768px) {
-    .hero-container { padding: 0 5%; min-height: 350px; }
-    .hero-title { font-size: 28px; }
-    .hero-subtitle { font-size: 18px; }
-}
-
-
-
-
-.header-overlay-text {
-    position: absolute; /* Текст "летает" внутри контейнера */
-    top: 50%;           /* Сдвиг на середину сверху */
-    left: 50%;          /* Сдвиг на середину слева */
-    transform: translate(-50%, -50%); /* Точное центрирование */
+/* Контейнер текста над картинкой */
+/* Контейнер с текстом накладываем ПОВЕРХ картинки */
+/* 1. РОДИТЕЛЬСКИЙ КОНТЕЙНЕР */
+   .custom-header-wrapper {
+    position: relative;
+    width: 100%;
     
+    /* Адаптивная высота: 40% экрана, но не меньше 350px и не больше 600px */
+    height: 40vh; 
+    min-height: 350px; 
+    max-height: 600px;
+    
+    overflow: hidden;
+    line-height: 0;
+}
+
+/* 2. КАРТИНКА (Тег <img>) */
+.custom-header-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Имитация фонового изображения */
+    object-position: center;
+    display: block;
+}
+/* 2. СЛОЙ ЗАТЕМНЕНИЯ */
+.header-dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45); 
+    z-index: 5;
+}
+
+/* 3. КОНТЕНТ (Текст и кнопка) */
+.header-overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
     text-align: center;
-    color: #ffffff;     /* Белый цвет текста */
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Тень, чтобы текст читался на светлом фоне */
-    z-index: 10;        /* Поднимаем над картинкой */
-    width: 100%;        /* Чтобы текст не сжимался */
+    width: 85%;
+    line-height: normal;
+    
+    /* Выстраиваем элементы в колонку */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* 4. ТЕКСТОВЫЕ СТИЛИ */
+.hero-title {
+    font-size: clamp(28px, 5vw, 48px) !important;
+    color: #ffffff !important;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+/* 1. Подзаголовок */
+.hero-subtitle {
+    font-size: clamp(18px, 3vw, 24px) !important;
+    color: #f1f1f1 !important;
+    font-weight: 400;
+    margin-bottom: 30px;
+    
+    /* УДАЛЕНО: border-left и padding-left */
+    border-left: none !important; 
+    padding-left: 0 !important;
+    
+    display: block; /* Растягиваем на всю ширину, чтобы кнопка ушла вниз */
+    text-align: center; /* Центрируем текст */
 }
 
-/* 3. Оформляем шрифт */
-.header-overlay-text h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 0;
+/* 3. КОНТЕЙНЕР: Убеждаемся, что всё внутри центруется */
+.header-overlay-content {
+    display: flex;
+    flex-direction: column; /* Элементы встают друг под друга: Заголовок -> Подзаголовок -> Кнопка */
+    align-items: center;    /* Центровка по горизонтали */
+    justify-content: center;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 90%;
 }
-
-
+/* ==========================================================================
+   3. КНОПКИ И ФОРМЫ (Callback)
+   ========================================================================== */
+/* Кнопка на заголовке*/
 .btn-callback {
-    display: inline-block;
+    display: inline-block;/* Позволяет центрировать через text-align родителя */
+    margin: 0 auto;        /* Центровка */
     margin-top: 25px;
     padding: 15px 35px;
-    background-color: #0056b3; /* Корпоративный синий */
+    background-color: #0056b3;
     color: #ffffff !important;
     text-decoration: none !important;
     font-weight: bold;
@@ -196,29 +217,39 @@ header#masthead,
     border-radius: 3px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+       z-index: 999 !important; /* Поднимаем кнопку над всеми оверлеями */
+    pointer-events: auto !important; /* Гарантируем реакцию на клик */
 }
+
+/* Стили для многострочного поля в контакт форме */
+.callback-form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical; /* Разрешаем менять высоту только по вертикали */
+    min-height: 80px;
+    font-family: inherit; /* Чтобы шрифт совпадал с остальными полями */
+}
+
+/* Убираем лишние отступы у рядов, если они появились */
+.form-row {
+    margin-bottom: 5px;
 
 .btn-callback:hover {
     background-color: #004494;
-    transform: translateY(-2px); /* Эффект нажатия */
+    transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }
 
-/* Фиксация для мобильных, чтобы кнопка не прыгала к центру */
-@media screen and (max-width: 768px) {
-    .btn-callback {
-        padding: 12px 25px;
-        font-size: 14px;
-        display: block;
-        text-align: center;
-        max-width: 250px;
-    }
-    /* Контейнер формы */
+/* Контейнер формы обратной связи */
 .callback-form-container {
-    padding: 10px;
+    padding: 20px;
+    max-width: 400px;
 }
 
-/* Поля ввода */
 .callback-form-container input[type="text"],
 .callback-form-container input[type="tel"] {
     width: 100%;
@@ -229,7 +260,6 @@ header#masthead,
     font-size: 16px;
 }
 
-/* Кнопка внутри формы */
 .callback-form-container input[type="submit"] {
     width: 100%;
     background-color: #0056b3;
@@ -242,15 +272,158 @@ header#masthead,
     transition: background 0.3s;
 }
 
-.callback-form-container input[type="submit"]:hover {
-    background-color: #004494;
+/* ==========================================================================
+   4. АДАПТИВНОСТЬ (Media Queries)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .hero-container { 
+        min-height: 350px; 
+    }
+    
+    #header-text-nav-wrap {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-callback {
+        padding: 12px 25px;
+        font-size: 14px;
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .header-overlay-text p.hero-subtitle {
+        border-left: 4px solid #0056b3;
+        padding-left: 15px;
+    }
+
+/* 4. АДАПТИВНОСТЬ ДЛЯ ТЕЛЕФОНОВ */
+@media screen and (max-width: 768px) {
+    .custom-header-wrapper {
+        height: 350px; /* Фиксируем на мобильных для стабильности */
+    }
+    .hero-title {
+        font-size: 24px !important;
+        margin-bottom: 10px;
+    }
+    .hero-subtitle {
+        font-size: 16px !important;
+        margin-bottom: 20px;
+    }
+}
+}
+}
+/* Адаптация формы для мобильных устройств */
+@media screen and (max-width: 480px) {
+    /* Уменьшаем внутренние отступы контейнера */
+    .callback-form-container {
+        padding: 15px 10px;
+    }
+
+    /* Делаем поля чуть ниже, чтобы сэкономить место по вертикали */
+    .callback-form-container input[type="text"],
+    .callback-form-container input[type="tel"],
+    .callback-form-container textarea {
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 14px; /* Чуть меньше шрифт для узких экранов */
+    }
+
+    .callback-form-container textarea {
+        min-height: 60px; /* Уменьшаем высоту поля сообщения */
+    }
+
+    .callback-form-container input[type="submit"] {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .form-note {
+        font-size: 11px;
+        line-height: 1.3;
+    }
 }
 
-.form-note {
-    font-size: 12px;
-    color: #777;
-    margin-top: 10px;
-    text-align: center;
-} 
+/* Настройка самого окна Popup Maker (если оно обрезается) */
+.pum-container {
+    max-width: 95% !important; /* Чтобы окно не прилипало к краям экрана */
+    max-height: 90vh !important; /* Не выше 90% экрана */
+    overflow-y: auto !important; /* Добавляем внутреннюю прокрутку, если форма длинная */
+}
 
+
+/* Включаем отображение сайдбара и контента рядом */
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Основной контент (70% ширины) */
+#primary {
+    width: 70% !important;
+    float: right !important; /* Если макет с левым сайдбаром */
+}
+
+/* Левый сайдбар (25% ширины) */
+#secondary {
+    width: 25% !important;
+    float: left !important;
+    display: block !important; /* Принудительно показываем */
+}
+
+/* Адаптивность: на мобильных в одну колонку */
+@media screen and (max-width: 768px) {
+    #primary, #secondary {
+        width: 100% !important;
+        float: none !important;
+    }
+}
+
+
+
+
+/* =============================================================
+   ВИЗУАЛЬНАЯ ОТЛАДКА СТРУКТУРЫ (Синие рамки)
+   ============================================================= */
+
+/* 1. ШАПКА (Заголовок) */
+#masthead, 
+.site-header {
+    border: 3px solid #0056b3 !important;
+    margin-bottom: 10px !important;
+}
+
+/* 2. ЦЕНТРАЛЬНАЯ ЧАСТЬ (Контент) */
+#primary, 
+#content, 
+.content-area {
+    border: 3px solid #0056b3 !important;
+    min-height: 100px;
+}
+
+/* 3. САЙДБАРЫ (Левый и Правый объединены общим правилом) */
+#secondary, 
+.sidebar, 
+#secondary-left, 
+#secondary-right {
+    border: 3px solid #0056b3 !important;
+    background: rgba(0, 86, 179, 0.05); /* Легкая заливка, чтобы видеть блок если он пуст */
+    min-height: 200px;
+}
+
+/* 4. ПОДВАЛ (Футер) */
+#colophon, 
+.site-footer {
+    border: 3px solid #0056b3 !important;
+    margin-top: 10px !important;
+}
+
+/* Общая обертка контента (чтобы видеть как они лежат рядом) */
+#main {
+    border: 1px dashed #ccc;
+    padding: 10px;
 }
