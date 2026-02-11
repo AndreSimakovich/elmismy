@@ -55,11 +55,9 @@ if ( ! function_exists( 'of_get_option' ) ) {
 
     <!-- Контейнер с контентом -->
     <div class="header-overlay-content">
-        <h1 class="hero-title">«ЭЛМИС» — вдыхаем новую жизнь в ваше оборудование</h1>
-        <p class="hero-subtitle">На высоте новых технологий</p>
-            <!-- Кнопки теперь в общем флекс-контейнере -->
-    <div class="hero-buttons-wrap">
-        <a href="#callback-form" class="btn-callback popmake-975">Рассчитать проект</a>
+        <h1 class="hero-title">На высоте новых технологий</h1>
+        <p class="hero-subtitle">«Элмис» — вдыхаем новую жизнь в ваше оборудование</p>
+         <a href="#callback-form" class="btn-callback popmake-975">Рассчитать проект</a>
         <a href="<?php echo esc_url( get_permalink( 931 ) ); ?>" class="hero-link">
             Получить консультацию 
         </a>

@@ -201,87 +201,25 @@ Version: 1.1.0
 /* ==========================================================================
    3. КНОПКИ И ФОРМЫ (Callback)
    ========================================================================== */
-
-/* Контейнер для кнопок */
-.hero-buttons-wrap {
-    display: flex;
-    justify-content: center; /* Центрируем кнопки по горизонтали */
-    align-items: center;     /* Центрируем по вертикали */
-    gap: 20px;               /* Расстояние между кнопками */
-    margin-top: 25px;        /* Отступ от текста сверху */
-    flex-wrap: wrap;         /* Чтобы на узких мобилках кнопки переносились */
-}
-
-
-/* Кнопка на позвонить*/
-/* Стили для второй ссылки (hero-link), чтобы она была похожа на кнопку или имела свой стиль */
-.hero-link {
-    display: inline-block;
-    padding: 15px 20px;
-    background-color: #0056b3;;
+/* Кнопка для формы*/
+.btn-callback {
+    display: inline-block;/* Позволяет центрировать через text-align родителя */
+    margin: 0 auto;        /* Центровка */
+    margin-top: 25px;
+    padding: 15px 35px;
+    background-color: #0056b3;
     color: #ffffff !important;
-    border: 2px solid #ffffff;
     text-decoration: none !important;
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 3px;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+       z-index: 999 !important; /* Поднимаем кнопку над всеми оверлеями */
+    pointer-events: auto !important; /* Гарантируем реакцию на клик */
 }
-
-.hero-link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    transform: translateY(-15px);
-}
-
-/* Стили для подписей к картинкам и галереям */
-.wp-caption-text {
-    font-size: 14px;
-    color: #555;
-    font-style: italic;
-    text-align: center;
-    margin-top: 8px;
-}
-.figcaption-glv {
-    font-size: 5rem;      /* Сделать текст чуть меньше основного */
-    color: #e2e2e2;             /* Серый цвет, чтобы не отвлекал */
-    font-style: italic;      /* Курсив — классика для подписей */
-    text-align: center;      /* Выравнивание по центру */
-    margin-top: 10px;        /* Отступ от картинки */
-}
-
-
-
-/* Объединяем все возможные варианты подписей в один блок */
-.wp-caption-text, 
-.wp-element-caption, 
-.wp-caption .wp-caption-text {
-    text-align: center;
-    margin: 0.8rem 0;
-    font-style: italic; /* добавьте свое, если нужно */
-}
-
-/* Выбираем фигуру с классом миниатюры и находим в ней подпись */
-figure.wp-block-image.size-thumbnail .wp-element-caption {
-    font-size: 16px;           /* Уменьшим шрифт для маленького фото */
-    color: #dcdee0;            
-    text-transform: uppercase; /* Все буквы заглавные (как в вашем примере) */
-    margin-top: 5px;
-    letter-spacing: 2px;       /* Расстояние между буквами */
-}
-
-/* Настройка самого жирного текста внутри этой подписи */
-figure.wp-block-image.size-thumbnail .wp-element-caption strong {
-    /* color: #f5f5f5;            Сделаем слово СПЕЦИАЛИЗАЦИЯ красным
-    font-weight: 900; */
-     font-size: 150%;           /* Уменьшим шрифт для маленького фото */
-    color: #f8fcff;            
-    text-transform: uppercase; /* Все буквы заглавные (как в вашем примере) */
-    margin-top: 5px;
-    letter-spacing: 2px;       /* Расстояние между буквами */
-}
-
-/* Кнопка для формы*/
-.btn-callback {
+/* Кнопка на позвонить*/
+.hero-link{
     display: inline-block;/* Позволяет центрировать через text-align родителя */
     margin: 0 auto;        /* Центровка */
     margin-top: 25px;
