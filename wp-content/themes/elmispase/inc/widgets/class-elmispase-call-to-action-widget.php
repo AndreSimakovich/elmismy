@@ -92,8 +92,7 @@ class elmispase_call_to_action_widget extends WP_Widget {
 			</div>
 			<?php
 			if ( ! empty( $button_text ) ) {
-				?>
-				<a class="call-to-action-button" href="<?php echo $button_url; ?>" title="<?php echo esc_attr( $button_text ); ?>"><?php echo esc_html( $button_text ); ?></a>
+				?><a class="call-to-action-button" href="<?php echo esc_url( home_url( '/contact' ) ); ?>" title="<?php echo esc_attr( $button_text ); ?>"><?php echo esc_html( $button_text ); ?></a>
 				<?php
 			}
 			?>
