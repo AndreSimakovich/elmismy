@@ -10,11 +10,27 @@ Version: 1.1.0
    1. ШАПКА И ЛОГОТИП (Header Sections)
    ========================================================================== */
 
+/* ВРЕМЕННЫЙ БЛОК: Визуальный аудит границ */
+#header-text-nav-wrap, 
+#header-text-nav-wrap > div,
+#header-left-section,
+#header-right-section,
+#header-logo-image,
+#header-text,
+.inner-wrap {
+    outline: 1px solid rgba(255, 0, 0, 0.5) !important; /* Красная рамка для контейнеров */
+}
+
+#header-text-nav-wrap * {
+    outline: 1px dashed rgba(0, 255, 0, 0.4); /* Зеленая пунктирная рамка для всех вложенных элементов */
+}
+
+   
 /* Флекс-контейнер для всей шапки */
 #header-text-nav-wrap {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     flex-wrap: wrap;
     width: 100%;
     max-width: 100%;
@@ -23,11 +39,24 @@ Version: 1.1.0
 /* Блок логотипа и названия (Left Section) */
 #header-left-section {
     display: flex;
-    align-items: center;
+    align-items:center;
     gap: 20px;
     float: none !important; /* Убираем старые флоаты */
     width: auto !important;
+    margin-left: 2px;
 }
+
+
+/* Блок логотипа и названия (Left Section) */
+#header-right-section {
+    display: flex;
+    align-items:center;
+    gap: 20px;
+    float: none !important; /* Убираем старые флоаты */
+    width: auto !important;
+    margin-right: 20px;
+}
+
 
 #header-text h1, #header-text h2 {
     margin: 0;
@@ -188,7 +217,7 @@ Version: 1.1.0
 /* Стили для второй ссылки (hero-link), чтобы она была похожа на кнопку или имела свой стиль */
 .hero-link {
     display: inline-block;
-    padding: 15px 35px;
+    padding: 15px 20px;
     background-color: #0056b3;;
     color: #ffffff !important;
     border: 2px solid #ffffff;
@@ -204,9 +233,52 @@ Version: 1.1.0
     transform: translateY(-15px);
 }
 
+/* Стили для подписей к картинкам и галереям */
+.wp-caption-text {
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+    text-align: center;
+    margin-top: 8px;
+}
+.figcaption-glv {
+    font-size: 5rem;      /* Сделать текст чуть меньше основного */
+    color: #e2e2e2;             /* Серый цвет, чтобы не отвлекал */
+    font-style: italic;      /* Курсив — классика для подписей */
+    text-align: center;      /* Выравнивание по центру */
+    margin-top: 10px;        /* Отступ от картинки */
+}
 
 
 
+/* Объединяем все возможные варианты подписей в один блок */
+.wp-caption-text, 
+.wp-element-caption, 
+.wp-caption .wp-caption-text {
+    text-align: center;
+    margin: 0.8rem 0;
+    font-style: italic; /* добавьте свое, если нужно */
+}
+
+/* Выбираем фигуру с классом миниатюры и находим в ней подпись */
+figure.wp-block-image.size-thumbnail .wp-element-caption {
+    font-size: 16px;           /* Уменьшим шрифт для маленького фото */
+    color: #dcdee0;            
+    text-transform: uppercase; /* Все буквы заглавные (как в вашем примере) */
+    margin-top: 5px;
+    letter-spacing: 2px;       /* Расстояние между буквами */
+}
+
+/* Настройка самого жирного текста внутри этой подписи */
+figure.wp-block-image.size-thumbnail .wp-element-caption strong {
+    /* color: #f5f5f5;            Сделаем слово СПЕЦИАЛИЗАЦИЯ красным
+    font-weight: 900; */
+     font-size: 150%;           /* Уменьшим шрифт для маленького фото */
+    color: #f8fcff;            
+    text-transform: uppercase; /* Все буквы заглавные (как в вашем примере) */
+    margin-top: 5px;
+    letter-spacing: 2px;       /* Расстояние между буквами */
+}
 
 /* Кнопка для формы*/
 .btn-callback {
@@ -243,6 +315,7 @@ Version: 1.1.0
 /* Убираем лишние отступы у рядов, если они появились */
 .form-row {
     margin-bottom: 5px;
+}
 
 .btn-callback:hover {
     background-color: #004494;
@@ -321,7 +394,7 @@ Version: 1.1.0
     }
 }
 }
-}
+
 /* Адаптация формы для мобильных устройств */
 @media screen and (max-width: 480px) {
     /* Уменьшаем внутренние отступы контейнера */
@@ -382,5 +455,37 @@ Version: 1.1.0
 @media screen and (min-width: 768px) {
     .widget-video-bg {
         max-height: 225px;
+    }
+}
+
+.entry-content h1.wp-block-heading.has-text-align-center {
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+
+.custom-hero-text {
+    /* clamp(МИНИМУМ, ИДЕАЛЬНЫЙ_РАЗМЕР, МАКСИМУМ) */
+    font-size: clamp(18px, 2.5vw, 32px); 
+    line-height: 1.5;      /* Межстрочный интервал */
+    text-align: justify;   /* Растягиваем текст по ширине блока */
+    text-align-last: center; /* Последнюю строку центрируем (или justify для полной растяжки) */
+    
+    width: 100%;           /* Растягиваем сам контейнер */
+    max-width: 1200px;     /* Ограничение максимальной ширины */
+    margin: 0 auto;        /* Центрируем блок на странице */
+    
+    font-weight: 500;
+    color: #333;
+}
+
+/* Адаптивность для мобильных телефонов */
+@media (max-width: 768px) {
+    .custom-hero-text {
+        font-size: 1.2rem; /* На смартфонах переходим на фиксированный размер */
+        text-align: center; /* На узких экранах justify часто выглядит плохо */
+        text-align-last: center;
     }
 }

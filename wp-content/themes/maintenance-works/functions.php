@@ -73,6 +73,29 @@ if ( ! function_exists( 'maintenance_works_after_theme_support' ) ) :
 		add_theme_support( 'wp-block-styles' );
 
 		require get_template_directory() . '/inc/metabox.php';
+		require get_template_directory() . '/inc/homepage-setup/homepage-setup-settings.php';
+
+		if (! defined( 'MAINTENANCE_WORK_DOCS_PRO' ) ){
+		define('MAINTENANCE_WORK_DOCS_PRO',__('https://layout.omegathemes.com/steps/pro-maintenance-works/','maintenance-works'));
+		}
+		if (! defined( 'MAINTENANCE_WORK_BUY_NOW' ) ){
+		define('MAINTENANCE_WORK_BUY_NOW',__('https://www.omegathemes.com/products/online-learning-wordpress-theme','maintenance-works'));
+		}
+		if (! defined( 'MAINTENANCE_WORK_SUPPORT_FREE' ) ){
+		define('MAINTENANCE_WORK_SUPPORT_FREE',__('https://wordpress.org/support/theme/maintenance-works/','maintenance-works'));
+		}
+		if (! defined( 'MAINTENANCE_WORK_REVIEW_FREE' ) ){
+		define('MAINTENANCE_WORK_REVIEW_FREE',__('https://wordpress.org/support/theme/maintenance-works/reviews/#new-post/','maintenance-works'));
+		}
+		if (! defined( 'MAINTENANCE_WORK_DEMO_PRO' ) ){
+		define('MAINTENANCE_WORK_DEMO_PRO',__('https://layout.omegathemes.com/maintenance-works/','maintenance-works'));
+		}
+		if (! defined( 'MAINTENANCE_WORK_LITE_DOCS_PRO' ) ){
+		define('MAINTENANCE_WORK_LITE_DOCS_PRO',__('https://layout.omegathemes.com/steps/maintenance-works-lite/','maintenance-works'));
+		}
+		if (! defined( 'MAINTENANCE_WORK_BUNDLE_BUTTON' ) ){
+			define('MAINTENANCE_WORK_BUNDLE_BUTTON',__('https://www.omegathemes.com/products/wp-theme-bundle','maintenance-works'));
+		}
 
 	}
 
@@ -244,3 +267,49 @@ function maintenance_works_sticky_sidebar_enabled() {
     }
 }
 add_action('wp_enqueue_scripts', 'maintenance_works_sticky_sidebar_enabled');
+
+// NOTICE FUNCTION
+
+function maintenance_works_admin_notice() { 
+    global $pagenow;
+    $theme_args = wp_get_theme();
+    $meta = get_option( 'maintenance_works_admin_notice' );
+    $name = $theme_args->get( 'Name' );
+    $current_screen = get_current_screen();
+
+    if ( ! $meta ) {
+        if ( is_network_admin() ) {
+            return;
+        }
+
+        if ( ! current_user_can( 'manage_options' ) ) {
+            return;
+        }
+
+        if ( $current_screen->base != 'appearance_page_maintenanceworks-wizard' ) {
+            ?>
+            <div class="notice notice-success notice-content">
+                <h2><?php esc_html_e('Welcome! Thank you for choosing Online Learning LMS. Let’s Set Up Your Website!', 'maintenance-works') ?> </h2>
+                <p><?php esc_html_e('Before you dive into customization, let’s go through a quick setup process to ensure everything runs smoothly. Click below to start setting up your website in minutes!', 'maintenance-works') ?> </p>
+                <div class="info-link">
+                    <a href="<?php echo esc_url( admin_url( 'themes.php?page=maintenanceworks-wizard' ) ); ?>"><?php esc_html_e('Get Started with Online Learning LMS', 'maintenance-works'); ?></a>
+                </div>
+                <p class="dismiss-link"><strong><a href="?maintenance_works_admin_notice=1"><?php esc_html_e( 'Dismiss', 'maintenance-works' ); ?></a></strong></p>
+            </div>
+            <?php
+        }
+    }
+}
+add_action( 'admin_notices', 'maintenance_works_admin_notice' );
+
+if ( ! function_exists( 'maintenance_works_update_admin_notice' ) ) :
+/**
+ * Updating admin notice on dismiss
+ */
+function maintenance_works_update_admin_notice() {
+    if ( isset( $_GET['maintenance_works_admin_notice'] ) && $_GET['maintenance_works_admin_notice'] == '1' ) {
+        update_option( 'maintenance_works_admin_notice', true );
+    }
+}
+endif;
+add_action( 'admin_init', 'maintenance_works_update_admin_notice' );

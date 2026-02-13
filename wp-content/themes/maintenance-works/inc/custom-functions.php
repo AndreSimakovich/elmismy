@@ -374,7 +374,7 @@ if( !function_exists('maintenance_works_footer_content_info') ):
                                 $maintenance_works_footer_copyright_text = wp_kses_post( get_theme_mod( 'maintenance_works_footer_copyright_text', $maintenance_works_default['maintenance_works_footer_copyright_text'] ) );
                                     echo esc_html( $maintenance_works_footer_copyright_text );
                                     echo '<br>';
-                                    echo esc_html__('Theme: ', 'maintenance-works') .  esc_html__('Maintenance Works', 'maintenance-works') . esc_html__(' By ', 'maintenance-works') . '  <span>' . esc_html__('OMEGA ', 'maintenance-works') . '</span>';
+                                    echo esc_html__('Theme: ', 'maintenance-works') . '<a href="' . esc_url('https://www.omegathemes.com/products/maintenance-works') . '" title="' . esc_attr__('Electrician Company ', 'maintenance-works') . '" target="_blank"><span>' . esc_html__('Maintenance Works  ', 'maintenance-works') . '</span></a>' . esc_html__(' By ', 'maintenance-works') . '  <span>' . esc_html__('OMEGA ', 'maintenance-works') . '</span>';
                                     echo esc_html__('Powered by ', 'maintenance-works') . '<a href="' . esc_url('https://wordpress.org') . '" title="' . esc_attr__('WordPress', 'maintenance-works') . '" target="_blank"><span>' . esc_html__('WordPress.', 'maintenance-works') . '</span></a>';
                                  ?>
                             </div>

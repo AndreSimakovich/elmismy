@@ -138,6 +138,20 @@ function maintenance_works_customize_register( $wp_customize ) {
 			)
 		)
 	);
+
+	// Register second custom section (Buy Bundle)
+	$wp_customize->add_section(
+		new Maintenance_Works_Customize_Section_Upsell(
+			$wp_customize,
+			'theme_upsell_bundle',
+			array(
+				'title'    => esc_html__( 'Buy WP Theme Bundle', 'maintenance-works' ),
+				'pro_text' => esc_html__( 'Get Bundle', 'maintenance-works' ),
+				'pro_url'  => esc_url( 'https://www.omegathemes.com/products/wp-theme-bundle' ),
+				'priority' => 2,
+			)
+		)
+	);
 }
 
 endif;

@@ -3,7 +3,7 @@ Contributors: omegathemes
 Requires at least: 5.3
 Tested up to: 6.9
 Requires PHP: 7.2
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -110,3 +110,8 @@ Source: https://pxhere.com/en/photo/1608794
 = 1.0.1 =
 * Added font licence.
 * Updated owl css file.
+
+= 1.0.2 =
+* Added demo impoter.
+* Added getstart.
+* Added footer link.

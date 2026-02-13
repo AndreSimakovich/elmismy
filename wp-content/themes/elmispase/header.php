@@ -147,7 +147,9 @@ if ( function_exists( 'wp_body_open' ) ) {
 							</div>
 							<?php
 						} ?>
-
+<?php if ( ! ( 'four' === get_theme_mod( 'elmispase_header_display_type', 'one' ) ) ) :
+							elmispase_main_nav();
+						endif; ?>
 						<?php if ( 'four' !== get_theme_mod( 'elmispase_header_display_type', 'one' ) ) : ?>
 							<div class="header-action">
 								<?php
@@ -167,9 +169,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 							</div>
 						<?php endif; ?>
 
-						<?php if ( ! ( 'four' === get_theme_mod( 'elmispase_header_display_type', 'one' ) ) ) :
-							elmispase_main_nav();
-						endif; ?>
+						
 
 					</div><!-- #header-right-section -->
 
