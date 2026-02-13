@@ -1,0 +1,511 @@
+css
+/*
+Theme Name: Elmispase Child
+Description: elmispase_child - Полная версия со всеми исправлениями
+Template: elmispase
+Version: 1.1.0
+*/
+
+/* ==========================================================================
+   1. ШАПКА И ЛОГОТИП (Header Sections)
+   ========================================================================== */
+
+/* ВРЕМЕННЫЙ БЛОК: Визуальный аудит границ */
+#header-text-nav-wrap, 
+#header-text-nav-wrap > div,
+#header-left-section,
+#header-right-section,
+#header-logo-image,
+#header-text,
+.inner-wrap {
+    outline: 1px solid rgba(255, 0, 0, 0.5) !important; /* Красная рамка для контейнеров */
+}
+
+#header-text-nav-wrap * {
+    outline: 1px dashed rgba(0, 255, 0, 0.4); /* Зеленая пунктирная рамка для всех вложенных элементов */
+}
+
+   
+/* Флекс-контейнер для всей шапки */
+#header-text-nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Блок логотипа и названия (Left Section) */
+#header-left-section {
+    display: flex;
+    align-items:center;
+    gap: 20px;
+    float: none !important; /* Убираем старые флоаты */
+    width: auto !important;
+    margin-left: 2px;
+}
+
+
+/* Блок логотипа и названия (Left Section) */
+#header-right-section {
+    display: flex;
+    align-items:center;
+    gap: 20px;
+    float: none !important; /* Убираем старые флоаты */
+    width: auto !important;
+    margin-right: 20px;
+}
+
+
+#header-text h1, #header-text h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ограничение высоты логотипа */
+#header-logo-image img, .custom-logo-link img {
+    max-height: 75px !important;
+    width: auto !important;
+    display: block;
+}
+
+/* ==========================================================================
+   2. HERO-БЛОК (Текст поверх картинки в Header)
+   ========================================================================== */
+
+   /* Главная обертка должна иметь относительное позиционирование */
+.custom-header-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+/* Контейнер обертки */
+#wp-custom-header, .hero-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* По умолчанию по центру */
+    min-height: 250px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Общий слой затемнения (Overlay) */
+.hero-container::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* Контейнер текста над картинкой */
+/* Контейнер с текстом накладываем ПОВЕРХ картинки */
+/* 1. РОДИТЕЛЬСКИЙ КОНТЕЙНЕР */
+   .custom-header-wrapper {
+    position: relative;
+    width: 100%;
+    
+    /* Адаптивная высота: 40% экрана, но не меньше 350px и не больше 600px */
+    height: 30vh; 
+    min-height: 200px; 
+    max-height: 400px;
+    
+    overflow: hidden;
+    line-height: 0;
+}
+
+/* 2. КАРТИНКА (Тег <img>) */
+.custom-header-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Имитация фонового изображения */
+    object-position: center;
+    display: block;
+}
+/* 2. СЛОЙ ЗАТЕМНЕНИЯ */
+.header-dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45); 
+    z-index: 5;
+}
+
+/* 3. КОНТЕНТ (Текст и кнопка) */
+.header-overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+    width: 85%;
+    line-height: normal;
+    
+    /* Выстраиваем элементы в колонку */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     justify-content: center; /* Центрируем содержимое внутри самого флекса */
+    gap: 5px; /* Управляем отступами между всеми элементами сразу */
+}
+/* 4. ТЕКСТОВЫЕ СТИЛИ */
+.hero-title {
+    font-size: clamp(28px, 5vw, 48px) !important;
+    color: #ffffff !important;
+    text-transform: uppercase;
+    font-weight: 800;
+     line-height: 1.1; /* Уменьшаем, чтобы заголовок был компактнее */
+    margin: 0 !important; /* Убираем маржин, за него теперь отвечает gap */ 
+    margin-bottom: 15px;
+    text-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+}
+/* 1. Подзаголовок */
+.hero-subtitle {
+    font-size: clamp(16px, 3vw, 22px) !important;
+    color: #f1f1f1 !important;
+    font-weight: 400;
+    margin-bottom: 10px;
+    line-height: 1.4; /* Увеличим для читаемости, если текст перенесется */
+    margin: 0 !important; /* Убираем маржин */
+    display: inline-block; /* Для ссылок лучше использовать inline-block */
+    max-width: 800px; /* Чтобы текст не растягивался на весь экран */
+    
+    /* УДАЛЕНО: border-left и padding-left */
+    border-left: none !important; 
+    padding-left: 0 !important;
+    
+    display: block; /* Растягиваем на всю ширину, чтобы кнопка ушла вниз */
+    text-align: center; /* Центрируем текст */
+}
+
+/* 3. КОНТЕЙНЕР: Убеждаемся, что всё внутри центруется */
+.header-overlay-content {
+    display: flex;
+    flex-direction: column; /* Элементы встают друг под друга: Заголовок -> Подзаголовок -> Кнопка */
+    align-items: center;    /* Центровка по горизонтали */
+    justify-content: center;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 90%;
+}
+/* ==========================================================================
+   3. КНОПКИ И ФОРМЫ (Callback)
+   ========================================================================== */
+<<<<<<< HEAD
+
+/* Контейнер для кнопок */
+.hero-buttons-wrap {
+    display: flex;
+    justify-content: center; /* Центрируем кнопки по горизонтали */
+    align-items: center;     /* Центрируем по вертикали */
+    gap: 20px;               /* Расстояние между кнопками */
+    margin-top: 25px;        /* Отступ от текста сверху */
+    flex-wrap: wrap;         /* Чтобы на узких мобилках кнопки переносились */
+}
+
+
+/* Кнопка на позвонить*/
+/* Стили для второй ссылки (hero-link), чтобы она была похожа на кнопку или имела свой стиль */
+.hero-link {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #0056b3;;
+    color: #ffffff !important;
+    border: 2px solid #ffffff;
+    text-decoration: none !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.hero-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-15px);
+}
+
+/* Стили для подписей к картинкам и галереям */
+.wp-caption-text {
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+    text-align: center;
+    margin-top: 8px;
+}
+.figcaption-glv {
+    font-size: 5rem;      /* Сделать текст чуть меньше основного */
+    color: #e2e2e2;             /* Серый цвет, чтобы не отвлекал */
+    font-style: italic;      /* Курсив — классика для подписей */
+    text-align: center;      /* Выравнивание по центру */
+    margin-top: 10px;        /* Отступ от картинки */
+}
+
+
+
+/* Объединяем все возможные варианты подписей в один блок */
+.wp-caption-text, 
+.wp-element-caption, 
+.wp-caption .wp-caption-text {
+    text-align: center;
+    margin: 0.8rem 0;
+    font-style: italic; /* добавьте свое, если нужно */
+}
+
+/* Выбираем фигуру с классом миниатюры и находим в ней подпись */
+figure.wp-block-image.size-thumbnail .wp-element-caption {
+    font-size: 16px;           /* Уменьшим шрифт для маленького фото */
+    color: #dcdee0;            
+    text-transform: uppercase; /* Все буквы заглавные (как в вашем примере) */
+    margin-top: 5px;
+    letter-spacing: 2px;       /* Расстояние между буквами */
+}
+
+/* Настройка самого жирного текста внутри этой подписи */
+figure.wp-block-image.size-thumbnail .wp-element-caption strong {
+    /* color: #f5f5f5;            Сделаем слово СПЕЦИАЛИЗАЦИЯ красным
+    font-weight: 900; */
+     font-size: 150%;           /* Уменьшим шрифт для маленького фото */
+    color: #f8fcff;            
+    text-transform: uppercase; /* Все буквы заглавные (как в вашем примере) */
+    margin-top: 5px;
+    letter-spacing: 2px;       /* Расстояние между буквами */
+}
+
+=======
+>>>>>>> 436bb3c ( Определена концепция)
+/* Кнопка для формы*/
+.btn-callback {
+    display: inline-block;/* Позволяет центрировать через text-align родителя */
+    margin: 0 auto;        /* Центровка */
+    margin-top: 25px;
+    padding: 15px 35px;
+    background-color: #0056b3;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+       z-index: 999 !important; /* Поднимаем кнопку над всеми оверлеями */
+    pointer-events: auto !important; /* Гарантируем реакцию на клик */
+}
+/* Кнопка на позвонить*/
+.hero-link{
+    display: inline-block;/* Позволяет центрировать через text-align родителя */
+    margin: 0 auto;        /* Центровка */
+    margin-top: 25px;
+    padding: 15px 35px;
+    background-color: #0056b3;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+       z-index: 999 !important; /* Поднимаем кнопку над всеми оверлеями */
+    pointer-events: auto !important; /* Гарантируем реакцию на клик */
+}
+
+
+/* Стили для многострочного поля в контакт форме */
+.callback-form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical; /* Разрешаем менять высоту только по вертикали */
+    min-height: 80px;
+    font-family: inherit; /* Чтобы шрифт совпадал с остальными полями */
+}
+
+/* Убираем лишние отступы у рядов, если они появились */
+.form-row {
+    margin-bottom: 5px;
+}
+
+.btn-callback:hover {
+    background-color: #004494;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+/* Контейнер формы обратной связи */
+.callback-form-container {
+    padding: 20px;
+    max-width: 400px;
+}
+
+.callback-form-container input[type="text"],
+.callback-form-container input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.callback-form-container input[type="submit"] {
+    width: 100%;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* ==========================================================================
+   4. АДАПТИВНОСТЬ (Media Queries)
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .hero-container { 
+        min-height: 350px; 
+    }
+    
+    #header-text-nav-wrap {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-callback {
+        padding: 12px 25px;
+        font-size: 14px;
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .header-overlay-text p.hero-subtitle {
+        border-left: 4px solid #0056b3;
+        padding-left: 15px;
+    }
+
+/* 4. АДАПТИВНОСТЬ ДЛЯ ТЕЛЕФОНОВ */
+@media screen and (max-width: 768px) {
+    .custom-header-wrapper {
+        height: 350px; /* Фиксируем на мобильных для стабильности */
+    }
+    .hero-title {
+        font-size: 24px !important;
+        margin-bottom: 10px;
+    }
+    .hero-subtitle {
+        font-size: 16px !important;
+        margin-bottom: 20px;
+    }
+}
+}
+
+/* Адаптация формы для мобильных устройств */
+@media screen and (max-width: 480px) {
+    /* Уменьшаем внутренние отступы контейнера */
+    .callback-form-container {
+        padding: 15px 10px;
+    }
+
+    /* Делаем поля чуть ниже, чтобы сэкономить место по вертикали */
+    .callback-form-container input[type="text"],
+    .callback-form-container input[type="tel"],
+    .callback-form-container textarea {
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 14px; /* Чуть меньше шрифт для узких экранов */
+    }
+
+    .callback-form-container textarea {
+        min-height: 60px; /* Уменьшаем высоту поля сообщения */
+    }
+
+    .callback-form-container input[type="submit"] {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .form-note {
+        font-size: 11px;
+        line-height: 1.3;
+    }
+}
+
+/* Настройка самого окна Popup Maker (если оно обрезается) */
+.pum-container {
+    max-width: 95% !important; /* Чтобы окно не прилипало к краям экрана */
+    max-height: 90vh !important; /* Не выше 90% экрана */
+    overflow-y: auto !important; /* Добавляем внутреннюю прокрутку, если форма длинная */
+}
+
+
+/*===============================================================================================*/
+
+/* Настройка video 2A622F1 */
+.custom-video-widget {
+    width: 100%;
+    line-height: 0;
+    overflow: hidden;
+    border-radius: 4px; /* Если у картинок в теме есть закругление */
+}
+
+.widget-video-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Чтобы видео заполняло контейнер без черных полос */
+}
+
+/* Если нужно ограничить высоту как у оригинала (225px) */
+@media screen and (min-width: 768px) {
+    .widget-video-bg {
+        max-height: 225px;
+    }
+}
+
+.entry-content h1.wp-block-heading.has-text-align-center {
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+
+.custom-hero-text {
+    /* clamp(МИНИМУМ, ИДЕАЛЬНЫЙ_РАЗМЕР, МАКСИМУМ) */
+    font-size: clamp(18px, 2.5vw, 32px); 
+    line-height: 1.5;      /* Межстрочный интервал */
+    text-align: justify;   /* Растягиваем текст по ширине блока */
+    text-align-last: center; /* Последнюю строку центрируем (или justify для полной растяжки) */
+    
+    width: 100%;           /* Растягиваем сам контейнер */
+    max-width: 1200px;     /* Ограничение максимальной ширины */
+    margin: 0 auto;        /* Центрируем блок на странице */
+    
+    font-weight: 500;
+    color: #333;
+}
+
+/* Адаптивность для мобильных телефонов */
+@media (max-width: 768px) {
+    .custom-hero-text {
+        font-size: 1.2rem; /* На смартфонах переходим на фиксированный размер */
+        text-align: center; /* На узких экранах justify часто выглядит плохо */
+        text-align-last: center;
+    }
+}
