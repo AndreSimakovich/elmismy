@@ -58,9 +58,7 @@ if ( ! function_exists( 'of_get_option' ) ) {
         <h1 class="hero-title">На высоте новых технологий</h1>
         <p class="hero-subtitle">«Элмис» — вдыхаем новую жизнь в ваше оборудование</p>
          <a href="#callback-form" class="btn-callback popmake-975">Рассчитать проект</a>
-        <a href="<?php echo esc_url( get_permalink( 931 ) ); ?>" class="hero-link">
-            Получить консультацию 
-        </a>
+       
     </div>
     </div>
 </div>
@@ -95,16 +93,15 @@ if ( ! function_exists( 'of_get_option' ) ) {
                             <h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
                         </div>
                         <?php } ?>
+                        <a href="<?php echo esc_url( get_permalink( 931 ) ); ?>" class="hero-link">
+            Получить консультацию 
+        </a>
                     </div>
 
                     <!-- 3.3. ПРАВАЯ СЕКЦИЯ: Виджеты шапки и Меню -->
                     <div id="header-right-section">
-                        <?php if( is_active_sidebar( 'elmispase_header_sidebar' ) ) : ?>	
-                            <div id="header-right-sidebar" class="clearfix">
-                                <?php dynamic_sidebar( 'elmispase_header_sidebar' ); ?>		
-                            </div>
-                        <?php endif; ?>
-
+                        
+ 
                         <nav id="site-navigation" class="main-navigation" role="navigation">
                             <h1 class="menu-toggle"><?php _e( 'Menu', 'elmispase' ); ?></h1>
                             <?php
@@ -112,7 +109,12 @@ if ( ! function_exists( 'of_get_option' ) ) {
                                     wp_nav_menu( array( 'theme_location' => 'primary' ) );
                                 } else { wp_page_menu(); }
                             ?>
-                        </nav>					
+                        </nav>
+                        <?php if( is_active_sidebar( 'elmispase_header_sidebar' ) ) : ?>	
+                            <div id="header-right-sidebar" class="clearfix">
+                                <?php dynamic_sidebar( 'elmispase_header_sidebar' ); ?>		
+                            </div>
+                        <?php endif; ?>					
                     </div> 
                     
                </div><!-- #header-text-nav-wrap -->

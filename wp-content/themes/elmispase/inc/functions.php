@@ -316,9 +316,19 @@ endif;
  * Source: https://css-tricks.com/snippets/php/convert-hex-to-rgb/#comment-1052011
  */
 if ( ! function_exists( 'elmispase_hex2rgb' ) ) {
+	
+    
 	function elmispase_hex2rgb( $hexstr ) {
-		$int = hexdec( str_replace( '#', '', $hexstr ) );
+		  // 1. Если пришел null или пусто - возвращаем черный, чтобы не было ошибки
+    if ( empty($hexstr) ) { return "rgba(0,0,0, 0.85)"; }
 
+    // 2. Очищаем строку: ОСТАВЛЯЕМ ТОЛЬКО цифры 0-9 и буквы a-f
+    // Это гарантированно удалит любые решетки, пробелы и мусор
+    $clean_hex = preg_replace('/[^a-f0-9]/i', '', (string)$hexstr);
+
+    // 3. Теперь hexdec получит ИДЕАЛЬНУЮ строку
+    $int = hexdec( $clean_hex );
+	//$int = hexdec( str_replace( '#', '', $hexstr ) );
 		$rgb = array( "red" => 0xFF & ( $int >> 0x10 ), "green" => 0xFF & ( $int >> 0x8 ), "blue" => 0xFF & $int );
 		$r   = $rgb['red'];
 		$g   = $rgb['green'];
@@ -337,7 +347,17 @@ function elmispase_darkcolor( $hex, $steps ) {
 	$steps = max( -255, min( 255, $steps ) );
 
 	// Normalize into a six character long hex string
-	$hex = str_replace( '#', '', $hex );
+
+	// 1. Если пришел null или пусто - возвращаем черный, чтобы не было ошибки
+    if ( empty($hex) ) { return "rgba(0,0,0, 0.85)"; }
+
+    // 2. Очищаем строку: ОСТАВЛЯЕМ ТОЛЬКО цифры 0-9 и буквы a-f
+    // Это гарантированно удалит любые решетки, пробелы и мусор
+    $clean_hex = preg_replace('/[^a-f0-9]/i', '', (string)$hex);
+	$hex=$clean_hex;
+    // 3. Теперь hexdec получит ИДЕАЛЬНУЮ строку
+   // $int = hexdec( $clean_hex );
+ //$hex = str_replace( '#', '', $hex );
 	if ( strlen( $hex ) == 3 ) {
 		$hex = str_repeat( substr( $hex, 0, 1 ), 2 ) . str_repeat( substr( $hex, 1, 1 ), 2 ) . str_repeat( substr( $hex, 2, 1 ), 2 );
 	}
@@ -361,11 +381,11 @@ function elmispase_darkcolor( $hex, $steps ) {
  * Hooks the Custom Internal CSS to head section
  */
 function elmispase_custom_css() {
-	$primary_color         = get_theme_mod( 'elmispase_primary_color', '#0FBE7C' );
+	$primary_color         = get_theme_mod( 'elmispase_primary_color', '#755151' );
 	$primary_opacity       = elmispase_hex2rgb( $primary_color );
 	$primary_dark          = elmispase_darkcolor( $primary_color, -50 );
 	$elmispase_internal_css = '';
-	if ( $primary_color != '#0FBE7C' ) {
+	if ( $primary_color != '#c50b0b' ) {
 		$elmispase_internal_css .= ' blockquote { border-left: 3px solid ' . $primary_color . '; }
 			.elmispase-button, input[type="reset"], input[type="button"], input[type="submit"], button { background-color: ' . $primary_color . '; }
 			.previous a:hover, .next a:hover { 	color: ' . $primary_color . '; }

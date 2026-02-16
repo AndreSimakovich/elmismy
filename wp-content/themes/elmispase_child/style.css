@@ -109,7 +109,7 @@ Version: 1.1.0
     width: 100%;
     
     /* Адаптивная высота: 40% экрана, но не меньше 350px и не больше 600px */
-    height: 30vh; 
+    height: 20vh; 
     min-height: 200px; 
     max-height: 400px;
     
@@ -426,4 +426,155 @@ Version: 1.1.0
         text-align: center; /* На узких экранах justify часто выглядит плохо */
         text-align-last: center;
     }
+}
+
+
+/*============================================================================================
+Главная страница шахматка картинок
+==========================================================================================/*
+/* Основной контейнер */
+.custom-features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Расстояние между рядами */
+    padding: 20px 0;
+}
+
+/* Ряд: по умолчанию картинка слева */
+.feature-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Реверсивный ряд: картинка уходит вправо */
+.feature-item.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Стили для картинок */
+.feature-item .wp-block-image {
+    flex: 0 0 300px; /* Фиксированная ширина картинки */
+    margin: 0;
+}
+
+.feature-item .wp-block-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Для стиля rounded */
+}
+
+/* Стили для текста */
+.feature-text {
+    flex: 1;
+}
+
+/* Адаптивность для мобильных */
+@media screen and (max-width: 768px) {
+    .feature-item, .feature-item.reverse {
+        flex-direction: column; /* На телефонах всё в один столбик */
+        text-align: center;
+    }
+    .feature-item .wp-block-image {
+        flex: 0 0 auto;
+        width: 150px; /* Уменьшаем картинку на мобилках */
+    }
+}
+
+
+/*======================================================================================
+ Контейнер страницы контактов 
+ ======================================================================================*/
+.contact-page-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Заголовок */
+.contact-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-header h2 {
+    font-size: 36px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.contact-header p {
+    color: #666;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Сетка карточек */
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+/* Стили карточки */
+.contact-item {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.contact-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-color: #0056b3;
+}
+
+/* Иконки */
+.contact-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: inline-block;
+    color: #0056b3;
+}
+
+.contact-item h3 {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.contact-item p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* Адаптивность для мобильных */
+@media screen and (max-width: 768px) {
+    .contact-header h2 { font-size: 28px; }
+    .contact-item { padding: 30px 20px; }
+}
+
+
+/*====================================================================================
+левый сайдбар
+=====================================================================================*/
+#secondary .widget img, 
+#secondary .wp-block-image,
+#secondary .widget .widget_text  {
+     border: 3px solid #0056b3; /* Толщина, Тип (сплошная), Цвет */
+    display: block;
+    margin-left: auto !important;  /* Авто-отступ слева толкает картинку вправо */
+    margin-right: 0 !important;    /* Обнуляем правый отступ */
 }
