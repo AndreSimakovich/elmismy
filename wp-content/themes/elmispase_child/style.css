@@ -18,11 +18,11 @@ Version: 1.1.0
 #header-logo-image,
 #header-text,
 .inner-wrap {
-    outline: 1px solid rgba(255, 0, 0, 0.5) !important; /* Красная рамка для контейнеров */
+    outline: 0px solid rgba(255, 0, 0, 0.5) !important; /* Красная рамка для контейнеров */
 }
 
 #header-text-nav-wrap * {
-    outline: 1px dashed rgba(0, 255, 0, 0.4); /* Зеленая пунктирная рамка для всех вложенных элементов */
+    outline: 0px dashed rgba(0, 255, 0, 0.4); /* Зеленая пунктирная рамка для всех вложенных элементов */
 }
 
    
@@ -439,13 +439,15 @@ Version: 1.1.0
     gap: 40px; /* Расстояние между рядами */
     padding: 20px 0;
 }
-
+/* Общий контейнер для одной строки */
 /* Ряд: по умолчанию картинка слева */
 .feature-item {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
+    flex-direction: row; /* Выстраивает в ряд */
+    align-items:flex-end; /* Центрирует картинку и текст по вертикали */
+    justify-content: center; /* двигает блок текста с картинкой по горизонтали */
+    gap: 10px; /* Расстояние между картинкой и текстом */
+    width: 100%;
 }
 
 /* Реверсивный ряд: картинка уходит вправо */
@@ -455,7 +457,8 @@ Version: 1.1.0
 
 /* Стили для картинок */
 .feature-item .wp-block-image {
-    flex: 0 0 300px; /* Фиксированная ширина картинки */
+    border: #004494 solid 0px;
+    flex: 0 0 400px; /* Фиксированная ширина картинки */
     margin: 0;
 }
 
@@ -466,8 +469,18 @@ Version: 1.1.0
 }
 
 /* Стили для текста */
+/* Настройка блока с текстом */
 .feature-text {
-    flex: 1;
+    border: #03e63c solid 0px;
+    flex: 0 1 auto; /* Текст занимает место только по наполнению */
+    padding: 15px;
+}
+
+
+/* Чтобы картинка не сжималась */
+.feature-link {
+    flex-shrink: 0;
+    display: block;
 }
 
 /* Адаптивность для мобильных */
@@ -516,17 +529,31 @@ Version: 1.1.0
 
 /* Сетка карточек */
 .contact-info-grid {
+    display: flex;
+    flex-direction: row; /* Выстраивает блоки в ряд */
+    justify-content: space-between; /* Распределяет их равномерно по ширине */
+    gap: 30px; /* Расстояние между блоками */
+    flex-wrap: wrap; /* Позволяет блокам переноситься на новую строку на мобильных */
+    padding: 2px 0;
+}
+/*карточки распологаются таблицей2х2 *//*
+.contact-info-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
 }
-
+*/
 /* Стили карточки */
+/* Настройка отдельного блока контакта */
+
+
 .contact-item {
     background: #ffffff;
+    flex: 1; /* Все блоки будут одинаковой ширины */
+    min-width: 250px; /* Минимальная ширина, чтобы текст не сжимался слишком сильно */
+    text-align: center; /* Центрируем иконку и текст внутри блока */
     padding: 40px 30px;
     border-radius: 12px;
-    text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
     border: 1px solid #f0f0f0;
@@ -539,8 +566,9 @@ Version: 1.1.0
 }
 
 /* Иконки */
+
 .contact-icon {
-    font-size: 40px;
+    font-size: 28px;
     margin-bottom: 20px;
     display: inline-block;
     color: #0056b3;
@@ -550,13 +578,13 @@ Version: 1.1.0
     font-size: 20px;
     color: #222;
     margin-bottom: 15px;
-    font-weight: 700;
+    font-weight: 100;
 }
 
 .contact-item p {
     color: #555;
     line-height: 1.6;
-    font-size: 15px;
+    font-size: 28px;
     margin: 0;
 }
 
@@ -573,8 +601,74 @@ Version: 1.1.0
 #secondary .widget img, 
 #secondary .wp-block-image,
 #secondary .widget .widget_text  {
-     border: 3px solid #0056b3; /* Толщина, Тип (сплошная), Цвет */
+     border: 0px solid #0056b3; /* Толщина, Тип (сплошная), Цвет */
     display: block;
     margin-left: auto !important;  /* Авто-отступ слева толкает картинку вправо */
     margin-right: 0 !important;    /* Обнуляем правый отступ */
+}
+
+
+/*=======================================================================================================
+стили   Н1  в подписях
+========================================================================================================*/
+
+/* Обращение через родительский ID или специфичный класс */
+#post-928 .custom-hero-text
+{
+                        color: #050505;
+                        font-size: 50px;
+                        font-family: 'Manrope',Arial,sans-serif;
+                        line-height: 1;
+                        font-weight: 600;
+                        letter-spacing: -1px;
+                        background-position: center center;
+                        border-width: var(--t396-borderwidth,0);
+                        border-style: var(--t396-borderstyle,solid);
+                        border-color: var(--t396-bordercolor,transparent);
+                        transition: background-color var(--t396-speedhover,0s) ease-in-out,color var(--t396-speedhover,0s) ease-in-out,border-color var(--t396-speedhover,0s) ease-in-out,box-shadow var(--t396-shadowshoverspeed,0.2s) ease-in-out;
+                        text-shadow: var(--t396-shadow-text-x,0px) var(--t396-shadow-text-y,0px) var(--t396-shadow-text-blur,0px) rgba(var(--t396-shadow-text-color),var(--t396-shadow-text-opacity,100%));
+                    }
+
+                    /* Если нужно стилизовать список преимуществ ниже */
+                   
+#post-928 .custom-features-list h3 {
+     color: #00158b;
+     font-size: 40px;
+     font-family: 'Manrope',Arial,sans-serif;
+     font-style:normal;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+#post-928 .custom-features-list  {
+     color: #000000;
+     font-size: 32px;
+     font-family: 'Manrope',Arial,sans-serif;
+     font-style:italic;
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+}
+
+
+
+/*===========================================================================================================
+работа с PRIMARY MENU
+============================================================================================================*/
+/* Изменяем размер шрифта главного меню */
+.main-navigation ul li a {
+     color: #050505;
+                        font-size: 32px;
+                        font-family: 'Manrope',Arial,sans-serif;
+                        line-height: 1;
+                        font-weight: 50;
+                        letter-spacing: -1px;
+                        background-position: center center;
+                        border-width: var(--t396-borderwidth,0);
+                        border-style: var(--t396-borderstyle,solid);
+                        border-color: var(--t396-bordercolor,transparent);
+                        transition: background-color var(--t396-speedhover,0s) ease-in-out,color var(--t396-speedhover,0s) ease-in-out,border-color var(--t396-speedhover,0s) ease-in-out,box-shadow var(--t396-shadowshoverspeed,0.2s) ease-in-out;
+                        text-shadow: var(--t396-shadow-text-x,0px) var(--t396-shadow-text-y,0px) var(--t396-shadow-text-blur,0px) rgba(var(--t396-shadow-text-color),var(--t396-shadow-text-opacity,100%));
+                    }
+
 }

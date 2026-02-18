@@ -123,7 +123,7 @@ pre {
 	color: #BBBBBB;
 }
 .main-navigation ul li ul {
-	background: none repeat scroll 0 0 rgba(0, 0 ,0 , 0.7);
+	background: springgreen repeat scroll 0 0 rgba(0, 0 ,0 , 0.7);
 }
 .main-navigation ul li ul li a,
 .main-navigation ul li.current-menu-item ul li a,
